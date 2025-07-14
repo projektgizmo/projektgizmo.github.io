@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aldrich:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aldrich:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aldrich:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aldrich:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="desktop1-container">
+        <div class="desktop1-desktop1">
+          <img
+            alt="Ellipse63319"
+            src="https://play.teleporthq.io/static/svg/default-img.svg"
+            class="desktop1-ellipse6"
+          />
+          <div class="desktop1backgroundgradient">
+            <img
+              alt="Ellipse33310"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse3"
+            />
+            <img
+              alt="Ellipse23310"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse21"
+            />
+            <img
+              alt="Ellipse13310"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse1"
+            />
+            <img
+              alt="Ellipse43310"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse4"
+            />
+            <img
+              alt="Ellipse23310"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse22"
+            />
+            <img
+              alt="Ellipse53319"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse5"
+            />
+            <img
+              alt="Ellipse103323"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse10"
+            />
+            <img
+              alt="Ellipse133347"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse13"
+            />
+            <img
+              alt="Ellipse113323"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse11"
+            />
+            <img
+              alt="Ellipse123347"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-ellipse12"
+            />
+          </div>
+          <div class="desktop1-kontakt">
+            <img
+              alt="Linkedin3319"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-linkedin"
+            />
+            <img
+              alt="mail3319"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-mail"
+            />
+            <img
+              alt="Instagram3319"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-instagram"
+            />
+            <span
+              class="desktop1-text10 DisplayDesktopHeadingMobileH2-Semibold"
+            >
+              <span>@projekt_gizmo</span>
+              <br />
+            </span>
+            <span
+              class="desktop1-text13 DisplayDesktopHeadingMobileH2-Semibold"
+            >
+              Projekt Gizmo
+            </span>
+            <span
+              class="desktop1-text14 DisplayDesktopHeadingMobileH2-Semibold"
+            >
+              Projekt Gizmo
+            </span>
+            <img
+              alt="Facebook3319"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-facebook"
+            />
+            <span
+              class="desktop1-text15 DisplayDesktopHeadingMobileH2-Semibold"
+            >
+              gizmoprojekt@gmail.com
+            </span>
+            <span class="desktop1-text16 JumboDesktopMobileBold">Kontakt</span>
+          </div>
+          <div class="desktop1-zespol">
+            <img
+              alt="Rectangle53313"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-rectangle51"
+            />
+            <img
+              alt="Rectangle63313"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-rectangle61"
+            />
+            <img
+              alt="Rectangle103320"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-rectangle101"
+            />
+            <div class="desktop1-group3">
+              <span class="desktop1-text17 DisplayDesktopalfti">Zespół</span>
+            </div>
+            <div class="desktop1-group6">
+              <span
+                class="desktop1-text18 DisplayDesktopHeadingMobileH1-SemiBold"
+              >
+                Feliks Brzeziński
+              </span>
+              <span class="desktop1-text19 BodyDesktopXXL-Regular">
+                główny programista
+              </span>
+            </div>
+            <div class="desktop1-group8">
+              <span
+                class="desktop1-text20 DisplayDesktopHeadingMobileH1-SemiBold"
+              >
+                Patrycja Płodowska
+              </span>
+              <span class="desktop1-text21 BodyDesktopXXL-Regular">
+                główna elektronik
+              </span>
+            </div>
+            <div class="desktop1-group7">
+              <span
+                class="desktop1-text22 DisplayDesktopHeadingMobileH1-SemiBold"
+              >
+                Kacper Olszewski
+              </span>
+              <span class="desktop1-text23 BodyDesktopXXL-Regular">
+                <span>główny mechanik</span>
+                <br />
+              </span>
+            </div>
+            <div class="desktop1-group9">
+              <span
+                class="desktop1-text26 DisplayDesktopHeadingMobileH1-SemiBold"
+              >
+                Weronika Arciuch
+              </span>
+              <span class="desktop1-text27 BodyDesktopXXL-Regular">
+                <span>specjalistka social media</span>
+                <br />
+              </span>
+            </div>
+            <img
+              alt="Genericavatar3318"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-genericavatar1"
+            />
+            <img
+              alt="Genericavatar3318"
+              src="https://play.teleporthq.io/static/svg/default-img.svg"
+              class="desktop1-genericavatar2"
+            />
+            <img
+              alt="Genericavatar3318"
+              src="public/external/genericavatar3318-0ngs.svg"
+              class="desktop1-genericavatar3"
+            />
+            <img
+              alt="Genericavatar3318"
+              src="public/external/genericavatar3318-cit8.svg"
+              class="desktop1-genericavatar4"
+            />
+          </div>
+          <div class="desktop1-navbar">
+            <img
+              alt="Rectangle13310"
+              src="public/external/rectangle13310-yizp-200h.png"
+              class="desktop1-rectangle1"
+            />
+            <div class="desktop1-logo">
+              <div class="desktop1gizmonapis">
+                <img
+                  alt="path6883310"
+                  src="public/external/path6883310-xl0s.svg"
+                  class="desktop1-path688"
+                />
+                <img
+                  alt="path6873310"
+                  src="public/external/path6873310-ofb.svg"
+                  class="desktop1-path687"
+                />
+                <img
+                  alt="path6863310"
+                  src="public/external/path6863310-4ta.svg"
+                  class="desktop1-path686"
+                />
+                <img
+                  alt="path6853310"
+                  src="public/external/path6853310-bhjn.svg"
+                  class="desktop1-path685"
+                />
+                <img
+                  alt="path6843310"
+                  src="public/external/path6843310-bjlq.svg"
+                  class="desktop1-path684"
+                />
+                <img
+                  alt="path6833310"
+                  src="public/external/path6833310-i2pi.svg"
+                  class="desktop1-path683"
+                />
+              </div>
+              <div class="desktop1-logoekran11">
+                <div class="desktop1-layer1">
+                  <img
+                    alt="path529Stroke3310"
+                    src="public/external/path529stroke3310-rwa.svg"
+                    class="desktop1-path529-stroke"
+                  />
+                  <img
+                    alt="path575Stroke3310"
+                    src="public/external/path575stroke3310-ua08.svg"
+                    class="desktop1-path575-stroke"
+                  />
+                  <img
+                    alt="path583Stroke3310"
+                    src="public/external/path583stroke3310-kfmr.svg"
+                    class="desktop1-path583-stroke"
+                  />
+                  <img
+                    alt="path630Stroke3310"
+                    src="public/external/path630stroke3310-wauj.svg"
+                    class="desktop1-path630-stroke"
+                  />
+                  <img
+                    alt="path7534Stroke3310"
+                    src="public/external/path7534stroke3310-c5kr.svg"
+                    class="desktop1-path7534-stroke"
+                  />
+                  <img
+                    alt="path7603Stroke3310"
+                    src="public/external/path7603stroke3310-0u0f.svg"
+                    class="desktop1-path7603-stroke"
+                  />
+                  <img
+                    alt="path7717Stroke3310"
+                    src="public/external/path7717stroke3310-b55o.svg"
+                    class="desktop1-path7717-stroke"
+                  />
+                  <img
+                    alt="path7890Stroke3310"
+                    src="public/external/path7890stroke3310-da0a.svg"
+                    class="desktop1-path7890-stroke"
+                  />
+                  <img
+                    alt="path953Stroke3310"
+                    src="public/external/path953stroke3310-h57o.svg"
+                    class="desktop1-path953-stroke"
+                  />
+                  <img
+                    alt="path1006Stroke3310"
+                    src="public/external/path1006stroke3310-lspbg.svg"
+                    class="desktop1-path1006-stroke"
+                  />
+                  <img
+                    alt="path1011Stroke3310"
+                    src="public/external/path1011stroke3310-6sxn.svg"
+                    class="desktop1-path1011-stroke"
+                  />
+                  <img
+                    alt="path1027Stroke3310"
+                    src="public/external/path1027stroke3310-m6ii.svg"
+                    class="desktop1-path1027-stroke"
+                  />
+                  <img
+                    alt="path1030Stroke3310"
+                    src="public/external/path1030stroke3310-serk.svg"
+                    class="desktop1-path1030-stroke"
+                  />
+                  <img
+                    alt="path1062Stroke3310"
+                    src="public/external/path1062stroke3310-hvkh.svg"
+                    class="desktop1-path1062-stroke"
+                  />
+                  <img
+                    alt="path11183Stroke3310"
+                    src="public/external/path11183stroke3310-64u2.svg"
+                    class="desktop1-path11183-stroke"
+                  />
+                  <img
+                    alt="path1190Stroke3310"
+                    src="public/external/path1190stroke3310-tu9b.svg"
+                    class="desktop1-path1190-stroke"
+                  />
+                  <img
+                    alt="path1204Stroke3310"
+                    src="public/external/path1204stroke3310-f1m9.svg"
+                    class="desktop1-path1204-stroke"
+                  />
+                  <img
+                    alt="path1219Stroke3310"
+                    src="public/external/path1219stroke3310-nitr.svg"
+                    class="desktop1-path1219-stroke"
+                  />
+                  <img
+                    alt="path1228Stroke3310"
+                    src="public/external/path1228stroke3310-esza.svg"
+                    class="desktop1-path1228-stroke"
+                  />
+                  <img
+                    alt="path1289Stroke3310"
+                    src="public/external/path1289stroke3310-k67.svg"
+                    class="desktop1-path1289-stroke"
+                  />
+                  <img
+                    alt="path1304Stroke3310"
+                    src="public/external/path1304stroke3310-tco8h.svg"
+                    class="desktop1-path1304-stroke"
+                  />
+                  <img
+                    alt="path26498Stroke3310"
+                    src="public/external/path26498stroke3310-pe1i.svg"
+                    class="desktop1-path26498-stroke"
+                  />
+                  <img
+                    alt="path2657Stroke3310"
+                    src="public/external/path2657stroke3310-clkf.svg"
+                    class="desktop1-path2657-stroke"
+                  />
+                  <img
+                    alt="path2665Stroke3310"
+                    src="public/external/path2665stroke3310-9ly.svg"
+                    class="desktop1-path2665-stroke"
+                  />
+                  <img
+                    alt="path2676Stroke3310"
+                    src="public/external/path2676stroke3310-x8hh.svg"
+                    class="desktop1-path2676-stroke"
+                  />
+                  <img
+                    alt="path2684Stroke3310"
+                    src="public/external/path2684stroke3310-5y9g.svg"
+                    class="desktop1-path2684-stroke"
+                  />
+                  <img
+                    alt="path2698Stroke3310"
+                    src="public/external/path2698stroke3310-d96q.svg"
+                    class="desktop1-path2698-stroke"
+                  />
+                  <img
+                    alt="path2706Stroke3310"
+                    src="public/external/path2706stroke3310-taf9.svg"
+                    class="desktop1-path2706-stroke"
+                  />
+                  <img
+                    alt="path27587Stroke3310"
+                    src="public/external/path27587stroke3310-gbw5.svg"
+                    class="desktop1-path27587-stroke"
+                  />
+                  <img
+                    alt="path27780Stroke3310"
+                    src="public/external/path27780stroke3310-ug5q.svg"
+                    class="desktop1-path27780-stroke"
+                  />
+                  <img
+                    alt="path27895Stroke3310"
+                    src="public/external/path27895stroke3310-1t0p.svg"
+                    class="desktop1-path27895-stroke"
+                  />
+                  <img
+                    alt="path2806Stroke3310"
+                    src="public/external/path2806stroke3310-99k.svg"
+                    class="desktop1-path2806-stroke"
+                  />
+                  <img
+                    alt="path2819Stroke3310"
+                    src="public/external/path2819stroke3310-pe.svg"
+                    class="desktop1-path2819-stroke"
+                  />
+                  <img
+                    alt="path2840Stroke3310"
+                    src="public/external/path2840stroke3310-rq69.svg"
+                    class="desktop1-path2840-stroke"
+                  />
+                  <img
+                    alt="path2880Stroke3310"
+                    src="public/external/path2880stroke3310-tj6d.svg"
+                    class="desktop1-path2880-stroke"
+                  />
+                  <img
+                    alt="path2891Stroke3310"
+                    src="public/external/path2891stroke3310-i8i4.svg"
+                    class="desktop1-path2891-stroke"
+                  />
+                  <img
+                    alt="path2913Stroke3310"
+                    src="public/external/path2913stroke3310-yq6f.svg"
+                    class="desktop1-path2913-stroke"
+                  />
+                  <img
+                    alt="path2925Stroke3310"
+                    src="public/external/path2925stroke3310-2mm.svg"
+                    class="desktop1-path2925-stroke"
+                  />
+                  <img
+                    alt="path2935Stroke3310"
+                    src="public/external/path2935stroke3310-k14k.svg"
+                    class="desktop1-path2935-stroke"
+                  />
+                  <img
+                    alt="path2948Stroke3310"
+                    src="public/external/path2948stroke3310-rztn.svg"
+                    class="desktop1-path2948-stroke"
+                  />
+                  <img
+                    alt="path31377Stroke3310"
+                    src="public/external/path31377stroke3310-00f.svg"
+                    class="desktop1-path31377-stroke"
+                  />
+                  <img
+                    alt="path3164Stroke3310"
+                    src="public/external/path3164stroke3310-g2db.svg"
+                    class="desktop1-path3164-stroke"
+                  />
+                  <img
+                    alt="path3226Stroke3310"
+                    src="public/external/path3226stroke3310-5lgi.svg"
+                    class="desktop1-path3226-stroke"
+                  />
+                  <img
+                    alt="path3257Stroke3310"
+                    src="public/external/path3257stroke3310-yxwrm.svg"
+                    class="desktop1-path3257-stroke"
+                  />
+                  <img
+                    alt="path3270Stroke3310"
+                    src="public/external/path3270stroke3310-cdxg.svg"
+                    class="desktop1-path3270-stroke"
+                  />
+                  <div class="desktop1-clippathgroup1">
+                    <div class="desktop1-clip-path32945">
+                      <img
+                        alt="path329893310"
+                        src="https://play.teleporthq.io/static/svg/default-img.svg"
+                        class="desktop1-path32989"
+                      />
+                    </div>
+                    <img
+                      alt="path3287Stroke3310"
+                      src="https://play.teleporthq.io/static/svg/default-img.svg"
+                      class="desktop1-path3287-stroke"
+                    />
+                  </div>
+                  <img
+                    alt="path3304Stroke3310"
+                    src="public/external/path3304stroke3310-vf1d.svg"
+                    class="desktop1-path3304-stroke"
+                  />
+                  <img
+                    alt="path3361Stroke3310"
+                    src="public/external/path3361stroke3310-0iu7.svg"
+                    class="desktop1-path3361-stroke"
+                  />
+                  <img
+                    alt="path3392Stroke3310"
+                    src="public/external/path3392stroke3310-c32.svg"
+                    class="desktop1-path3392-stroke"
+                  />
+                  <img
+                    alt="path3411Stroke3310"
+                    src="public/external/path3411stroke3310-wqn8.svg"
+                    class="desktop1-path3411-stroke"
+                  />
+                  <div class="desktop1-clippathgroup2">
+                    <div class="desktop1-clip-path34357">
+                      <img
+                        alt="path343613310"
+                        src="https://play.teleporthq.io/static/svg/default-img.svg"
+                        class="desktop1-path34361"
+                      />
+                    </div>
+                    <img
+                      alt="path3428Stroke3310"
+                      src="https://play.teleporthq.io/static/svg/default-img.svg"
+                      class="desktop1-path3428-stroke"
+                    />
+                  </div>
+                  <img
+                    alt="path3443Stroke3310"
+                    src="public/external/path3443stroke3310-l2bs.svg"
+                    class="desktop1-path3443-stroke"
+                  />
+                  <img
+                    alt="path3465Stroke3310"
+                    src="public/external/path3465stroke3310-be3.svg"
+                    class="desktop1-path3465-stroke"
+                  />
+                  <img
+                    alt="path3477Stroke3310"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="desktop1-path3477-stroke"
+                  />
+                  <img
+                    alt="path34914Stroke3310"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="desktop1-path34914-stroke"
+                  />
+                  <img
+                    alt="path27897Stroke3310"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="desktop1-path27897-stroke"
+                  />
+                  <img
+                    alt="path13016Stroke3310"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="desktop1-path13016-stroke"
+                  />
+                  <img
+                    alt="path128882Stroke3310"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="desktop1-path128882-stroke"
+                  />
+                  <img
+                    alt="path27563Stroke3310"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="desktop1-path27563-stroke"
+                  />
+                  <img
+                    alt="rect13310"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="desktop1-rect1"
+                  />
+                  <img
+                    alt="rect1Stroke3310"
+                    src="https://play.teleporthq.io/static/svg/default-img.svg"
+                    class="desktop1-rect1-stroke"
+                  />
+                </div>
+              </div>
+            </div>
+            <span class="desktop1-text30 BodyDesktopL-Regular">o nas</span>
+            <span class="desktop1-text31 BodyDesktopL-Regular">kontakt</span>
+            <span class="desktop1-text32 BodyDesktopL-Regular">
+              <span class="desktop1-text33">PL</span>
+              <span>/ENG</span>
+            </span>
+            <span class="desktop1-text35 BodyDesktopL-Regular">historia</span>
+            <img
+              alt="Rectangle23310"
+              src="public/external/rectangle23310-objv-200h.png"
+              class="desktop1-rectangle2"
+            />
+            <img
+              alt="Rectangle43310"
+              src="public/external/rectangle43310-yzk-200h.png"
+              class="desktop1-rectangle4"
+            />
+            <img
+              alt="Rectangle33310"
+              src="public/external/rectangle33310-d59-200h.png"
+              class="desktop1-rectangle3"
+            />
+          </div>
+          <div class="desktop1-banner">
+            <img
+              alt="Rectangle53310"
+              src="public/external/rectangle53310-lecs.svg"
+              class="desktop1-rectangle52"
+            />
+            <img
+              alt="Rectangle63310"
+              src="public/external/rectangle63310-x8n.svg"
+              class="desktop1-rectangle62"
+            />
+            <img
+              alt="Rectangle73310"
+              src="public/external/rectangle73310-xwz.svg"
+              class="desktop1-rectangle7"
+            />
+            <div class="desktop1-group20">
+              <img
+                alt="Vector3312"
+                src="public/external/vector3312-rqlj.svg"
+                class="desktop1-vector1"
+              />
+              <img
+                alt="Vector3312"
+                src="public/external/vector3312-kh33.svg"
+                class="desktop1-vector2"
+              />
+            </div>
+            <img
+              alt="Rectangle83310"
+              src="public/external/rectangle83310-s51i.svg"
+              class="desktop1-rectangle8"
+            />
+            <img
+              alt="Rectangle93310"
+              src="public/external/rectangle93310-teyg.svg"
+              class="desktop1-rectangle9"
+            />
+            <span class="desktop1-text36 BodyDesktopXXL-Regular">
+              to robot modularny zdolny do łączenia się z innymi podobnymi sobie
+              robotami w celu realizacji złożonych zadań. 
+            </span>
+            <span class="desktop1-text37">GIZMO</span>
+            <div class="desktop1-banner2">
+              <img
+                alt="Rectangle103318"
+                src="public/external/rectangle103318-fa8k.svg"
+                class="desktop1-rectangle102"
+              />
+              <img
+                alt="Rectangle113318"
+                src="public/external/rectangle113318-7lrc.svg"
+                class="desktop1-rectangle11"
+              />
+              <img
+                alt="Rectangle103318"
+                src="public/external/rectangle103318-z3y8.svg"
+                class="desktop1-rectangle103"
+              />
+              <span class="desktop1-text38 BodyDesktopL-Regular">
+                Każdy robot Gizmo jest niezależnym urządzeniem zdolnym do ruchu,
+                reakcji na zmiany środowiska oraz komunikacje z innymi
+                urządzeniami.
+              </span>
+            </div>
+          </div>
+          <div class="desktop1-group2">
+            <img
+              alt="gizmoMtransparent13311"
+              src="public/external/gizmomtransparent13311-dyn-500w.png"
+              class="desktop1-gizmo-mtransparent1"
+            />
+          </div>
+          <div class="desktop1-konferencje">
+            <span class="desktop1-text39 JumboDesktopMobileBold">
+              Konferencje
+            </span>
+            <img
+              alt="Connect3348"
+              src="public/external/connect3348-atx9-200h.png"
+              class="desktop1-connect1"
+            />
+            <img
+              alt="Connect3348"
+              src="public/external/connect3348-t79q-200h.png"
+              class="desktop1-connect2"
+            />
+            <span class="desktop1-text40 BodyDesktopXXL-Regular">SITEE</span>
+            <span class="desktop1-text41 BodyDesktopXXL-Regular">
+              SpaceConnect
+            </span>
+          </div>
+          <div class="desktop1-promotorzy1">
+            <span class="desktop1-text42 JumboDesktopMobileBold">
+              Promotorzy
+            </span>
+            <img
+              alt="Connect3348"
+              src="public/external/connect3348-nqvt8-200h.png"
+              class="desktop1-connect3"
+            />
+            <img
+              alt="Connect3348"
+              src="public/external/connect3348-bub4-200h.png"
+              class="desktop1-connect4"
+            />
+            <span class="desktop1-text43 BodyDesktopXXL-Regular">
+              dr. hab. inż. Łukasz Kolimas
+            </span>
+            <span class="desktop1-text44 BodyDesktopXXL-Regular">
+              dr. inż. Łukasz Makowski
+            </span>
+          </div>
+          <div class="desktop1-promotorzy2">
+            <span class="desktop1-text45 JumboDesktopMobileBold">
+              Koła naukowe
+            </span>
+            <img
+              alt="Connect3348"
+              src="public/external/connect3348-xr6-200h.png"
+              class="desktop1-connect5"
+            />
+            <img
+              alt="Connect3348"
+              src="public/external/connect3348-njx-200h.png"
+              class="desktop1-connect6"
+            />
+            <span class="desktop1-text46 BodyDesktopXXL-Regular">KNR</span>
+            <span class="desktop1-text47 BodyDesktopXXL-Regular">Tapir</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
