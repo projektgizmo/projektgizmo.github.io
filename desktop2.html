@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Ewolucja i historia rozwoju modułowego robota Gizmo." />
+        <title>Historia Projektu - Projekt Gizmo</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Outfit:wght@400;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="background-decor">
+            <div class="ellipse ellipse-1"></div>
+            <div class="ellipse ellipse-2"></div>
+            <div class="ellipse ellipse-3"></div>
+            <div class="ellipse ellipse-4"></div>
+            <div class="ellipse ellipse-7"></div>
+            <div class="ellipse ellipse-8"></div>
+        </div>
+
+    <header class="navbar">
+            <div class="container navbar__container">
+                <a href="/" class="navbar__logo">
+                    <span>gizmo</span>
+                </a>
+                <nav class="navbar__nav">
+                    <ul class="navbar__links">
+                        <li><a href="./desktop2.html" class="navbar__link navbar__link--active">Historia</a></li>
+                        <li><a href="index.html" class="navbar__link">O Nas</a></li>
+                        <li><a href="galeria.html" class="navbar__link ">Galeria</a></li>
+                        <li><a href="index.html#kontakt" class="navbar__link">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar__lang-switcher">
+                    <a href="desktop2.html" class="navbar__lang navbar__lang--active">PL</a>
+                    <span>/</span>
+                    <a href="detskop2_eng.html" class="navbar__lang">ENG</a>
+                </div>
+            </div>
+        </header>
+                <div class="decorative-circle circle-model-1" style="transform: scale(0.5) translateX(2000px);"></div>
+        <main class="container">
+            <h1 class="page-title">Ewolucja</h1>
+                
+            <section class="evolution-intro">
+                <div class="evolution-intro__card">
+                    <div class="column">
+                        <div class="row">
+                            <img src="public/external/model1.png" alt="Model 1">
+                            <img src="public/external/arrow.png" alt="arrow" class="arrow">
+                            <img src="public/external/model2.png" alt="Model 2">
+                            <img src="public/external/arrow.png" alt="arrow" class="arrow">
+                            <img src="public/external/model3.png" alt="Model 3">
+                        </div>
+                        <img src="public/external/arrow.png" alt="arrow down" class="arrow arrow-down">
+                        <img src="public/external/model4.png" alt="Model 4">
+                    </div>
+                </div>
+                <div class="decorative-circle circle-model-1" style="transform: scale(0.3) translateX(500px);"></div>
+            </section>
+
+            <section class="evolution-card">
+                    <div class="evolution-card__image-gallery" style="display: flex; align-items: center; justify-content: space-around; width: 100%;">
+                        <div class="evolution-card__image-wrapper">
+                            <div class="decorative-circle circle-model-1"></div>
+                            <img src="public/external/model1.png" alt="Główny obraz Model 1">
+                        </div>
+                        <h2 class="evolution-card__title" style="margin: 0;">Model 1</h2>
+                        <div class="evolution-card__image-wrapper">
+                            <img src="public/external/model1_2.png" alt="Obraz dodatkowy 1">
+                        </div>
+                        <div class="evolution-card__image-wrapper">
+                            <img src="public/external/model1_3.jpg.png" alt="Obraz dodatkowy 2" style="transform: scale(1.12);">
+                        </div>
+                    </div>
+                <div style="height: 26px;"> </div>
+                    <p>Pierwszy model składał się z dwóch dysków łączonych połączeniem przegubowym. Był to pierwsza próba stworzenia bryły robota. Inspiracją do budowy takiego modelu były manipulatory elastyczne.</p>
+                    <p>Model 1 celowo nie został wyposażony w jednostkę napędową oraz sterowania, ponieważ przeznaczony został głównie badaniu koncepcji budowy napędu. Model ten zakładał ruch w trzech płaszczyznach.</p>
+                </div>
+            </section>
+
+            <section class="evolution-card">
+                <div class="evolution-card__content text-center">
+                    <div class="evolution-card__image-gallery" style="display: flex; align-items: center; justify-content: space-around; width: 100%;">
+                        <div class="evolution-card__image-wrapper">
+                            <div class="decorative-circle circle-model-2"></div>
+                            <img src="public/external/model2.png" alt="Główny obraz Model 2">
+                        </div>
+                        <h2 class="evolution-card__title">Model 2</h2>
+                        <div class="evolution-card__image-wrapper">
+                            <img src="public/external/model2_1.png" alt="Obraz dodatkowy 1"">
+                        </div>
+                        <div class="evolution-card__image-wrapper">
+                            <img src="public/external/model2_2.png" alt="Obraz dodatkowy 2" style="transform: scale(0.8);">
+                        </div>
+                    </div>
+                    <p>Sukces modelu 1 przyczynił się do zaprojektowania wersji testowej. Robot ten wyposażony w trzy serwomechanizmy łączył się z podobnym sobie robotami poprzez połączenie przegubowe. Ruch umożliwiały linki łączące korpus robota z wałem serwomechanizmu. Wadami konstrukcji okazały się jednak:</p>
+                    <ul class="feature-list feature-list--drawbacks">
+                        <li>potrzeba kontroli napięcia linek jako jedyny mechanizm kontroli pozycji</li>
+                        <li>niekontrolowane obroty dysków względem przegubu</li>
+                        <li>złożony sposób łączenia robotów</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="evolution-card">
+                <div class="evolution-card__content text-center">
+                    <div class="evolution-card__image-gallery" style="display: flex; align-items: center; justify-content: space-around; width: 100%;">
+                        <div class="evolution-card__image-wrapper">
+                            <div class="decorative-circle circle-model-3"></div>
+                            <img src="public/external/model3.png" alt="Główny obraz Model 3">
+                        </div>
+                        <h2 class="evolution-card__title">Model 3</h2>
+                        <div class="evolution-card__image-wrapper">
+                            <img src="public/external/model3_1.png" alt="Obraz dodatkowy 1">
+                        </div>
+                        <div class="evolution-card__image-wrapper">
+                            <img src="public/external/model3_2.png" alt="Obraz dodatkowy 2">
+                        </div>
+                    </div>
+                    <p>Wady poprzednich modeli usunięto w zaimplementowanym napędzie. Cechował się on:</p>
+                    <ul class="feature-list feature-list--advantages">
+                        <li>łatwością uzyskania zadanego wychylenia</li>
+                        <li>brakiem konieczności nadzorowania pozycji</li>
+                        <li>prostą wymianą modułów</li>
+                    </ul>
+                    <p>Model jednak nie zapewniał optymalnego modelu. Główne wady:</p>
+                    <ul class="feature-list feature-list--drawbacks">
+                        <li>złożony sposób łączenia</li>
+                        <li>brak sprzężenia zwrotnego</li>
+                        <li>konkretne wymagania co do ułożenia modułów oraz ryzyko uszkodzenia tuby</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="evolution-card">
+                <div class="evolution-card__content text-center">
+                    <div class="evolution-card__image-gallery" style="display: flex; align-items: center; justify-content: space-around; width: 100%;">
+                        <div class="evolution-card__image-wrapper">
+                            <div class="decorative-circle circle-model-4"></div>
+                            <img src="public/external/model4.png" alt="Główny obraz Model 3" style="transform: scale(0.8);">
+                        </div>
+                        <h2 class="evolution-card__title">Model 4</h2>
+                        <div class="evolution-card__image-wrapper">
+                            <img src="public/external/model4_1.png" alt="Obraz dodatkowy 1">
+                        </div>
+                    </div>
+                    <p>Poprzednie wady poprawiono poprzez:</p>
+                    <ul class="feature-list feature-list--advantages">
+                        <li>skrócenie tuby(136mm->54mm)</li>
+                    </ul>
+                    <div class="solid-images-container">
+                    <img src="public/external/solid.png" alt="Model 3D Gizmo w programie SolidWorks">
+                    <img src="public/external/solid2.png" alt="Złożenie modelu 3D Gizmo w programie SolidWorks">
+                </div>
+                <ul class="feature-list feature-list--advantages">
+                        <li>zastosowanie jedynie jednego serwomechanizmu na tubę</li>
+                        <li>zastosowanie łączników końcowych</li>
+                    </ul>
+                            <div class="decorative-circle circle-model-1" style="transform: scale(0.3) translateX(1000px) ;"></div>
+                    <p>Dodatkowo zrezygnowanie z układu połączonych serwomechanizmów na rzecz rozdzielenia ich połączenia łącznikami końcowymi znacznie skracając czas łączenia robotów.</p>
+                </div>
+
+        </main>
+
+        <footer id="kontakt" class="footer">
+            <div class="container">
+                <h2 class="section-title">Kontakt</h2>
+            <address class="footer__contact-info">
+                <p><img src="public/external/mail.svg" alt="Mail icon" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+                <p><img src="public/external/instagram-svgrepo-com.svg" alt="Instagram icon" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p>
+                <p><img src="public/external/linkedin-fill-svgrepo-com.svg" alt="LinkedIn icon" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="https://www.linkedin.com/company/projekt-gizmo/">Projekt Gizmo</a></p>
+                <p><img src="public/external/facebook-svgrepo-com.svg" alt="Facebook icon" class="contact-icon" /> <a href="https://www.facebook.com/profile.php?id=61575747850184" target="https://www.facebook.com/profile.php?id=61575747850184">Projekt Gizmo</a></p>
+            </address>
+            </div>
+        </footer>
+    </body>
+</html>

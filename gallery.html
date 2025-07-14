@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Galeria zdjęć projektu Gizmo." />
+        <title>Gallery - Projekt Gizmo</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Outfit:wght@400;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="background-decor">
+            <div class="ellipse ellipse-1"></div>
+            <div class="ellipse ellipse-2"></div>
+            <div class="ellipse ellipse-3"></div>
+            <div class="ellipse ellipse-4"></div>
+            <div class="ellipse ellipse-7"></div>
+            <div class="ellipse ellipse-8"></div>
+        </div>
+
+        <header class="navbar">
+            <div class="container navbar__container">
+                <a href="/" class="navbar__logo">
+                    <span>gizmo</span>
+                </a>
+                <nav class="navbar__nav">
+                    <ul class="navbar__links">
+                        <li><a href="./desktop2_eng.html" class="navbar__link">History</a></li>
+                        <li><a href="index_eng.html" class="navbar__link">About</a></li>
+                        <li><a href="gallery.html" class="navbar__link navbar__link--active">Gallery</a></li>
+                        <li><a href="index#kontakt.html" class="navbar__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar__lang-switcher">
+                    <a href="galeria.html" class="navbar__lang ">PL</a>
+                    <span>/</span>
+                    <a href="gallery.html" class="navbar__lang navbar__lang--active">ENG</a>
+                </div>
+            </div>
+        </header>
+            
+        <main class="container">
+            <h1 class="page-title">Gizmollery</h1>
+                
+            <section class="gallery-section">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x200/733D98/FFFFFF?text=Zdjęcie+1" alt="Opis zdjęcia 1">
+                        <div class="gallery-item__caption">Prototyp robota Gizmo w akcji.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x200/27DD8E/FFFFFF?text=Zdjęcie+2" alt="Opis zdjęcia 2">
+                        <div class="gallery-item__caption">Moduły robota przed montażem.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x200/C0FE72/343434?text=Zdjęcie+3" alt="Opis zdjęcia 3">
+                        <div class="gallery-item__caption">Zespół Projektu Gizmo podczas pracy.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x200/343434/FFFFFF?text=Zdjęcie+4" alt="Opis zdjęcia 4">
+                        <div class="gallery-item__caption">Testy terenowe robota.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x200/733D98/FFFFFF?text=Zdjęcie+5" alt="Opis zdjęcia 5">
+                        <div class="gallery-item__caption">Detale konstrukcyjne modułu.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://placehold.co/400x200/27DD8E/FFFFFF?text=Zdjęcie+6" alt="Opis zdjęcia 6">
+                        <div class="gallery-item__caption">Robot Gizmo w środowisku laboratoryjnym.</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="kontakt" class="footer">
+            <div class="container">
+                <h2 class="section-title">Kontakt</h2>
+            <address class="footer__contact-info">
+                <p><img src="public/external/mail.svg" alt="Mail icon" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+                <p><img src="public/external/instagram-svgrepo-com.svg" alt="Instagram icon" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p>
+                <p><img src="public/external/linkedin-fill-svgrepo-com.svg" alt="LinkedIn icon" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/">Projekt Gizmo</a></p>
+                <p><img src="public/external/facebook-svgrepo-com.svg" alt="Facebook icon" class="contact-icon" /> <a href="https://www.facebook.com/profile.php?id=61575747850184" t>Projekt Gizmo</a></p>
+            </address>
+            </div>
+        </footer>
+    </body>
+</html>
