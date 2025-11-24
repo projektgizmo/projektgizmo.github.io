@@ -546,6 +546,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  align: canter;
   justify-content: space-between;
   gap: 32px;
   width: 100%;
@@ -650,4 +651,12 @@ body {
     .hero__subtitle {
         font-size: 1.2rem;
     }
+}
+.gallery-item{
+    align-items: center;
+}
+
+.gallery-item__image {
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    height: auto; /* Maintains the aspect ratio */
 }
