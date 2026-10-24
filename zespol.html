@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Zespół Projektu Gizmo — ludzie stojący za robotyczną automatyką do szklarni." />
+        <title>Zespół - Projekt Gizmo</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="background-decor">
+            <div class="ellipse ellipse-1"></div>
+            <div class="ellipse ellipse-2"></div>
+            <div class="ellipse ellipse-3"></div>
+            <div class="ellipse ellipse-4"></div>
+            <div class="ellipse ellipse-5"></div>
+            <div class="decorative-circle circle-index-1"></div>
+            <div class="decorative-circle circle-index-2"></div>
+            <div class="decorative-circle circle-index-3"></div>
+        </div>
+
+        <header class="navbar">
+            <div class="container navbar__container">
+                <a href="index.html" class="navbar__logo"><span>gizmo</span></a>
+                <nav class="navbar__nav">
+                    <ul class="navbar__links">
+                        <li><a href="index.html" class="navbar__link">Strona główna</a></li>
+                        <li><a href="desktop2.html" class="navbar__link">Historia</a></li>
+                        <li><a href="zespol.html" class="navbar__link navbar__link--active">Zespół</a></li>
+                        <li><a href="wdrozenia.html" class="navbar__link">Wdrożenia</a></li>
+                        <li><a href="galeria.html" class="navbar__link">Galeria</a></li>
+                        <li><a href="kontakt.html" class="navbar__link">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar__lang-switcher">
+                    <a href="zespol.html" class="navbar__lang navbar__lang--active">PL</a>
+                    <span>/</span>
+                    <a href="team.html" class="navbar__lang">ENG</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="team-section" style="background: transparent; padding-top: 4rem;">
+                <h1 class="page-title">Zespół</h1>
+                <p class="lead">Wspólnie projektujemy robotykę, która wspiera ludzi w pracach wymagających powtarzalności, precyzji i ciągłości działania.</p>
+
+                <div class="team-grid">
+                    <a href="kontakt.html" class="team-card team-card--link" aria-label="Skontaktuj się z Feliksem Brzezińskim">
+                        <img src="public/external/avatar.svg" alt="Awatar Feliksa Brzezińskiego" class="team-card__avatar" />
+                        <div class="team-card__info">
+                            <h3 class="team-card__name">Feliks Brzeziński</h3>
+                            <p class="team-card__role">Embedded Systems Engineer</p>
+                        </div>
+                    </a>
+
+                    <a href="kontakt.html" class="team-card team-card--link" aria-label="Skontaktuj się z Kacprem Olszewskim">
+                        <img src="public/external/avatar.svg" alt="Awatar Kacpra Olszewskiego" class="team-card__avatar" />
+                        <div class="team-card__info">
+                            <h3 class="team-card__name">Kacper Olszewski</h3>
+                            <p class="team-card__role">Lead Mechanical Engineer</p>
+                        </div>
+                    </a>
+
+                    <a href="kontakt.html" class="team-card team-card--link" aria-label="Skontaktuj się z Weroniką Arciuch">
+                        <img src="public/external/avatar.svg" alt="Awatar Weroniki Arciuch" class="team-card__avatar" />
+                        <div class="team-card__info">
+                            <h3 class="team-card__name">Weronika Arciuch</h3>
+                            <p class="team-card__role">Social media i promocja, IT</p>
+                        </div>
+                    </a>
+
+                    <a href="kontakt.html" class="team-card team-card--link" aria-label="Skontaktuj się z Norbertem">
+                        <img src="public/external/avatar.svg" alt="Placeholder awatara Norberta" class="team-card__avatar" />
+                        <div class="team-card__info">
+                            <h3 class="team-card__name">Norbert</h3>
+                            <p class="team-card__role">Rola do uzupełnienia</p>
+                        </div>
+                    </a>
+
+                    <a href="kontakt.html" class="team-card team-card--link" aria-label="Skontaktuj się z Antkiem">
+                        <img src="public/external/avatar.svg" alt="Placeholder awatara Antka" class="team-card__avatar" />
+                        <div class="team-card__info">
+                            <h3 class="team-card__name">Antek</h3>
+                            <p class="team-card__role">Rola do uzupełnienia</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <div class="info-column">
+                    <h2 class="section-title--small">Nasze kompetencje</h2>
+                    <ul class="info-list">
+                        <li><span class="connect-icon"></span>Robotyka modułowa</li>
+                        <li><span class="connect-icon"></span>Automatyzacja procesów</li>
+                        <li><span class="connect-icon"></span>Integracja z infrastrukturą szklarni</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h2 class="section-title--small">Jak pracujemy</h2>
+                    <ul class="info-list">
+                        <li><span class="connect-icon"></span>Projekt i prototyp</li>
+                        <li><span class="connect-icon"></span>Testy w środowisku użytkowym</li>
+                        <li><span class="connect-icon"></span>Wdrożenie i optymalizacja</li>
+                    </ul>
+                </div>
+                <div class="info-column">
+                    <h2 class="section-title--small">Cel</h2>
+                    <ul class="info-list">
+                        <li><span class="connect-icon"></span>Zmniejszenie obciążenia pracą ręczną</li>
+                        <li><span class="connect-icon"></span>Wzrost wydajności upraw</li>
+                        <li><span class="connect-icon"></span>Skalowalność bez przebudowy hali</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer id="kontakt" class="footer">
+            <div class="container">
+                <h2 class="section-title">Kontakt</h2>
+                <address class="footer__contact-info">
+                    <p><img src="public/external/mail.svg" alt="Mail icon" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+                    <p><img src="public/external/instagram-svgrepo-com.svg" alt="Instagram icon" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noreferrer">@projekt_gizmo</a></p>
+                    <p><img src="public/external/linkedin-fill-svgrepo-com.svg" alt="LinkedIn icon" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+                    <p><img src="public/external/facebook-svgrepo-com.svg" alt="Facebook icon" class="contact-icon" /> <a href="https://www.facebook.com/profile.php?id=61575747850184" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>

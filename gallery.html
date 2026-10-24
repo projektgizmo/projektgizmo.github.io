@@ -8,7 +8,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Outfit:wght@400;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="./style.css" />
     </head>
@@ -20,19 +20,24 @@
             <div class="ellipse ellipse-4"></div>
             <div class="ellipse ellipse-7"></div>
             <div class="ellipse ellipse-8"></div>
+            <div class="decorative-circle circle-index-1"></div>
+            <div class="decorative-circle circle-index-2"></div>
+            <div class="decorative-circle circle-index-3"></div>
         </div>
 
         <header class="navbar">
             <div class="container navbar__container">
-                <a href="/" class="navbar__logo">
+                <a href="index_eng.html" class="navbar__logo">
                     <span>gizmo</span>
                 </a>
                 <nav class="navbar__nav">
                     <ul class="navbar__links">
-                        <li><a href="./desktop2_eng.html" class="navbar__link">History</a></li>
-                        <li><a href="index_eng.html#team" class="navbar__link">About Us</a></li>
+                        <li><a href="index_eng.html" class="navbar__link">About</a></li>
+                        <li><a href="detskop2_eng.html" class="navbar__link">History</a></li>
+                        <li><a href="team.html" class="navbar__link">Team</a></li>
+                        <li><a href="wdrozenia_eng.html" class="navbar__link">Deployments</a></li>
                         <li><a href="gallery.html" class="navbar__link navbar__link--active">Gallery</a></li>
-                        <li><a href="index_eng.html#contact" class="navbar__link">Contact</a></li>
+                        <li><a href="index_eng.html#kontakt" class="navbar__link">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="navbar__lang-switcher">
@@ -43,23 +48,42 @@
             </div>
         </header>
             
-        <main class="container">
-            <h1 class="page-title">Photo Gallery</h1>
-                
-            <section class="gallery-section">
+        <main class="container gallery-page">
+            <header class="gallery-page__header">
+                <span class="gallery-page__eyebrow">Project Gizmo</span>
+                <h1 class="page-title">Gallery</h1>
+                <p class="lead">Explore Gizmo through our projects, models, and robot development.</p>
+            </header>
+
+            <section class="gallery-section" aria-label="Project Gizmo photo gallery">
                 <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="public/external/gizmo_tasma.png" alt="Tape with modular Gizmo robot in use" class="gallery-item__image">
-                        <div class="gallery-item__caption">Example use case.</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="public/external/kula_gizmula.png" alt="gizmula_sphere">
-                        <div class="gallery-item__caption">Futuristic robot made of Gizmo robots.</div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="public/external/blizniak.png" alt="Gizmo and its twin">
-                        <div class="gallery-item__caption">3D-printed robots — Gizmo and its twin</div>
-                    </div>
+                    <figure class="gallery-item gallery-item--featured">
+                        <div class="gallery-item__visual">
+                            <img src="public/external/gizmo_tasma.png" alt="Modular Gizmo robot on a production conveyor" class="gallery-item__image">
+                        </div>
+                        <figcaption class="gallery-item__caption">
+                            <span class="gallery-item__number">01 / In action</span>
+                            <span>Gizmo working on a production conveyor</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-item__visual">
+                            <img src="public/external/kula_gizmula.png" alt="Structure assembled from connected Gizmo modules" class="gallery-item__image">
+                        </div>
+                        <figcaption class="gallery-item__caption">
+                            <span class="gallery-item__number">02 / Modular design</span>
+                            <span>A structure assembled from Gizmo modules</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-item__visual">
+                            <img src="public/external/blizniak.png" alt="Two 3D-printed Gizmo robots" class="gallery-item__image">
+                        </div>
+                        <figcaption class="gallery-item__caption">
+                            <span class="gallery-item__number">03 / Prototypes</span>
+                            <span>3D-printed Gizmo robots</span>
+                        </figcaption>
+                    </figure>
                 </div>
             </section>
         </main>

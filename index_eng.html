@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projekt Gizmo - modułowy robot zdolny do realizacji złożonych zadań." />
+    <meta name="description" content="Project Gizmo - modular robot designed for complex agricultural tasks and scalable automation." />
     <title>Project Gizmo - About</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Outfit:wght@400;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -21,19 +21,24 @@
       <div class="ellipse ellipse-4"></div>
       <div class="ellipse ellipse-5"></div>
       <div class="ellipse ellipse-6"></div>
+      <div class="decorative-circle circle-index-1"></div>
+      <div class="decorative-circle circle-index-2"></div>
+      <div class="decorative-circle circle-index-3"></div>
     </div>
     <div class="decorative-circle circle-model-1"></div>
         <header class="navbar">
             <div class="container navbar__container">
-                <a href="/" class="navbar__logo">
+                <a href="index_eng.html" class="navbar__logo">
                     <span>gizmo</span>
                 </a>
                 <nav class="navbar__nav">
                     <ul class="navbar__links">
-                        <li><a href="detskop2_eng.html" class="navbar__link ">History</a></li>
                         <li><a href="index_eng.html" class="navbar__link navbar__link--active">About</a></li>
-                        <li><a href="gallery.html" class = "navbar__link">Gallery</a></li>
-                        <li><a href="index.html#kontakt" class="navbar__link">Contact</a></li>
+                        <li><a href="detskop2_eng.html" class="navbar__link">History</a></li>
+                        <li><a href="team.html" class="navbar__link">Team</a></li>
+                        <li><a href="wdrozenia_eng.html" class="navbar__link">Deployments</a></li>
+                        <li><a href="gallery.html" class="navbar__link">Gallery</a></li>
+                        <li><a href="index_eng.html#kontakt" class="navbar__link">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="navbar__lang-switcher">
@@ -117,6 +122,10 @@
 
                 <div class="decorative-circle-left circle-model-1" style="transform: scale(0.6) translateX(1200px);"></div>
 
+      <section class="deployment-link container">
+        <a href="wdrozenia_eng.html" class="btn btn--primary">Explore deployment examples</a>
+      </section>
+
       <section id="info" class="info-section container">
           <div class="info-column">
               <h2 class="section-title--small">Conferences</h2>
@@ -142,6 +151,34 @@
               </ul>
           </div>
       </section>
+
+      <section class="social-updates container" aria-labelledby="social-updates-title">
+        <div class="social-updates__header">
+          <span class="social-updates__eyebrow">Stay up to date</span>
+          <h2 id="social-updates-title">Latest updates</h2>
+          <p>Follow us on social media for the latest news about Project Gizmo.</p>
+        </div>
+        <div class="social-updates__grid">
+          <a class="social-updates__card" href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noopener noreferrer">
+            <img src="public/external/instagram-svgrepo-com.svg" alt="" aria-hidden="true">
+            <span class="social-updates__name">Instagram</span>
+            <span class="social-updates__handle">@projekt_gizmo</span>
+            <span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="social-updates__card" href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noopener noreferrer">
+            <img src="public/external/linkedin-fill-svgrepo-com.svg" alt="" aria-hidden="true">
+            <span class="social-updates__name">LinkedIn</span>
+            <span class="social-updates__handle">Projekt Gizmo</span>
+            <span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span>
+          </a>
+          <a class="social-updates__card" href="https://www.facebook.com/p/Projekt-Gizmo-61575747850184/" target="_blank" rel="noopener noreferrer">
+            <img src="public/external/facebook-svgrepo-com.svg" alt="" aria-hidden="true">
+            <span class="social-updates__name">Facebook</span>
+            <span class="social-updates__handle">Projekt Gizmo</span>
+            <span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer id="kontakt" class="footer">
@@ -156,5 +193,6 @@
             </address>
         </div>
     </footer>
+
   </body>
 </html>
