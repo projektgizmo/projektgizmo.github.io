@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./style.css" />
+    <script src="./navigation.js" defer></script>
   </head>
   <body>
 
@@ -31,7 +32,10 @@
                 <a href="index_eng.html" class="navbar__logo">
                     <span>gizmo</span>
                 </a>
-                <nav class="navbar__nav">
+                <button class="navbar__toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="navbar__nav" id="site-navigation">
                     <ul class="navbar__links">
                         <li><a href="index_eng.html" class="navbar__link navbar__link--active">About</a></li>
                         <li><a href="detskop2_eng.html" class="navbar__link">History</a></li>

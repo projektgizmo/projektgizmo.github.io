@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="./style.css" />
+        <script src="./navigation.js" defer></script>
     </head>
     <body>
         <div class="background-decor">
@@ -30,7 +31,10 @@
                 <a href="index.html" class="navbar__logo">
                     <span>gizmo</span>
                 </a>
-                <nav class="navbar__nav">
+                <button class="navbar__toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Otwórz menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="navbar__nav" id="site-navigation">
                     <ul class="navbar__links">
                         <li><a href="index.html" class="navbar__link">Strona główna</a></li>
                         <li><a href="desktop2.html" class="navbar__link">Historia</a></li>
