@@ -52,6 +52,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html.home-page {
+  scroll-snap-type: y proximity;
+}
+
 body {
   font-family: var(--font-primary);
   color: var(--color-text);
@@ -68,6 +72,30 @@ body {
   position: relative;
   z-index: 2;
 }
+
+.home-panel {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+.home-panel--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+html.home-scroll-ready .home-panel {
+  opacity: 0.72;
+  transition: opacity 500ms ease;
+}
+
+html.home-scroll-ready .home-panel--visible {
+  opacity: 1;
+}
+
 
 /* ==========================================================================
    2. DECORATIVE BACKGROUND
@@ -227,12 +255,95 @@ body {
   top: 0;
   z-index: 10;
   width: 100%;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: opacity 450ms ease, transform 450ms cubic-bezier(0.22, 1, 0.36, 1), visibility 0s linear 0s;
 }
 
 .navbar__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.intro-nav-trigger {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.5rem;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(255,255,255,0.7);
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem 0.45rem 0.55rem;
+  background: linear-gradient(135deg, var(--color-teal), var(--color-indigo));
+  color: var(--color-text-light);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(19,19,19,0.2);
+  animation: intro-nav-pulse 2.2s ease-in-out infinite;
+}
+
+.intro-nav-trigger__icon {
+  display: grid;
+  width: 1.7rem;
+  height: 1.7rem;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  font-size: 1rem;
+}
+
+.intro-nav-trigger:focus-visible,
+.hero-skip:focus-visible {
+  outline: 3px solid var(--color-lime);
+  outline-offset: 3px;
+}
+
+html.home-intro-active .navbar__nav,
+html.home-intro-active .navbar__lang-switcher {
+  visibility: hidden;
+}
+
+html.home-intro-active {
+  overflow: hidden;
+  scroll-snap-type: none;
+}
+
+html.home-intro-active .navbar {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+  transition: opacity 300ms ease, transform 450ms cubic-bezier(0.22, 1, 0.36, 1), visibility 0s linear 450ms;
+}
+
+html.home-nav-revealing .intro-nav-trigger {
+  opacity: 0;
+  transform: translateY(-6px) scale(0.92);
+  pointer-events: none;
+  animation: none;
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+html.home-nav-revealing .navbar {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+html:not(.home-intro-active):not(.home-nav-revealing) .intro-nav-trigger {
+  display: none;
+}
+
+@keyframes intro-nav-pulse {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
 }
 
 .navbar__logo {
@@ -1019,16 +1130,33 @@ body {
       pointer-events: none;
     }
     .hero-lp__content { flex-basis: 55%; }
-    .hero-lp h1 {
+    .hero-title {
       font-family: var(--font-display);
-      font-size: 3.4rem;
+      font-size: clamp(4rem, 8vw, 7rem);
       line-height: 1.15;
       color: var(--color-indigo);
       text-shadow: 3px 3px 0 rgba(0,0,0,0.12);
       -webkit-text-stroke: 0.4px currentColor;
-      margin-bottom: 1.5rem;
+      margin: 0;
     }
-    .hero-lp h1 span { color: var(--color-text); -webkit-text-stroke: 0; text-shadow: none; }
+    .hero-stage {
+      display: flex;
+      align-items: flex-start;
+      min-height: 5.2rem;
+      margin-top: 0.35rem;
+      color: var(--color-text);
+      font-family: var(--font-display);
+      font-size: clamp(1.7rem, 3.2vw, 3rem);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    .hero-stage__text--visible {
+      animation: hero-stage-in 420ms ease both;
+    }
+    @keyframes hero-stage-in {
+      from { opacity: 0; transform: translateY(0.45rem); }
+      to { opacity: 1; transform: translateY(0); }
+    }
     .hero-lp__ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
     .btn {
       font-family: var(--font-primary);
@@ -1048,6 +1176,29 @@ body {
       flex-basis: 45%;
       display: flex;
       justify-content: center;
+    }
+    .hero-animation {
+      width: 100%;
+      max-width: 560px;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      border-radius: var(--radius-lg);
+      background: var(--gray-100);
+      box-shadow: 0 24px 50px rgba(92,20,235,0.28);
+    }
+    .hero-skip {
+      position: absolute;
+      right: 0;
+      bottom: 1rem;
+      border: 0;
+      background: transparent;
+      color: var(--color-indigo);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+    }
+    .hero-skip[hidden] {
+      display: none;
     }
     .render-placeholder {
       width: 100%;
@@ -1471,6 +1622,38 @@ body {
       font-size: 0.9rem;
       font-weight: 700;
     }
+    @media (max-width: 700px) {
+      html.home-page { scroll-snap-type: none; }
+      .home-panel {
+        min-height: auto;
+        padding: 2rem 0;
+      }
+      .home-panel--hero { padding-top: 0; }
+      html.home-scroll-ready .home-panel {
+        opacity: 1;
+        transition: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html.home-page { scroll-behavior: auto; }
+      .home-panel,
+      html.home-scroll-ready .home-panel,
+      html.home-scroll-ready .home-panel--visible {
+        opacity: 1;
+        transition: none;
+      }
+      .navbar,
+      html.home-intro-active .navbar,
+      html.home-nav-revealing .navbar,
+      html.home-nav-revealing .intro-nav-trigger {
+        transition: none;
+      }
+      .hero-stage__text--visible {
+        animation: none;
+      }
+    }
+
     @media (max-width: 700px) {
       .social-updates__grid {
         grid-template-columns: 1fr;
