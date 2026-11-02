@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{description}}" />
+  <link rel="alternate" hreflang="pl" href="{{plUrl}}" />
+  <link rel="alternate" hreflang="en" href="{{enUrl}}" />
+  <title>{{title}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{base}}src/styles/site.css" />
+  <script src="{{base}}src/scripts/navigation.js" defer></script>
+</head>
+<body>
+  <div class="background-decor">
+    <div class="ellipse ellipse-1"></div><div class="ellipse ellipse-2"></div>
+    <div class="ellipse ellipse-5"></div>
+    <div class="decorative-circle circle-index-1"></div>
+    <div class="decorative-circle circle-index-2"></div>
+    <div class="decorative-circle circle-index-3"></div>
+  </div>
+  <header class="navbar">
+    <div class="container navbar__container">
+      <a href="{{homeUrl}}" class="navbar__logo"><span>gizmo</span></a>
+      <button class="navbar__toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="{{menuOpen}}">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__nav" id="site-navigation">
+        <ul class="navbar__links">{{navigation}}</ul>
+      </nav>
+      <div class="navbar__lang-switcher"><a href="{{plUrl}}" class="navbar__lang {{plActive}}">PL</a><span>/</span><a href="{{enUrl}}" class="navbar__lang {{enActive}}">ENG</a></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero-lp container">
+      <div class="hero-lp__content"><h1>Gizmo — <span>{{hero}}</span></h1>
+        <div class="hero-lp__ctas"><a href="#value" class="btn btn--primary">{{heroCta}}</a><a href="{{contactUrl}}" class="btn btn--outline">{{contactCta}}</a></div>
+      </div>
+      <div class="hero-lp__visual"><div class="render-placeholder"><svg viewBox="0 0 100 160" fill="none" stroke="currentColor" stroke-width="3"><path d="M30 10 L70 10 L70 30 L60 30 L60 40 L40 40 L40 30 L30 30 Z" /><rect x="42" y="70" width="16" height="16" /><path d="M25 60 L75 60 L75 130 L25 130 Z" /></svg><span>{{renderPlaceholder}}</span></div></div>
+    </section>
+    <section class="photo-carousel container"><h2>{{carouselTitle}}</h2><div class="photo-carousel__viewport"><div class="photo-carousel__track" id="photoTrack">{{slides}}</div><button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" aria-label="{{previous}}">←</button><button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" aria-label="{{next}}">→</button></div><div class="photo-carousel__dots" id="photoDots"></div></section>
+    <section id="value" class="value-section container"><h2>{{valueTitle}}</h2><p>{{valueText}}</p><p class="value-question">{{valueQuestion}}</p></section>
+    <section class="stats-grid container">{{stats}}</section>
+    <section class="checklist-section container"><ul>{{checklist}}</ul></section>
+    <section class="deployment-link container"><a href="{{deploymentsUrl}}" class="btn btn--primary">{{deploymentsCta}}</a></section>
+    <section class="partners-section container"><h3>{{partnersTitle}}</h3><div class="partner-logos"><div class="partner-logo-placeholder">{{partner}}</div><div class="partner-logo-placeholder">{{partner}}</div><div class="partner-logo-placeholder">{{partner}}</div></div></section>
+    <section class="social-updates container" aria-labelledby="social-updates-title"><div class="social-updates__header"><span class="social-updates__eyebrow">{{updatesEyebrow}}</span><h2 id="social-updates-title">{{updatesTitle}}</h2><p>{{updatesText}}</p></div><div class="social-updates__grid">{{socialCards}}</div></section>
+  </main>
+  <footer id="contact" class="footer"><div class="container"><h2 class="section-title">{{contactTitle}}</h2><div style="height: 24px;"></div><address class="footer__contact-info"><p><img src="{{base}}public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p><p><img src="{{base}}public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p><p><img src="{{base}}public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/">Projekt Gizmo</a></p></address></div></footer>
+  <script src="{{base}}src/scripts/carousel.js" defer></script>
+</body>
+</html>

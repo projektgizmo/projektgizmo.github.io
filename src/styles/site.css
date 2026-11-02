@@ -602,7 +602,7 @@ body {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-image: url('public/external/connect.png');
+    background-image: url('../../public/external/connect.png');
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 1rem;
@@ -749,11 +749,11 @@ body {
 }
 
 .feature-list--drawbacks li::before {
-    background-image: url('public/external/minuscircle3360-63s.svg');
+    background-image: url('../../public/external/minuscircle3360-63s.svg');
 }
 
 .feature-list--advantages li::before {
-    background-image: url('public/external/zarowa.svg');
+    background-image: url('../../public/external/zarowa.svg');
 }
 .evolution-intro__down {
   display: flex;

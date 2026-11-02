@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gizmo — skalowalna robotyka dla Twoich upraw." />
+  <link rel="alternate" hreflang="pl" href="../pl/index.html" />
+  <link rel="alternate" hreflang="en" href="../en/index.html" />
+  <title>Gizmo — Skalowalna robotyka dla Twoich upraw</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/site.css" />
+  <script src="../src/scripts/navigation.js" defer></script>
+</head>
+<body>
+  <div class="background-decor">
+    <div class="ellipse ellipse-1"></div><div class="ellipse ellipse-2"></div>
+    <div class="ellipse ellipse-5"></div>
+    <div class="decorative-circle circle-index-1"></div>
+    <div class="decorative-circle circle-index-2"></div>
+    <div class="decorative-circle circle-index-3"></div>
+  </div>
+  <header class="navbar">
+    <div class="container navbar__container">
+      <a href="./index.html" class="navbar__logo"><span>gizmo</span></a>
+      <button class="navbar__toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Otwórz menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__nav" id="site-navigation">
+        <ul class="navbar__links"><li><a href="../index.html" class="navbar__link navbar__link--active">Strona główna</a></li><li><a href="../desktop2.html" class="navbar__link">Historia</a></li><li><a href="../zespol.html" class="navbar__link">Zespół</a></li><li><a href="../wdrozenia.html" class="navbar__link">Wdrożenia</a></li><li><a href="../galeria.html" class="navbar__link">Galeria</a></li><li><a href="../index.html#contact" class="navbar__link">Kontakt</a></li></ul>
+      </nav>
+      <div class="navbar__lang-switcher"><a href="../pl/index.html" class="navbar__lang navbar__lang--active">PL</a><span>/</span><a href="../en/index.html" class="navbar__lang ">ENG</a></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero-lp container">
+      <div class="hero-lp__content"><h1>Gizmo — <span>skalowalna robotyka dla Twoich upraw</span></h1>
+        <div class="hero-lp__ctas"><a href="#value" class="btn btn--primary">Zobacz jak działa</a><a href="./index.html#contact" class="btn btn--outline">Umów wdrożenie</a></div>
+      </div>
+      <div class="hero-lp__visual"><div class="render-placeholder"><svg viewBox="0 0 100 160" fill="none" stroke="currentColor" stroke-width="3"><path d="M30 10 L70 10 L70 30 L60 30 L60 40 L40 40 L40 30 L30 30 Z" /><rect x="42" y="70" width="16" height="16" /><path d="M25 60 L75 60 L75 130 L25 130 Z" /></svg><span>Render Gizmo w akcji — placeholder</span></div></div>
+    </section>
+    <section class="photo-carousel container"><h2>Gizmo w akcji</h2><div class="photo-carousel__viewport"><div class="photo-carousel__track" id="photoTrack"><div class="photo-carousel__slide"><img src="../public/external/gizmo_tasma.png" alt="Gizmo na taśmie produkcyjnej" /></div><div class="photo-carousel__slide"><img src="../public/external/kula_gizmula.png" alt="Struktura złożona z modułów Gizmo" /></div><div class="photo-carousel__slide"><img src="../public/external/blizniak.png" alt="Wydrukowane roboty Gizmo" /></div><div class="photo-carousel__slide"><img src="../public/external/model4.png" alt="Model 4 robota Gizmo" /></div><div class="photo-carousel__slide photo-carousel__slide--tagged"><img src="../public/external/wizualizacja-pomidory.png" alt="Wizualizacja koncepcyjna: Gizmo przy zbiorze pomidorów w szklarni" /><span class="photo-carousel__tag">Wizualizacja koncepcyjna</span></div></div><button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" aria-label="Poprzednie zdjęcie">←</button><button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" aria-label="Następne zdjęcie">→</button></div><div class="photo-carousel__dots" id="photoDots"></div></section>
+    <section id="value" class="value-section container"><h2>Jak Gizmo wspiera Twój biznes?</h2><p>Gizmo przejmuje powtarzalną, fizyczną pracę w Twoich uprawach — od zbiorów po transport — bez ingerencji w istniejącą infrastrukturę.</p><p class="value-question">Ile załogi i szkoleń wymaga wdrożenie? Mniej, niż myślisz — nasz zespół dogląda uruchomienia od początku do końca.</p></section>
+    <section class="stats-grid container"><div class="stat-card"><span class="stat-card__value">[ustal wartość] €/ha rocznie</span><span class="stat-card__label">potencjalnej oszczędności na kosztach pracy</span></div><div class="stat-card"><span class="stat-card__value">Kryzys kadrowy</span><span class="stat-card__label">rosnący brak sezonowych pracowników</span></div><div class="stat-card"><span class="stat-card__value">RaaS</span><span class="stat-card__label">wdrożenie bez kredytu — płacisz za usługę</span></div></section>
+    <section class="checklist-section container"><ul><li>Modułowe rozwiązanie dopasowane do Ciebie</li><li>Wdrażamy bez przebudowy Twojej szklarni</li></ul></section>
+    <section class="deployment-link container"><a href="../wdrozenia.html" class="btn btn--primary">Poznaj przykłady wdrożeń</a></section>
+    <section class="partners-section container"><h3>Z kim współpracujemy</h3><div class="partner-logos"><div class="partner-logo-placeholder">Logo partnera</div><div class="partner-logo-placeholder">Logo partnera</div><div class="partner-logo-placeholder">Logo partnera</div></div></section>
+    <section class="social-updates container" aria-labelledby="social-updates-title"><div class="social-updates__header"><span class="social-updates__eyebrow">Bądź na bieżąco</span><h2 id="social-updates-title">Aktualności</h2><p>Obserwuj nas w mediach społecznościowych i poznaj najnowsze informacje o projekcie Gizmo.</p></div><div class="social-updates__grid"><a class="social-updates__card" href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noopener noreferrer"><img src="../public/external/instagram-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">Instagram</span><span class="social-updates__handle">@projekt_gizmo</span><span class="social-updates__action">Zobacz profil <span aria-hidden="true">↗</span></span></a><a class="social-updates__card" href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noopener noreferrer"><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">LinkedIn</span><span class="social-updates__handle">Projekt Gizmo</span><span class="social-updates__action">Zobacz profil <span aria-hidden="true">↗</span></span></a><a class="social-updates__card" href="https://www.facebook.com/p/Projekt-Gizmo-61575747850184/" target="_blank" rel="noopener noreferrer"><img src="../public/external/facebook-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">Facebook</span><span class="social-updates__handle">Projekt Gizmo</span><span class="social-updates__action">Zobacz profil <span aria-hidden="true">↗</span></span></a></div></section>
+  </main>
+  <footer id="contact" class="footer"><div class="container"><h2 class="section-title">Kontakt</h2><div style="height: 24px;"></div><address class="footer__contact-info"><p><img src="../public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p><p><img src="../public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p><p><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/">Projekt Gizmo</a></p></address></div></footer>
+  <script src="../src/scripts/carousel.js" defer></script>
+</body>
+</html>

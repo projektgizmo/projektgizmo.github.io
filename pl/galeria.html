@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Galeria zdjęć projektu Gizmo." />
+        <title>Galeria - Projekt Gizmo</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../src/styles/site.css" />
+        <script src="../src/scripts/navigation.js" defer></script>
+    </head>
+    <body>
+        <div class="background-decor">
+            <div class="ellipse ellipse-1"></div>
+            <div class="ellipse ellipse-2"></div>
+            <div class="ellipse ellipse-3"></div>
+            <div class="ellipse ellipse-4"></div>
+            <div class="ellipse ellipse-7"></div>
+            <div class="ellipse ellipse-8"></div>
+            <div class="decorative-circle circle-index-1"></div>
+            <div class="decorative-circle circle-index-2"></div>
+            <div class="decorative-circle circle-index-3"></div>
+        </div>
+
+        <header class="navbar">
+            <div class="container navbar__container">
+                <a href="index.html" class="navbar__logo">
+                    <span>gizmo</span>
+                </a>
+                <button class="navbar__toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Otwórz menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="navbar__nav" id="site-navigation">
+                    <ul class="navbar__links">
+                        <li><a href="index.html" class="navbar__link">Strona główna</a></li>
+                        <li><a href="desktop2.html" class="navbar__link">Historia</a></li>
+                        <li><a href="zespol.html" class="navbar__link">Zespół</a></li>
+                        <li><a href="wdrozenia.html" class="navbar__link">Wdrożenia</a></li>
+                        <li><a href="galeria.html" class="navbar__link navbar__link--active">Galeria</a></li>
+                        <li><a href="kontakt.html" class="navbar__link">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar__lang-switcher">
+                    <a href="galeria.html" class="navbar__lang navbar__lang--active">PL</a>
+                    <span>/</span>
+                    <a href="../en/index.html" class="navbar__lang">ENG</a>
+                </div>
+            </div>
+        </header>
+            
+        <main class="container gallery-page">
+            <header class="gallery-page__header">
+                <span class="gallery-page__eyebrow">Projekt Gizmo</span>
+                <h1 class="page-title">Galeria</h1>
+                <p class="lead">Zobacz Gizmo w projektach, modelach i pracy nad robotami.</p>
+            </header>
+
+            <section class="gallery-section" aria-label="Galeria zdjęć projektu Gizmo">
+                <div class="gallery-grid">
+                    <figure class="gallery-item gallery-item--featured">
+                        <div class="gallery-item__visual">
+                            <img src="../public/external/gizmo_tasma.png" alt="Robot modułowy Gizmo na taśmie produkcyjnej" class="gallery-item__image">
+                        </div>
+                        <figcaption class="gallery-item__caption">
+                            <span class="gallery-item__number">01 / W praktyce</span>
+                            <span>Gizmo podczas pracy na taśmie produkcyjnej</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-item__visual">
+                            <img src="../public/external/kula_gizmula.png" alt="Konstrukcja złożona z połączonych modułów Gizmo" class="gallery-item__image">
+                        </div>
+                        <figcaption class="gallery-item__caption">
+                            <span class="gallery-item__number">02 / Modułowość</span>
+                            <span>Konstrukcja złożona z modułów Gizmo</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <div class="gallery-item__visual">
+                            <img src="../public/external/blizniak.png" alt="Dwa wydrukowane roboty Gizmo" class="gallery-item__image">
+                        </div>
+                        <figcaption class="gallery-item__caption">
+                            <span class="gallery-item__number">03 / Prototypy</span>
+                            <span>Wydrukowane roboty Gizmo</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <footer id="kontakt" class="footer">
+            <div class="container">
+                <h2 class="section-title">Kontakt</h2>
+            <address class="footer__contact-info">
+                <p><img src="../public/external/mail.svg" alt="Mail icon" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+                <p><img src="../public/external/instagram-svgrepo-com.svg" alt="Instagram icon" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p>
+                <p><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="LinkedIn icon" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="">Projekt Gizmo</a></p>
+                <p><img src="../public/external/facebook-svgrepo-com.svg" alt="Facebook icon" class="contact-icon" /> <a href="https://www.facebook.com/profile.php?id=61575747850184" target="https://www.facebook.com/profile.php?id=61575747850184">Projekt Gizmo</a></p>
+            </address>
+            </div>
+        </footer>
+    </body>
+</html>
