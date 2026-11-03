@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="home-page">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,15 +15,14 @@
 </head>
 <body>
   <div class="background-decor">
-    <div class="ellipse ellipse-1"></div><div class="ellipse ellipse-2"></div>
+    <div class="ellipse ellipse-1"></div>
+    <div class="ellipse ellipse-2"></div>
     <div class="ellipse ellipse-5"></div>
     <div class="decorative-circle circle-index-1"></div>
     <div class="decorative-circle circle-index-2"></div>
     <div class="decorative-circle circle-index-3"></div>
   </div>
-  <button class="intro-nav-trigger" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Show navigation">
-    <span class="intro-nav-trigger__icon" aria-hidden="true">↓</span><span class="intro-nav-trigger__label">Show navigation</span>
-  </button>
+
   <header class="navbar">
     <div class="container navbar__container">
       <a href="./index.html" class="navbar__logo"><span>gizmo</span></a>
@@ -31,39 +30,87 @@
         <span></span><span></span><span></span>
       </button>
       <nav class="navbar__nav" id="site-navigation">
-        <ul class="navbar__links"><li><a href="../index_eng.html" class="navbar__link navbar__link--active">Home</a></li><li><a href="../detskop2_eng.html" class="navbar__link">History</a></li><li><a href="../team.html" class="navbar__link">Team</a></li><li><a href="../wdrozenia_eng.html" class="navbar__link">Deployments</a></li><li><a href="../gallery.html" class="navbar__link">Gallery</a></li><li><a href="../index_eng.html#contact" class="navbar__link">Contact</a></li></ul>
+        <ul class="navbar__links"><li><a href="./index.html" class="navbar__link navbar__link--active">Home</a></li><li><a href="../detskop2_eng.html" class="navbar__link">History</a></li><li><a href="../team.html" class="navbar__link">Team</a></li><li><a href="../wdrozenia_eng.html" class="navbar__link">Deployments</a></li><li><a href="../gallery.html" class="navbar__link">Gallery</a></li><li><a href="./index.html#contact" class="navbar__link">Contact</a></li></ul>
       </nav>
-      <div class="navbar__lang-switcher"><a href="../pl/index.html" class="navbar__lang ">PL</a><span>/</span><a href="../en/index.html" class="navbar__lang navbar__lang--active">ENG</a></div>
+      <div class="navbar__lang-switcher">
+        <a href="../pl/index.html" class="navbar__lang ">PL</a>
+        <span>/</span>
+        <a href="../en/index.html" class="navbar__lang navbar__lang--active">ENG</a>
+      </div>
     </div>
   </header>
-  <main class="home-scroll">
-    <div class="home-panel home-panel--hero">
-      <section class="hero-lp container" data-animation-base="../public/external/" data-stage-1="meet the Gizmo robot" data-stage-2="Gizmo moves through the crop" data-stage-3="a modular design works wherever you need it" data-stage-4="scalable robotics for your crops">
-      <div class="hero-lp__content"><h1 class="hero-title">Gizmo</h1><div class="hero-stage" aria-live="polite"><span id="heroStageText">meet the Gizmo robot</span></div>
+
+  <main>
+    <section class="hero-lp container">
+      <div class="hero-lp__content">
+        <h1>Gizmo — <span>scalable robotics for your crops</span></h1>
+        <div class="hero-lp__ctas">
+          <a href="#value" class="btn btn--primary">See how it works</a>
+          <a href="./index.html#contact" class="btn btn--outline">Plan a deployment</a>
+        </div>
       </div>
-      <div class="hero-lp__visual"><video class="hero-animation" id="heroAnimation" src="../public/external/home_anim_stage0.mp4" autoplay muted playsinline preload="auto" aria-label="Gizmo in action render — placeholder"></video></div>
-      <button class="hero-skip" id="heroSkip" type="button">Skip animation ↓</button>
-      </section>
-    </div>
-    <div class="home-panel">
-      <section class="photo-carousel container"><h2>Gizmo in action</h2><div class="photo-carousel__viewport"><div class="photo-carousel__track" id="photoTrack"><div class="photo-carousel__slide"><img src="../public/external/gizmo_tasma.png" alt="Gizmo on a production line" /></div><div class="photo-carousel__slide"><img src="../public/external/kula_gizmula.png" alt="Structure made of Gizmo modules" /></div><div class="photo-carousel__slide"><img src="../public/external/blizniak.png" alt="Printed Gizmo robots" /></div><div class="photo-carousel__slide"><img src="../public/external/model4.png" alt="Gizmo robot model 4" /></div><div class="photo-carousel__slide photo-carousel__slide--tagged"><img src="../public/external/wizualizacja-pomidory.png" alt="Concept visualisation: Gizmo harvesting tomatoes in a greenhouse" /><span class="photo-carousel__tag">Concept visualisation</span></div></div><button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" aria-label="Previous photo">←</button><button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" aria-label="Next photo">→</button></div><div class="photo-carousel__dots" id="photoDots"></div></section>
-    </div>
-    <div class="home-panel home-panel--value">
-      <section id="value" class="value-section container"><h2>How does Gizmo support your business?</h2><p>Gizmo takes over repetitive physical work in your crops — from harvesting to transport — without changing your existing infrastructure.</p><p class="value-question">How much staff and training does deployment require? Less than you think — our team supports the launch from start to finish.</p></section>
-      <section class="stats-grid container"><div class="stat-card"><span class="stat-card__value">[value to be decided] €/ha per year</span><span class="stat-card__label">potential labour cost savings</span></div><div class="stat-card"><span class="stat-card__value">Staffing crisis</span><span class="stat-card__label">the growing shortage of seasonal workers</span></div><div class="stat-card"><span class="stat-card__value">RaaS</span><span class="stat-card__label">deployment without a loan — pay for the service</span></div></section>
-      <section class="checklist-section container"><ul><li>A modular solution tailored to you</li><li>Deploy without rebuilding your greenhouse</li></ul></section>
-    </div>
-    <div class="home-panel home-panel--partners">
-      <section class="deployment-link container"><a href="../wdrozenia_eng.html" class="btn btn--primary">Explore deployment examples</a></section>
-      <section class="partners-section container"><h3>Who we work with</h3><div class="partner-logos"><div class="partner-logo-placeholder">Partner logo</div><div class="partner-logo-placeholder">Partner logo</div><div class="partner-logo-placeholder">Partner logo</div></div></section>
-    </div>
-    <div class="home-panel">
-      <section class="social-updates container" aria-labelledby="social-updates-title"><div class="social-updates__header"><span class="social-updates__eyebrow">Stay up to date</span><h2 id="social-updates-title">Latest updates</h2><p>Follow us on social media for the latest news about Project Gizmo.</p></div><div class="social-updates__grid"><a class="social-updates__card" href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noopener noreferrer"><img src="../public/external/instagram-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">Instagram</span><span class="social-updates__handle">@projekt_gizmo</span><span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span></a><a class="social-updates__card" href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noopener noreferrer"><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">LinkedIn</span><span class="social-updates__handle">Projekt Gizmo</span><span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span></a><a class="social-updates__card" href="https://www.facebook.com/p/Projekt-Gizmo-61575747850184/" target="_blank" rel="noopener noreferrer"><img src="../public/external/facebook-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">Facebook</span><span class="social-updates__handle">Projekt Gizmo</span><span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span></a></div></section>
-    </div>
+      <div class="hero-lp__visual">
+        <video class="hero-animation" src="../public/external/home_anim_stage0.mp4" autoplay muted playsinline preload="auto" aria-label="Gizmo in action render — placeholder"></video>
+      </div>
+    </section>
+
+    <section class="photo-carousel container">
+      <h2>Gizmo in action</h2>
+      <div class="photo-carousel__viewport">
+        <div class="photo-carousel__track" id="photoTrack"><div class="photo-carousel__slide"><img src="../public/external/gizmo_tasma.png" alt="Gizmo on a production line" /></div><div class="photo-carousel__slide"><img src="../public/external/kula_gizmula.png" alt="Structure made of Gizmo modules" /></div><div class="photo-carousel__slide"><img src="../public/external/blizniak.png" alt="Printed Gizmo robots" /></div><div class="photo-carousel__slide"><img src="../public/external/model4.png" alt="Gizmo robot model 4" /></div><div class="photo-carousel__slide photo-carousel__slide--tagged"><img src="../public/external/wizualizacja-pomidory.png" alt="Concept visualisation: Gizmo harvesting tomatoes in a greenhouse" /><span class="photo-carousel__tag">Concept visualisation</span></div></div>
+        <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" aria-label="Previous photo">←</button>
+        <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" aria-label="Next photo">→</button>
+      </div>
+      <div class="photo-carousel__dots" id="photoDots"></div>
+    </section>
+
+    <section id="value" class="value-section container">
+      <h2>How does Gizmo support your business?</h2>
+      <p>Gizmo takes over repetitive physical work in your crops — from harvesting to transport — without changing your existing infrastructure.</p>
+      <p class="value-question">How much staff and training does deployment require? Less than you think — our team supports the launch from start to finish.</p>
+    </section>
+
+    <section class="stats-grid container"><div class="stat-card"><span class="stat-card__value">[value to be decided] €/ha per year</span><span class="stat-card__label">potential labour cost savings</span></div><div class="stat-card"><span class="stat-card__value">Staffing crisis</span><span class="stat-card__label">the growing shortage of seasonal workers</span></div><div class="stat-card"><span class="stat-card__value">RaaS</span><span class="stat-card__label">deployment without a loan — pay for the service</span></div></section>
+
+    <section class="checklist-section container">
+      <ul><li>A modular solution tailored to you</li><li>Deploy without rebuilding your greenhouse</li></ul>
+    </section>
+
+    <section class="deployment-link container">
+      <a href="../wdrozenia_eng.html" class="btn btn--primary">Explore deployment examples</a>
+    </section>
+
+    <section class="partners-section container">
+      <h3>Who we work with</h3>
+      <div class="partner-logos">
+        <div class="partner-logo-placeholder">Partner logo</div>
+        <div class="partner-logo-placeholder">Partner logo</div>
+        <div class="partner-logo-placeholder">Partner logo</div>
+      </div>
+    </section>
+
+    <section class="social-updates container" aria-labelledby="social-updates-title">
+      <div class="social-updates__header">
+        <span class="social-updates__eyebrow">Stay up to date</span>
+        <h2 id="social-updates-title">Latest updates</h2>
+        <p>Follow us on social media for the latest news about Project Gizmo.</p>
+      </div>
+      <div class="social-updates__grid"><a class="social-updates__card" href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noopener noreferrer"><img src="../public/external/instagram-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">Instagram</span><span class="social-updates__handle">@projekt_gizmo</span><span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span></a><a class="social-updates__card" href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noopener noreferrer"><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">LinkedIn</span><span class="social-updates__handle">Projekt Gizmo</span><span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span></a><a class="social-updates__card" href="https://www.facebook.com/p/Projekt-Gizmo-61575747850184/" target="_blank" rel="noopener noreferrer"><img src="../public/external/facebook-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">Facebook</span><span class="social-updates__handle">Projekt Gizmo</span><span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span></a></div>
+    </section>
   </main>
-  <footer id="contact" class="footer home-panel"><div class="container"><h2 class="section-title">Contact</h2><div style="height: 24px;"></div><address class="footer__contact-info"><p><img src="../public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p><p><img src="../public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p><p><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/">Projekt Gizmo</a></p></address></div></footer>
-  <script src="../src/scripts/home-scroll.js" defer></script>
-  <script src="../src/scripts/hero-intro.js?v=5"></script>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div style="height: 24px;"></div>
+      <address class="footer__contact-info">
+        <p><img src="../public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+        <p><img src="../public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p>
+        <p><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/">Projekt Gizmo</a></p>
+      </address>
+    </div>
+  </footer>
+
   <script src="../src/scripts/carousel.js" defer></script>
 </body>
 </html>

@@ -25,13 +25,24 @@ const socials = [
 function render(locale, localized) {
   const data = JSON.parse(fs.readFileSync(path.join(root, `src/content/${locale}.json`), 'utf8'));
   const base = localized ? '../' : './';
-  const url = (lang) => localized ? `../${lang}/index.html` : lang === 'pl' ? 'index.html' : 'index_eng.html';
-  const navigation = data.navigation.map((label, i) => `<li><a href="${base}${links[locale][i]}" class="navbar__link${i === 0 ? ' navbar__link--active' : ''}">${label}</a></li>`).join('');
+  const url = (lang) => localized ? `../${lang}/index.html` : lang === 'pl' ? 'index.html' : 'en/index.html';
+  const pageUrl = (page, i) => localized
+    ? locale === 'en' && i === 0
+      ? './index.html'
+      : locale === 'en' && i === 5
+        ? './index.html#contact'
+        : `${base}${page}`
+    : i === 0
+      ? 'index.html'
+      : i === 5
+        ? '#contact'
+      : `pl/${page}`;
+  const navigation = data.navigation.map((label, i) => `<li><a href="${pageUrl(links[locale][i], i)}" class="navbar__link${i === 0 ? ' navbar__link--active' : ''}">${label}</a></li>`).join('');
   const slides = images.map(([file, plAlt, enAlt], i) => `<div class="photo-carousel__slide${i === images.length - 1 ? ' photo-carousel__slide--tagged' : ''}"><img src="${base}public/external/${file}" alt="${locale === 'en' ? enAlt : plAlt}" />${i === images.length - 1 ? `<span class="photo-carousel__tag">${locale === 'en' ? 'Concept visualisation' : 'Wizualizacja koncepcyjna'}</span>` : ''}</div>`).join('');
   const stats = data.stats.map(([value, label]) => `<div class="stat-card"><span class="stat-card__value">${value}</span><span class="stat-card__label">${label}</span></div>`).join('');
   const checklist = data.checklist.map((item) => `<li>${item}</li>`).join('');
   const socialCards = socials.map(([icon, name, handle, href]) => `<a class="social-updates__card" href="${href}" target="_blank" rel="noopener noreferrer"><img src="${base}public/external/${icon}" alt="" aria-hidden="true"><span class="social-updates__name">${name}</span><span class="social-updates__handle">${handle}</span><span class="social-updates__action">${data.socialAction} <span aria-hidden="true">↗</span></span></a>`).join('');
-  const values = { ...data, base, homeUrl: localized ? './index.html' : pages[locale], contactUrl: localized ? './index.html#contact' : `${pages[locale]}#contact`, deploymentsUrl: `${base}${links[locale][3]}`, menuOpen: locale === 'en' ? 'Open menu' : 'Otwórz menu', plUrl: url('pl'), enUrl: url('en'), plActive: locale === 'pl' ? 'navbar__lang--active' : '', enActive: locale === 'en' ? 'navbar__lang--active' : '', navigation, slides, stats, checklist, socialCards };
+  const values = { ...data, base, homeUrl: localized ? './index.html' : pages[locale], contactUrl: localized ? './index.html#contact' : '#contact', deploymentsUrl: pageUrl(links[locale][3], 3), menuOpen: locale === 'en' ? 'Open menu' : 'Otwórz menu', plUrl: url('pl'), enUrl: url('en'), plActive: locale === 'pl' ? 'navbar__lang--active' : '', enActive: locale === 'en' ? 'navbar__lang--active' : '', navigation, slides, stats, checklist, socialCards };
   return template.replace(/\{\{(\w+)\}\}/g, (_, key) => values[key] ?? '');
 }
 

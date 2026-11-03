@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{language}}" class="home-page">
+<html lang="{{language}}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,15 +15,14 @@
 </head>
 <body>
   <div class="background-decor">
-    <div class="ellipse ellipse-1"></div><div class="ellipse ellipse-2"></div>
+    <div class="ellipse ellipse-1"></div>
+    <div class="ellipse ellipse-2"></div>
     <div class="ellipse ellipse-5"></div>
     <div class="decorative-circle circle-index-1"></div>
     <div class="decorative-circle circle-index-2"></div>
     <div class="decorative-circle circle-index-3"></div>
   </div>
-  <button class="intro-nav-trigger" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="{{showNavigation}}">
-    <span class="intro-nav-trigger__icon" aria-hidden="true">↓</span><span class="intro-nav-trigger__label">{{showNavigation}}</span>
-  </button>
+
   <header class="navbar">
     <div class="container navbar__container">
       <a href="{{homeUrl}}" class="navbar__logo"><span>gizmo</span></a>
@@ -33,37 +32,85 @@
       <nav class="navbar__nav" id="site-navigation">
         <ul class="navbar__links">{{navigation}}</ul>
       </nav>
-      <div class="navbar__lang-switcher"><a href="{{plUrl}}" class="navbar__lang {{plActive}}">PL</a><span>/</span><a href="{{enUrl}}" class="navbar__lang {{enActive}}">ENG</a></div>
+      <div class="navbar__lang-switcher">
+        <a href="{{plUrl}}" class="navbar__lang {{plActive}}">PL</a>
+        <span>/</span>
+        <a href="{{enUrl}}" class="navbar__lang {{enActive}}">ENG</a>
+      </div>
     </div>
   </header>
-  <main class="home-scroll">
-    <div class="home-panel home-panel--hero">
-      <section class="hero-lp container" data-animation-base="{{base}}public/external/" data-stage-1="{{heroStage1}}" data-stage-2="{{heroStage2}}" data-stage-3="{{heroStage3}}" data-stage-4="{{heroStage4}}">
-      <div class="hero-lp__content"><h1 class="hero-title">Gizmo</h1><div class="hero-stage" aria-live="polite"><span id="heroStageText">{{heroStage1}}</span></div>
+
+  <main>
+    <section class="hero-lp container">
+      <div class="hero-lp__content">
+        <h1>Gizmo — <span>{{hero}}</span></h1>
+        <div class="hero-lp__ctas">
+          <a href="#value" class="btn btn--primary">{{heroCta}}</a>
+          <a href="{{contactUrl}}" class="btn btn--outline">{{contactCta}}</a>
+        </div>
       </div>
-      <div class="hero-lp__visual"><video class="hero-animation" id="heroAnimation" src="{{base}}public/external/home_anim_stage0.mp4" autoplay muted playsinline preload="auto" aria-label="{{renderPlaceholder}}"></video></div>
-      <button class="hero-skip" id="heroSkip" type="button">{{skipIntro}}</button>
-      </section>
-    </div>
-    <div class="home-panel">
-      <section class="photo-carousel container"><h2>{{carouselTitle}}</h2><div class="photo-carousel__viewport"><div class="photo-carousel__track" id="photoTrack">{{slides}}</div><button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" aria-label="{{previous}}">←</button><button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" aria-label="{{next}}">→</button></div><div class="photo-carousel__dots" id="photoDots"></div></section>
-    </div>
-    <div class="home-panel home-panel--value">
-      <section id="value" class="value-section container"><h2>{{valueTitle}}</h2><p>{{valueText}}</p><p class="value-question">{{valueQuestion}}</p></section>
-      <section class="stats-grid container">{{stats}}</section>
-      <section class="checklist-section container"><ul>{{checklist}}</ul></section>
-    </div>
-    <div class="home-panel home-panel--partners">
-      <section class="deployment-link container"><a href="{{deploymentsUrl}}" class="btn btn--primary">{{deploymentsCta}}</a></section>
-      <section class="partners-section container"><h3>{{partnersTitle}}</h3><div class="partner-logos"><div class="partner-logo-placeholder">{{partner}}</div><div class="partner-logo-placeholder">{{partner}}</div><div class="partner-logo-placeholder">{{partner}}</div></div></section>
-    </div>
-    <div class="home-panel">
-      <section class="social-updates container" aria-labelledby="social-updates-title"><div class="social-updates__header"><span class="social-updates__eyebrow">{{updatesEyebrow}}</span><h2 id="social-updates-title">{{updatesTitle}}</h2><p>{{updatesText}}</p></div><div class="social-updates__grid">{{socialCards}}</div></section>
-    </div>
+      <div class="hero-lp__visual">
+        <video class="hero-animation" src="{{base}}public/external/home_anim_stage0.mp4" autoplay muted playsinline preload="auto" aria-label="{{renderPlaceholder}}"></video>
+      </div>
+    </section>
+
+    <section class="photo-carousel container">
+      <h2>{{carouselTitle}}</h2>
+      <div class="photo-carousel__viewport">
+        <div class="photo-carousel__track" id="photoTrack">{{slides}}</div>
+        <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" aria-label="{{previous}}">←</button>
+        <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" aria-label="{{next}}">→</button>
+      </div>
+      <div class="photo-carousel__dots" id="photoDots"></div>
+    </section>
+
+    <section id="value" class="value-section container">
+      <h2>{{valueTitle}}</h2>
+      <p>{{valueText}}</p>
+      <p class="value-question">{{valueQuestion}}</p>
+    </section>
+
+    <section class="stats-grid container">{{stats}}</section>
+
+    <section class="checklist-section container">
+      <ul>{{checklist}}</ul>
+    </section>
+
+    <section class="deployment-link container">
+      <a href="{{deploymentsUrl}}" class="btn btn--primary">{{deploymentsCta}}</a>
+    </section>
+
+    <section class="partners-section container">
+      <h3>{{partnersTitle}}</h3>
+      <div class="partner-logos">
+        <div class="partner-logo-placeholder">{{partner}}</div>
+        <div class="partner-logo-placeholder">{{partner}}</div>
+        <div class="partner-logo-placeholder">{{partner}}</div>
+      </div>
+    </section>
+
+    <section class="social-updates container" aria-labelledby="social-updates-title">
+      <div class="social-updates__header">
+        <span class="social-updates__eyebrow">{{updatesEyebrow}}</span>
+        <h2 id="social-updates-title">{{updatesTitle}}</h2>
+        <p>{{updatesText}}</p>
+      </div>
+      <div class="social-updates__grid">{{socialCards}}</div>
+    </section>
   </main>
-  <footer id="contact" class="footer home-panel"><div class="container"><h2 class="section-title">{{contactTitle}}</h2><div style="height: 24px;"></div><address class="footer__contact-info"><p><img src="{{base}}public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p><p><img src="{{base}}public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p><p><img src="{{base}}public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/">Projekt Gizmo</a></p></address></div></footer>
-  <script src="{{base}}src/scripts/home-scroll.js" defer></script>
-  <script src="{{base}}src/scripts/hero-intro.js?v=5"></script>
+
+  <footer id="contact" class="footer">
+    <div class="container">
+      <h2 class="section-title">{{contactTitle}}</h2>
+      <div style="height: 24px;"></div>
+      <address class="footer__contact-info">
+        <p><img src="{{base}}public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+        <p><img src="{{base}}public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p>
+        <p><img src="{{base}}public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/">Projekt Gizmo</a></p>
+      </address>
+    </div>
+  </footer>
+
   <script src="{{base}}src/scripts/carousel.js" defer></script>
 </body>
 </html>
