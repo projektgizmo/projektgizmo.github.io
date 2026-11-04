@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{language}}">
+<html lang="{{language}}" class="home-page">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,61 +41,75 @@
   </header>
 
   <main>
-    <section class="hero-lp container">
-      <div class="hero-lp__content">
-        <h1>Gizmo — <span>{{hero}}</span></h1>
-        <div class="hero-lp__ctas">
-          <a href="#value" class="btn btn--primary">{{heroCta}}</a>
-          <a href="{{contactUrl}}" class="btn btn--outline">{{contactCta}}</a>
+    <section class="home-panel home-panel--intro">
+      <img class="hero-lp__background" src="{{base}}public/renders/homepage_render.png" alt="" aria-hidden="true" />
+      <div class="hero-lp container">
+        <div class="hero-lp__content">
+          <div class="hero-lp__brand">
+            <img class="hero-lp__logo" src="{{base}}public/own/Gizmo_RAW_Minimal.svg" alt="Gizmo logo" />
+            <div class="hero-lp__copy">
+              <div class="hero-lp__heading">
+                <h1>Gizmo</h1>
+                <p>{{hero}}</p>
+              </div>
+              <div class="hero-lp__ctas">
+                <a href="#value" class="btn btn--primary">{{heroCta}}</a>
+                <a href="{{contactUrl}}" class="btn btn--outline">{{contactCta}}</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero-lp__visual">
-        <video class="hero-animation" src="{{base}}public/external/home_anim_stage0.mp4" autoplay muted playsinline preload="auto" aria-label="{{renderPlaceholder}}"></video>
+    </section>
+
+    <section class="home-panel home-panel--carousel">
+      <div class="photo-carousel container">
+        <h2>{{carouselTitle}}</h2>
+        <div class="photo-carousel__viewport">
+          <div class="photo-carousel__track" id="photoTrack">{{slides}}</div>
+          <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" aria-label="{{previous}}">←</button>
+          <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" aria-label="{{next}}">→</button>
+        </div>
+        <div class="photo-carousel__dots" id="photoDots"></div>
       </div>
     </section>
 
-    <section class="photo-carousel container">
-      <h2>{{carouselTitle}}</h2>
-      <div class="photo-carousel__viewport">
-        <div class="photo-carousel__track" id="photoTrack">{{slides}}</div>
-        <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" aria-label="{{previous}}">←</button>
-        <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" aria-label="{{next}}">→</button>
-      </div>
-      <div class="photo-carousel__dots" id="photoDots"></div>
+    <section class="home-panel home-panel--value">
+      <section id="value" class="value-section container">
+        <h2>{{valueTitle}}</h2>
+        <p>{{valueText}}</p>
+        <p class="value-question">{{valueQuestion}}</p>
+      </section>
+
+      <section class="stats-grid container">{{stats}}</section>
+
+      <section class="checklist-section container">
+        <ul>{{checklist}}</ul>
+      </section>
+
+      <section class="deployment-link container">
+        <a href="{{deploymentsUrl}}" class="btn btn--primary">{{deploymentsCta}}</a>
+      </section>
     </section>
 
-    <section id="value" class="value-section container">
-      <h2>{{valueTitle}}</h2>
-      <p>{{valueText}}</p>
-      <p class="value-question">{{valueQuestion}}</p>
-    </section>
+    <section class="home-panel home-panel--proof">
+      <section class="partners-section container">
+        <h3>{{partnersTitle}}</h3>
+        <div class="partner-logos">
+          <div class="partner-logo-placeholder">{{partner}}</div>
+          <div class="partner-logo-placeholder">{{partner}}</div>
+          <div class="partner-logo-placeholder">{{partner}}</div>
+        </div>
+      </section>
 
-    <section class="stats-grid container">{{stats}}</section>
-
-    <section class="checklist-section container">
-      <ul>{{checklist}}</ul>
-    </section>
-
-    <section class="deployment-link container">
-      <a href="{{deploymentsUrl}}" class="btn btn--primary">{{deploymentsCta}}</a>
-    </section>
-
-    <section class="partners-section container">
-      <h3>{{partnersTitle}}</h3>
-      <div class="partner-logos">
-        <div class="partner-logo-placeholder">{{partner}}</div>
-        <div class="partner-logo-placeholder">{{partner}}</div>
-        <div class="partner-logo-placeholder">{{partner}}</div>
-      </div>
-    </section>
-
-    <section class="social-updates container" aria-labelledby="social-updates-title">
-      <div class="social-updates__header">
-        <span class="social-updates__eyebrow">{{updatesEyebrow}}</span>
-        <h2 id="social-updates-title">{{updatesTitle}}</h2>
-        <p>{{updatesText}}</p>
-      </div>
-      <div class="social-updates__grid">{{socialCards}}</div>
+      <section class="social-updates container" aria-labelledby="social-updates-title">
+        <div class="social-updates__header">
+          <span class="social-updates__eyebrow">{{updatesEyebrow}}</span>
+          <h2 id="social-updates-title">{{updatesTitle}}</h2>
+          <p>{{updatesText}}</p>
+        </div>
+        <div class="social-updates__grid">{{socialCards}}</div>
+      </section>
     </section>
   </main>
 
@@ -112,5 +126,6 @@
   </footer>
 
   <script src="{{base}}src/scripts/carousel.js" defer></script>
+  <script src="{{base}}src/scripts/home-scroll.js" defer></script>
 </body>
 </html>
