@@ -24,6 +24,23 @@
   "deploymentsCta": "Poznaj przykłady wdrożeń",
   "partnersTitle": "Z kim współpracujemy",
   "partner": "Logo partnera",
+  "foundersTitle": "Nasz Zespół",
+  "founders": [
+    {"name": "Feliks Brzeziński", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "kocha szczury"},
+    {"name": "Kacper Olszewski", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "Kocha szczury."}
+  ],
+  "teamEyebrow": "LUDZIE STOJĄCY ZA GIZMO",
+  "teamTitle": "Poznaj nasz zespół",
+  "teamText": "Łączymy różne kompetencje, aby zamieniać praktyczne wyzwania w niezawodną automatyzację.",
+  "previousPerson": "Poprzednia osoba",
+  "nextPerson": "Następna osoba",
+  "team": [
+    {"name": "Weronika Arciuch", "role": "Marketing i Social Media", "bio": "gizmo gizmo na parkiecie"},
+    {"name": "Zuzanna Miśkiewicz", "role": "Biznes i Relacje z Klientem", "bio": "gizmo gizmo na parkiecie"},
+    {"name": "Norbert Ciesielski", "role": "Projektant Elektroniki", "bio": "gizmo gizmo na parkiecie"},
+    {"name": "Antek Banuch", "role": "Programista Niskopoziomowy", "bio": "gizmo gizmo na parkiecie"},
+    {"name": "?", "role": "Członek zespołu", "bio": "gizmo gizmo na parkiecie"}
+  ],
   "updatesEyebrow": "Bądź na bieżąco",
   "updatesTitle": "Aktualności",
   "updatesText": "Obserwuj nas w mediach społecznościowych i poznaj najnowsze informacje o projekcie Gizmo.",

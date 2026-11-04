@@ -103,7 +103,31 @@
           <div class="partner-logo-placeholder">{{partner}}</div>
         </div>
       </section>
+    </section>
 
+    <section class="home-panel home-panel--founders">
+      <section class="founders-section" aria-labelledby="founders-title">
+        <h2 id="founders-title">{{foundersTitle}}</h2>
+        <div class="founders-grid">{{founders}}</div>
+      </section>
+    </section>
+
+    <section class="home-panel home-panel--team">
+      <section class="team-carousel-section" aria-labelledby="team-carousel-title">
+        <div class="team-carousel" data-team-carousel>
+          <div class="team-carousel__identity">
+            <span class="team-carousel__identity-role" data-team-role>{{firstTeamRole}}</span>
+            <h2 id="team-carousel-title" data-team-name>{{firstTeamName}}</h2>
+          </div>
+          <button class="team-carousel__arrow team-carousel__arrow--prev" type="button" data-team-prev aria-label="{{previousPerson}}">←</button>
+          <div class="team-carousel__members" role="tablist" aria-label="{{teamTitle}}">{{teamMembers}}</div>
+          <button class="team-carousel__arrow team-carousel__arrow--next" type="button" data-team-next aria-label="{{nextPerson}}">→</button>
+          <article class="team-carousel__details" data-team-details aria-live="polite">{{teamDetails}}</article>
+        </div>
+      </section>
+    </section>
+
+    <section class="home-panel home-panel--proof">
       <section class="social-updates container" aria-labelledby="social-updates-title">
         <div class="social-updates__header">
           <span class="social-updates__eyebrow">{{updatesEyebrow}}</span>
@@ -128,6 +152,7 @@
   </footer>
 
   <script src="{{base}}src/scripts/carousel.js" defer></script>
+  <script src="{{base}}src/scripts/team-carousel.js" defer></script>
   <script src="{{base}}src/scripts/home-scroll.js" defer></script>
 </body>
 </html>

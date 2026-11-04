@@ -24,6 +24,23 @@
   "deploymentsCta": "Explore deployment examples",
   "partnersTitle": "Who we work with",
   "partner": "Partner logo",
+  "foundersTitle": "Meet our founders",
+  "founders": [
+    {"name": "Feliks Brzeziński", "role": "CO-FOUNDER", "bio": "Feliks develops the electronics and software that give Gizmo its autonomy and reliability in the field."},
+    {"name": "Kacper Olszewski", "role": "CO-FOUNDER", "bio": "Kacper designs the mechanics that make Gizmo modular, durable, and ready for real-world work."}
+  ],
+  "teamEyebrow": "THE PEOPLE BEHIND GIZMO",
+  "teamTitle": "Meet our team",
+  "teamText": "A multidisciplinary team turning practical challenges into dependable automation.",
+  "previousPerson": "Previous team member",
+  "nextPerson": "Next team member",
+  "team": [
+    {"name": "Feliks Brzeziński", "role": "Embedded Systems Engineer", "bio": "Feliks builds the electronics and software that let Gizmo sense its surroundings and work reliably in the field."},
+    {"name": "Kacper Olszewski", "role": "Lead Mechanical Engineer", "bio": "Kacper develops the mechanical systems that make Gizmo modular, durable, and ready for real-world work."},
+    {"name": "Weronika Arciuch", "role": "Social Media & IT", "bio": "Weronika connects the project with its community and keeps the digital side of Gizmo moving forward."},
+    {"name": "Norbert", "role": "Team member", "bio": "Norbert supports the team as we test ideas, learn from users, and shape the next version of Gizmo."},
+    {"name": "Antek", "role": "Team member", "bio": "Antek helps turn ambitious concepts into practical steps on the road to deployment."}
+  ],
   "updatesEyebrow": "Stay up to date",
   "updatesTitle": "Latest updates",
   "updatesText": "Follow us on social media for the latest news about Project Gizmo.",
