@@ -94,9 +94,18 @@ body {
 
 .home-panel--intro .hero-lp,
 .home-panel--carousel .photo-carousel {
-  width: 90%;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
   min-height: 0;
   padding-block: 0;
+}
+
+.home-panel--carousel {
+  height: calc(100dvh - var(--navbar-height));
+  min-height: calc(100dvh - var(--navbar-height));
+  width: 100vw;
+  padding: 0;
 }
 
 .home-panel--visible {
@@ -1146,7 +1155,7 @@ html:not(.home-intro-active):not(.home-nav-revealing) .intro-nav-trigger {
       display: flex;
       align-items: center;
       min-height: 100%;
-      padding: 5rem 0 4rem;
+      padding: 5rem 4rem 4rem;
       position: relative;
     }
     .home-panel--intro {
@@ -1529,74 +1538,114 @@ html:not(.home-intro-active):not(.home-nav-revealing) .intro-nav-trigger {
       }
     }
 
-    .photo-carousel { padding: 2rem 0 3rem; }
-    .photo-carousel h2 {
+    .photo-carousel {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+    }
+    .photo-carousel__static-title {
+      position: absolute;
+      z-index: 3;
+      top: clamp(1.5rem, 5vw, 4rem);
+      left: clamp(1.5rem, 5vw, 4rem);
+      color: white;
       font-family: var(--font-display);
-      font-size: 2rem;
-      color: var(--color-indigo);
-      margin-bottom: 1.5rem;
-      text-align: center;
+      font-size: clamp(2.5rem, 7vw, 6rem);
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      line-height: .9;
+      text-shadow: 0 4px 12px rgba(92,20,235,.45);
     }
     .photo-carousel__viewport {
       position: relative;
-      border-radius: var(--radius-lg);
+      flex: 1;
       overflow: hidden;
-      max-width: 800px;
-      margin: 0 auto;
-      background: var(--gray-100);
-      box-shadow: 0 24px 55px rgba(19,19,19,0.22);
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      background: #e4dffd;
     }
     .photo-carousel__track {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      scrollbar-width: none;
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
     }
-    .photo-carousel__track::-webkit-scrollbar { display: none; }
     .photo-carousel__slide {
-      flex: 0 0 100%;
-      scroll-snap-align: center;
-      aspect-ratio: 16/9;
+      display: none;
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+      grid-template-columns: 35% 65%;
+      background: linear-gradient(110deg, #d9d0f7, #eeeafe);
     }
-    .photo-carousel__slide img {
+    .photo-carousel__slide--active { display: grid; }
+    .photo-carousel__image {
+      min-height: inherit;
+      overflow: hidden;
+    }
+    .photo-carousel__image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
-    .photo-carousel__slide--tagged { position: relative; }
-    .photo-carousel__tag {
-      position: absolute;
-      bottom: 14px;
-      left: 14px;
-      background: rgba(19,19,19,0.75);
-      color: var(--color-text-light);
-      font-size: 0.8rem;
+    .photo-carousel__content {
+      align-self: center;
+      max-width: 600px;
+      padding: clamp(5rem, 8vw, 8rem) clamp(2rem, 7vw, 7rem) 4rem clamp(2rem, 5vw, 4rem);
+    }
+    .photo-carousel__category {
+      color: var(--color-indigo);
+      font-size: clamp(1rem, 1.5vw, 1.35rem);
+      font-weight: 700;
+      margin-bottom: .35rem;
+    }
+    .photo-carousel__content h3 {
+      color: #080808;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1;
+      margin-bottom: 1.25rem;
+    }
+    .photo-carousel__copy {
+      color: #5e5b61;
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
       font-weight: 600;
-      padding: 0.35rem 0.8rem;
-      border-radius: var(--radius-sm);
+      max-width: 520px;
     }
     .photo-carousel__arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      display: flex;
+      align-items: top;
+      justify-content: center;
+      flex: 0 0 auto;
       width: 44px; height: 44px;
       border-radius: 50%;
       border: none;
-      background: rgba(255,255,255,0.85);
+      background: var(--color-lime);
       color: var(--color-indigo);
-      font-size: 1.3rem;
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1;
       cursor: pointer;
+      margin: 0 0.7rem 0 0.7rem
     }
-    .photo-carousel__arrow:hover { background: var(--color-lime); }
-    .photo-carousel__arrow--prev { left: 12px; }
-    .photo-carousel__arrow--next { right: 12px; }
+    .photo-carousel__arrow:hover { background: white; }
+    .photo-carousel__controls {
+      position: absolute;
+      z-index: 4;
+      left: 50%;
+      bottom: clamp(2rem, 8vh, 5rem);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transform: translateX(-50%);
+    }
     .photo-carousel__dots {
       display: flex;
       justify-content: center;
       gap: 0.5rem;
-      margin-top: 1rem;
+      margin: 0;
     }
     .photo-carousel__dot {
       width: 10px; height: 10px;
@@ -1755,4 +1804,37 @@ html:not(.home-intro-active):not(.home-nav-revealing) .intro-nav-trigger {
       }
       .hero-lp__ctas { justify-content: center; }
       .stats-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 700px) {
+      .photo-carousel__viewport,
+      .photo-carousel__track,
+      .photo-carousel__slide {
+        min-height: 0;
+      }
+      .photo-carousel {
+        min-height: 100%;
+      }
+      .photo-carousel__slide {
+        grid-template-columns: 1fr;
+        grid-template-rows: 42vh auto;
+      }
+      .photo-carousel__image {
+        min-height: 42vh;
+      }
+      .photo-carousel__content {
+        padding: 2rem 1.5rem 4.5rem;
+      }
+      .photo-carousel__static-title {
+        top: 1.5rem;
+        left: 1.5rem;
+        font-size: clamp(2.5rem, 12vw, 4rem);
+      }
+      .photo-carousel__arrow {
+        width: 38px;
+        height: 38px;
+      }
+      .photo-carousel__controls {
+        bottom: 1.25rem;
+      }
     }

@@ -4,8 +4,11 @@ if (photoTrack) {
   const dotsWrap = document.getElementById('photoDots');
   let activeIndex = 0;
   const goToSlide = (index) => {
-    activeIndex = Math.max(0, Math.min(index, slides.length - 1));
-    photoTrack.scrollTo({ left: slides[activeIndex].offsetLeft, behavior: 'smooth' });
+    activeIndex = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('photo-carousel__slide--active', i === activeIndex);
+      slide.setAttribute('aria-hidden', i === activeIndex ? 'false' : 'true');
+    });
     [...dotsWrap.children].forEach((dot, i) => dot.classList.toggle('photo-carousel__dot--active', i === activeIndex));
   };
   slides.forEach((_, i) => {
@@ -17,4 +20,5 @@ if (photoTrack) {
   });
   document.getElementById('photoNext').addEventListener('click', () => goToSlide(activeIndex + 1));
   document.getElementById('photoPrev').addEventListener('click', () => goToSlide(activeIndex - 1));
+  goToSlide(0);
 }

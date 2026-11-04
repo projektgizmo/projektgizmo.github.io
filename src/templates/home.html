@@ -64,13 +64,15 @@
 
     <section class="home-panel home-panel--carousel">
       <div class="photo-carousel container">
-        <h2>{{carouselTitle}}</h2>
-        <div class="photo-carousel__viewport">
+        <h2 class="photo-carousel__static-title">{{carouselTitle}}</h2>
+        <div class="photo-carousel__viewport" aria-live="polite">
           <div class="photo-carousel__track" id="photoTrack">{{slides}}</div>
-          <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" aria-label="{{previous}}">←</button>
-          <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" aria-label="{{next}}">→</button>
+          <div class="photo-carousel__controls">
+            <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" type="button" aria-label="{{previous}}">←</button>
+            <div class="photo-carousel__dots" id="photoDots"></div>
+            <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" type="button" aria-label="{{next}}">→</button>
+          </div>
         </div>
-        <div class="photo-carousel__dots" id="photoDots"></div>
       </div>
     </section>
 

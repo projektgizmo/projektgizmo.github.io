@@ -4,11 +4,10 @@ const path = require('path');
 const root = path.resolve(__dirname, '../..');
 const template = fs.readFileSync(path.join(root, 'src/templates/home.html'), 'utf8');
 const images = [
-  ['gizmo_tasma.png', 'Gizmo na taśmie produkcyjnej', 'Gizmo on a production line'],
-  ['kula_gizmula.png', 'Struktura złożona z modułów Gizmo', 'Structure made of Gizmo modules'],
-  ['blizniak.png', 'Wydrukowane roboty Gizmo', 'Printed Gizmo robots'],
-  ['model4.png', 'Model 4 robota Gizmo', 'Gizmo robot model 4'],
-  ['wizualizacja-pomidory.png', 'Wizualizacja koncepcyjna: Gizmo przy zbiorze pomidorów w szklarni', 'Concept visualisation: Gizmo harvesting tomatoes in a greenhouse']
+  ['image3360-xpg-2200h.png', 'Petrochemia', 'Petrochemicals', 'INSPEKCJA', 'INSPECTION', 'Gizmo pomaga monitorować instalacje i wykrywać problemy zanim zatrzymają produkcję.', 'Gizmo helps monitor installations and detect problems before they stop production.'],
+  ['rectangle123360-hanq-900h.png', 'Rolnictwo', 'Agriculture', 'ZBIORY', 'HARVESTING', 'Modułowa konstrukcja Gizmo wspiera powtarzalne zadania w uprawach.', 'Gizmo’s modular design supports repetitive tasks in growing environments.'],
+  ['rectangle133360-7wul-800h.png', 'Logistyka', 'Logistics', 'TRANSPORT', 'TRANSPORT', 'Gizmo przenosi ładunki tam, gdzie potrzebujesz go najbardziej.', 'Gizmo moves loads wherever you need it most.'],
+  ['homepage_render.png', 'Produkcja', 'Manufacturing', 'AUTOMATYZACJA', 'AUTOMATION', 'Elastyczna robotyka dopasowuje się do Twojego procesu pracy.', 'Flexible robotics adapt to your workflow.']
 ];
 
 const pages = { pl: 'index.html' };
@@ -38,7 +37,7 @@ function render(locale, localized) {
         ? '#contact'
       : `pl/${page}`;
   const navigation = data.navigation.map((label, i) => `<li><a href="${pageUrl(links[locale][i], i)}" class="navbar__link${i === 0 ? ' navbar__link--active' : ''}">${label}</a></li>`).join('');
-  const slides = images.map(([file, plAlt, enAlt], i) => `<div class="photo-carousel__slide${i === images.length - 1 ? ' photo-carousel__slide--tagged' : ''}"><img src="${base}public/external/${file}" alt="${locale === 'en' ? enAlt : plAlt}" />${i === images.length - 1 ? `<span class="photo-carousel__tag">${locale === 'en' ? 'Concept visualisation' : 'Wizualizacja koncepcyjna'}</span>` : ''}</div>`).join('');
+  const slides = images.map(([file, plCategory, enCategory, plTitle, enTitle, plCopy, enCopy]) => `<article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="${base}public/${file === 'homepage_render.png' ? 'renders/' : 'external/'}${file}" alt="${locale === 'en' ? enCategory : plCategory}" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">${locale === 'en' ? enCategory : plCategory}</p><h3>${locale === 'en' ? enTitle : plTitle}</h3><p class="photo-carousel__copy">${locale === 'en' ? enCopy : plCopy}</p></div></article>`).join('');
   const stats = data.stats.map(([value, label]) => `<div class="stat-card"><span class="stat-card__value">${value}</span><span class="stat-card__label">${label}</span></div>`).join('');
   const checklist = data.checklist.map((item) => `<li>${item}</li>`).join('');
   const socialCards = socials.map(([icon, name, handle, href]) => `<a class="social-updates__card" href="${href}" target="_blank" rel="noopener noreferrer"><img src="${base}public/external/${icon}" alt="" aria-hidden="true"><span class="social-updates__name">${name}</span><span class="social-updates__handle">${handle}</span><span class="social-updates__action">${data.socialAction} <span aria-hidden="true">↗</span></span></a>`).join('');
