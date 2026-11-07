@@ -63,14 +63,15 @@
     </section>
 
     <section class="home-panel home-panel--carousel">
-      <div class="photo-carousel container">
+      <div class="photo-carousel">
         <h2 class="photo-carousel__static-title">APPLICATIONS</h2>
-        <div class="photo-carousel__viewport" aria-live="polite">
+        <div class="photo-carousel__viewport" role="region" aria-label="APPLICATIONS" aria-live="off" tabindex="0">
           <div class="photo-carousel__track" id="photoTrack"><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="../public/external/image3360-xpg-2200h.png" alt="Petrochemicals" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Petrochemicals</p><h3>INSPECTION</h3><p class="photo-carousel__copy">Gizmo helps monitor installations and detect problems before they stop production.</p></div></article><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="../public/external/rectangle123360-hanq-900h.png" alt="Agriculture" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Agriculture</p><h3>HARVESTING</h3><p class="photo-carousel__copy">Gizmo’s modular design supports repetitive tasks in growing environments.</p></div></article><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="../public/external/rectangle133360-7wul-800h.png" alt="Logistics" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Logistics</p><h3>TRANSPORT</h3><p class="photo-carousel__copy">Gizmo moves loads wherever you need it most.</p></div></article><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="../public/renders/homepage_render.png" alt="Manufacturing" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Manufacturing</p><h3>AUTOMATION</h3><p class="photo-carousel__copy">Flexible robotics adapt to your workflow.</p></div></article></div>
           <div class="photo-carousel__controls">
             <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" type="button" aria-label="Previous photo">←</button>
             <div class="photo-carousel__dots" id="photoDots"></div>
             <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" type="button" aria-label="Next photo">→</button>
+            <button class="photo-carousel__toggle" id="photoAutoplay" type="button" aria-label="Pause automatic sliding" data-label-pause="Pause automatic sliding" data-label-play="Resume automatic sliding">Ⅱ</button>
           </div>
         </div>
       </div>
@@ -78,27 +79,22 @@
 
     <section class="home-panel home-panel--value">
       <section id="value" class="value-section container">
-        <h2>How does Gizmo support your business?</h2>
-        <p>Gizmo takes over repetitive physical work in your crops — from harvesting to transport — without changing your existing infrastructure.</p>
-        <p class="value-question">How much staff and training does deployment require? Less than you think — our team supports the launch from start to finish.</p>
+        <span class="value-section__eyebrow">Robotics for real-world challenges</span>
+        <h2>What can we improve?</h2>
+        <p>Automation should address the day-to-day needs of a growing operation without turning the way it works upside down.</p>
       </section>
 
-      <section class="stats-grid container"><div class="stat-card"><span class="stat-card__value">[value to be decided] €/ha per year</span><span class="stat-card__label">potential labour cost savings</span></div><div class="stat-card"><span class="stat-card__value">Staffing crisis</span><span class="stat-card__label">the growing shortage of seasonal workers</span></div><div class="stat-card"><span class="stat-card__value">RaaS</span><span class="stat-card__label">deployment without a loan — pay for the service</span></div></section>
+      <section class="value-challenges container" aria-label="Challenges Gizmo is designed to address">
+        <article class="value-challenge"><span class="value-challenge__number">01</span><h3>Seasonal labour shortages</h3><p>A shortage of seasonal workers can make it harder to keep crop operations running smoothly.</p></article><article class="value-challenge"><span class="value-challenge__number">02</span><h3>Repetitive physical work</h3><p>Harvesting, transport and other physical tasks take time that a team could spend on other responsibilities.</p></article><article class="value-challenge"><span class="value-challenge__number">03</span><h3>Existing infrastructure</h3><p>Automation should work with the conditions and layout of the site where it will be used.</p></article>
+      </section>
 
-      <section class="checklist-section container">
-        <ul><li>A modular solution tailored to you</li><li>Deploy without rebuilding your greenhouse</li></ul>
+      <section class="value-summary container">
+        <p class="value-question">Gizmo is modular robotics designed for repetitive tasks and existing infrastructure.</p>
+        <ul class="checklist-section"><li>A modular solution tailored to you</li><li>Deploy without rebuilding your greenhouse</li></ul>
       </section>
 
       <section class="deployment-link container">
         <a href="./deployments.html" class="btn btn--primary">Explore deployment examples</a>
-      </section>
-
-      <section class="audience-links container" aria-labelledby="audience-links-title">
-        <h2 id="audience-links-title">More information</h2>
-        <div class="audience-links__items">
-          <a class="btn btn--outline" href="./investor.html">Information for investors</a>
-          <a class="btn btn--outline" href="./client.html">Information for clients</a>
-        </div>
       </section>
     </section>
 
@@ -122,15 +118,40 @@
 
     <section class="home-panel home-panel--team">
       <section class="team-carousel-section" aria-labelledby="team-carousel-title">
+        <header class="team-carousel__intro container">
+          <span class="social-updates__eyebrow">THE PEOPLE BEHIND GIZMO</span>
+          <h2>Meet our team</h2>
+          <p>A multidisciplinary team turning practical challenges into dependable automation.</p>
+        </header>
         <div class="team-carousel" data-team-carousel>
           <div class="team-carousel__identity">
-            <span class="team-carousel__identity-role" data-team-role>Embedded Systems Engineer</span>
-            <h2 id="team-carousel-title" data-team-name>Feliks Brzeziński</h2>
+            <span class="team-carousel__identity-role" data-team-role>Social Media & IT</span>
+            <h2 id="team-carousel-title" data-team-name>Weronika Arciuch</h2>
           </div>
           <button class="team-carousel__arrow team-carousel__arrow--prev" type="button" data-team-prev aria-label="Previous team member">←</button>
-          <div class="team-carousel__members" role="tablist" aria-label="Meet our team"><button class="team-carousel__member team-carousel__member--active" type="button" role="tab" aria-selected="true" aria-controls="team-detail-0" data-team-member="0" data-team-name="Feliks Brzeziński" data-team-role="Embedded Systems Engineer" tabindex="0"><span class="team-carousel__member-ring"><img src="../public/team_photos/bfeliks.png" alt="Feliks Brzeziński" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-1" data-team-member="1" data-team-name="Kacper Olszewski" data-team-role="Lead Mechanical Engineer" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/okacper.png" alt="Kacper Olszewski" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-2" data-team-member="2" data-team-name="Weronika Arciuch" data-team-role="Social Media & IT" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/arciuchw.png" alt="Weronika Arciuch" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-3" data-team-member="3" data-team-name="Zuzanna Miśkiewicz" data-team-role="Business & Client Relations" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/mzuzanna.png" alt="Zuzanna Miśkiewicz" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-4" data-team-member="4" data-team-name="Norbert Ciesielski" data-team-role="Electronics Designer" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/nciesielski.png" alt="Norbert Ciesielski" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-5" data-team-member="5" data-team-name="Antek Banuch" data-team-role="Embedded Software Developer" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/bantoni.png" alt="Antek Banuch" /></span></button></div>
+          <div class="team-carousel__members" role="tablist" aria-label="Meet our team"><button class="team-carousel__member team-carousel__member--active" type="button" role="tab" aria-selected="true" aria-controls="team-detail-0" data-team-member="0" data-team-name="Weronika Arciuch" data-team-role="Social Media & IT" tabindex="0"><span class="team-carousel__member-ring"><img src="../public/team_photos/arciuchw.png" alt="Weronika Arciuch" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-1" data-team-member="1" data-team-name="Zuzanna Miśkiewicz" data-team-role="Business & Client Relations" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/mzuzanna.png" alt="Zuzanna Miśkiewicz" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-2" data-team-member="2" data-team-name="Norbert Ciesielski" data-team-role="Electronics Designer" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/nciesielski.png" alt="Norbert Ciesielski" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-3" data-team-member="3" data-team-name="Antek Banuch" data-team-role="Embedded Software Developer" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/bantoni.png" alt="Antek Banuch" /></span></button></div>
           <button class="team-carousel__arrow team-carousel__arrow--next" type="button" data-team-next aria-label="Next team member">→</button>
-          <article class="team-carousel__details" data-team-details aria-live="polite"><div id="team-detail-0" class="team-carousel__detail team-carousel__detail--active" data-team-detail="0" ><p>Develops the electronics and software behind Gizmo.</p></div><div id="team-detail-1" class="team-carousel__detail" data-team-detail="1" hidden><p>Designs the mechanical systems that make Gizmo modular.</p></div><div id="team-detail-2" class="team-carousel__detail" data-team-detail="2" hidden><p>Leads project communications and social media.</p></div><div id="team-detail-3" class="team-carousel__detail" data-team-detail="3" hidden><p>Builds business partnerships and client relationships.</p></div><div id="team-detail-4" class="team-carousel__detail" data-team-detail="4" hidden><p>Designs the electronics that control the Gizmo robot.</p></div><div id="team-detail-5" class="team-carousel__detail" data-team-detail="5" hidden><p>Develops low-level software for the robot.</p></div></article>
+          <article class="team-carousel__details" data-team-details aria-live="polite"><div id="team-detail-0" class="team-carousel__detail team-carousel__detail--active" data-team-detail="0" ><p>Leads project communications and social media.</p></div><div id="team-detail-1" class="team-carousel__detail" data-team-detail="1" hidden><p>Builds business partnerships and client relationships.</p></div><div id="team-detail-2" class="team-carousel__detail" data-team-detail="2" hidden><p>Designs the electronics that control the Gizmo robot.</p></div><div id="team-detail-3" class="team-carousel__detail" data-team-detail="3" hidden><p>Develops low-level software for the robot.</p></div></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="home-panel home-panel--audience">
+      <section class="audience-section container" aria-labelledby="audience-links-title">
+        <span class="social-updates__eyebrow">Who we build Gizmo for</span>
+        <h2 id="audience-links-title">Explore the project from your perspective</h2>
+        <p class="audience-section__intro">Choose the information that best matches what you are looking for.</p>
+        <div class="audience-links__items">
+          <a class="audience-card audience-card--investor" href="./investor.html">
+            <span class="audience-card__title">Information for investors</span>
+            <span class="audience-card__copy">Business model, market opportunity and technology development.</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="audience-card audience-card--client" href="./client.html">
+            <span class="audience-card__title">Information for clients</span>
+            <span class="audience-card__copy">Deployment options and support for your growing operation.</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
     </section>

@@ -63,14 +63,15 @@
     </section>
 
     <section class="home-panel home-panel--carousel">
-      <div class="photo-carousel container">
+      <div class="photo-carousel">
         <h2 class="photo-carousel__static-title">ZASTOSOWANIA</h2>
-        <div class="photo-carousel__viewport" aria-live="polite">
+        <div class="photo-carousel__viewport" role="region" aria-label="ZASTOSOWANIA" aria-live="off" tabindex="0">
           <div class="photo-carousel__track" id="photoTrack"><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="./public/external/image3360-xpg-2200h.png" alt="Petrochemia" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Petrochemia</p><h3>INSPEKCJA</h3><p class="photo-carousel__copy">Gizmo pomaga monitorować instalacje i wykrywać problemy zanim zatrzymają produkcję.</p></div></article><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="./public/external/rectangle123360-hanq-900h.png" alt="Rolnictwo" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Rolnictwo</p><h3>ZBIORY</h3><p class="photo-carousel__copy">Modułowa konstrukcja Gizmo wspiera powtarzalne zadania w uprawach.</p></div></article><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="./public/external/rectangle133360-7wul-800h.png" alt="Logistyka" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Logistyka</p><h3>TRANSPORT</h3><p class="photo-carousel__copy">Gizmo przenosi ładunki tam, gdzie potrzebujesz go najbardziej.</p></div></article><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="./public/renders/homepage_render.png" alt="Produkcja" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Produkcja</p><h3>AUTOMATYZACJA</h3><p class="photo-carousel__copy">Elastyczna robotyka dopasowuje się do Twojego procesu pracy.</p></div></article></div>
           <div class="photo-carousel__controls">
             <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" type="button" aria-label="Poprzednie zdjęcie">←</button>
             <div class="photo-carousel__dots" id="photoDots"></div>
             <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" type="button" aria-label="Następne zdjęcie">→</button>
+            <button class="photo-carousel__toggle" id="photoAutoplay" type="button" aria-label="Wstrzymaj automatyczne przesuwanie" data-label-pause="Wstrzymaj automatyczne przesuwanie" data-label-play="Wznów automatyczne przesuwanie">Ⅱ</button>
           </div>
         </div>
       </div>
@@ -78,27 +79,22 @@
 
     <section class="home-panel home-panel--value">
       <section id="value" class="value-section container">
-        <h2>Jak Gizmo wspiera Twój biznes?</h2>
-        <p>Gizmo przejmuje powtarzalną, fizyczną pracę w Twoich uprawach — od zbiorów po transport — bez ingerencji w istniejącą infrastrukturę.</p>
-        <p class="value-question">Ile załogi i szkoleń wymaga wdrożenie? Mniej, niż myślisz — nasz zespół dogląda uruchomienia od początku do końca.</p>
+        <span class="value-section__eyebrow">Robotyka dla realnych wyzwań</span>
+        <h2>Co możemy usprawnić?</h2>
+        <p>Automatyzacja powinna odpowiadać na codzienne potrzeby gospodarstwa — bez wywracania jego pracy do góry nogami.</p>
       </section>
 
-      <section class="stats-grid container"><div class="stat-card"><span class="stat-card__value">[ustal wartość] €/ha rocznie</span><span class="stat-card__label">potencjalnej oszczędności na kosztach pracy</span></div><div class="stat-card"><span class="stat-card__value">Kryzys kadrowy</span><span class="stat-card__label">rosnący brak sezonowych pracowników</span></div><div class="stat-card"><span class="stat-card__value">RaaS</span><span class="stat-card__label">wdrożenie bez kredytu — płacisz za usługę</span></div></section>
+      <section class="value-challenges container" aria-label="Wyzwania, którym odpowiada Gizmo">
+        <article class="value-challenge"><span class="value-challenge__number">01</span><h3>Braki kadrowe</h3><p>Niedobór pracowników sezonowych utrudnia utrzymanie ciągłości prac w uprawie.</p></article><article class="value-challenge"><span class="value-challenge__number">02</span><h3>Powtarzalna praca</h3><p>Zbiory, transport i inne fizyczne zadania zajmują czas, który zespół może przeznaczyć na inne obowiązki.</p></article><article class="value-challenge"><span class="value-challenge__number">03</span><h3>Istniejąca infrastruktura</h3><p>Automatyzacja powinna współpracować z warunkami i układem miejsca, w którym będzie działać.</p></article>
+      </section>
 
-      <section class="checklist-section container">
-        <ul><li>Modułowe rozwiązanie dopasowane do Ciebie</li><li>Wdrażamy bez przebudowy Twojej szklarni</li></ul>
+      <section class="value-summary container">
+        <p class="value-question">Gizmo to modułowa robotyka projektowana z myślą o powtarzalnych zadaniach i istniejącej infrastrukturze.</p>
+        <ul class="checklist-section"><li>Modułowe rozwiązanie dopasowane do Ciebie</li><li>Wdrażamy bez przebudowy Twojej szklarni</li></ul>
       </section>
 
       <section class="deployment-link container">
         <a href="pl/wdrozenia.html" class="btn btn--primary">Poznaj przykłady wdrożeń</a>
-      </section>
-
-      <section class="audience-links container" aria-labelledby="audience-links-title">
-        <h2 id="audience-links-title">Więcej informacji</h2>
-        <div class="audience-links__items">
-          <a class="btn btn--outline" href="pl/investor.html">Informacje dla inwestorów</a>
-          <a class="btn btn--outline" href="pl/client.html">Informacje dla klientów</a>
-        </div>
       </section>
     </section>
 
@@ -122,6 +118,11 @@
 
     <section class="home-panel home-panel--team">
       <section class="team-carousel-section" aria-labelledby="team-carousel-title">
+        <header class="team-carousel__intro container">
+          <span class="social-updates__eyebrow">LUDZIE STOJĄCY ZA GIZMO</span>
+          <h2>Poznaj nasz zespół</h2>
+          <p>Łączymy różne kompetencje, aby zamieniać praktyczne wyzwania w niezawodną automatyzację.</p>
+        </header>
         <div class="team-carousel" data-team-carousel>
           <div class="team-carousel__identity">
             <span class="team-carousel__identity-role" data-team-role>Marketing i Social Media</span>
@@ -131,6 +132,26 @@
           <div class="team-carousel__members" role="tablist" aria-label="Poznaj nasz zespół"><button class="team-carousel__member team-carousel__member--active" type="button" role="tab" aria-selected="true" aria-controls="team-detail-0" data-team-member="0" data-team-name="Weronika Arciuch" data-team-role="Marketing i Social Media" tabindex="0"><span class="team-carousel__member-ring"><img src="./public/team_photos/arciuchw.png" alt="Weronika Arciuch" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-1" data-team-member="1" data-team-name="Zuzanna Miśkiewicz" data-team-role="Biznes i Relacje z Klientem" tabindex="-1"><span class="team-carousel__member-ring"><img src="./public/team_photos/mzuzanna.png" alt="Zuzanna Miśkiewicz" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-2" data-team-member="2" data-team-name="Norbert Ciesielski" data-team-role="Projektant Elektroniki" tabindex="-1"><span class="team-carousel__member-ring"><img src="./public/team_photos/nciesielski.png" alt="Norbert Ciesielski" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-3" data-team-member="3" data-team-name="Antek Banuch" data-team-role="Programista Niskopoziomowy" tabindex="-1"><span class="team-carousel__member-ring"><img src="./public/team_photos/bantoni.png" alt="Antek Banuch" /></span></button></div>
           <button class="team-carousel__arrow team-carousel__arrow--next" type="button" data-team-next aria-label="Następna osoba">→</button>
           <article class="team-carousel__details" data-team-details aria-live="polite"><div id="team-detail-0" class="team-carousel__detail team-carousel__detail--active" data-team-detail="0" ><p>Dba o komunikację projektu i jego obecność w mediach społecznościowych.</p></div><div id="team-detail-1" class="team-carousel__detail" data-team-detail="1" hidden><p>Rozwija współpracę biznesową i relacje z klientami.</p></div><div id="team-detail-2" class="team-carousel__detail" data-team-detail="2" hidden><p>Projektuje elektronikę sterującą robotem Gizmo.</p></div><div id="team-detail-3" class="team-carousel__detail" data-team-detail="3" hidden><p>Tworzy oprogramowanie niskopoziomowe dla robota.</p></div></article>
+        </div>
+      </section>
+    </section>
+
+    <section class="home-panel home-panel--audience">
+      <section class="audience-section container" aria-labelledby="audience-links-title">
+        <span class="social-updates__eyebrow">Dla kogo tworzymy Gizmo</span>
+        <h2 id="audience-links-title">Poznaj projekt z Twojej perspektywy</h2>
+        <p class="audience-section__intro">Wybierz informacje dopasowane do tego, czego szukasz.</p>
+        <div class="audience-links__items">
+          <a class="audience-card audience-card--investor" href="pl/investor.html">
+            <span class="audience-card__title">Informacje dla inwestorów</span>
+            <span class="audience-card__copy">Model biznesowy, rynek i rozwój technologii.</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="audience-card audience-card--client" href="pl/client.html">
+            <span class="audience-card__title">Informacje dla klientów</span>
+            <span class="audience-card__copy">Możliwości wdrożenia i wsparcie dla Twojej uprawy.</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
     </section>

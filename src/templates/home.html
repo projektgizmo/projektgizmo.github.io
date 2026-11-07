@@ -63,14 +63,15 @@
     </section>
 
     <section class="home-panel home-panel--carousel">
-      <div class="photo-carousel container">
+      <div class="photo-carousel">
         <h2 class="photo-carousel__static-title">{{carouselTitle}}</h2>
-        <div class="photo-carousel__viewport" aria-live="polite">
+        <div class="photo-carousel__viewport" role="region" aria-label="{{carouselTitle}}" aria-live="off" tabindex="0">
           <div class="photo-carousel__track" id="photoTrack">{{slides}}</div>
           <div class="photo-carousel__controls">
             <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" type="button" aria-label="{{previous}}">←</button>
             <div class="photo-carousel__dots" id="photoDots"></div>
             <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" type="button" aria-label="{{next}}">→</button>
+            <button class="photo-carousel__toggle" id="photoAutoplay" type="button" aria-label="{{carouselPause}}" data-label-pause="{{carouselPause}}" data-label-play="{{carouselPlay}}">Ⅱ</button>
           </div>
         </div>
       </div>
@@ -78,27 +79,22 @@
 
     <section class="home-panel home-panel--value">
       <section id="value" class="value-section container">
+        <span class="value-section__eyebrow">{{valueEyebrow}}</span>
         <h2>{{valueTitle}}</h2>
         <p>{{valueText}}</p>
-        <p class="value-question">{{valueQuestion}}</p>
       </section>
 
-      <section class="stats-grid container">{{stats}}</section>
+      <section class="value-challenges container" aria-label="{{valueChallengesLabel}}">
+        {{valueChallenges}}
+      </section>
 
-      <section class="checklist-section container">
-        <ul>{{checklist}}</ul>
+      <section class="value-summary container">
+        <p class="value-question">{{valueQuestion}}</p>
+        <ul class="checklist-section">{{checklist}}</ul>
       </section>
 
       <section class="deployment-link container">
         <a href="{{deploymentsUrl}}" class="btn btn--primary">{{deploymentsCta}}</a>
-      </section>
-
-      <section class="audience-links container" aria-labelledby="audience-links-title">
-        <h2 id="audience-links-title">{{audienceLinksTitle}}</h2>
-        <div class="audience-links__items">
-          <a class="btn btn--outline" href="{{investorUrl}}">{{investorLinkLabel}}</a>
-          <a class="btn btn--outline" href="{{clientUrl}}">{{clientLinkLabel}}</a>
-        </div>
       </section>
     </section>
 
@@ -122,6 +118,11 @@
 
     <section class="home-panel home-panel--team">
       <section class="team-carousel-section" aria-labelledby="team-carousel-title">
+        <header class="team-carousel__intro container">
+          <span class="social-updates__eyebrow">{{teamEyebrow}}</span>
+          <h2>{{teamTitle}}</h2>
+          <p>{{teamText}}</p>
+        </header>
         <div class="team-carousel" data-team-carousel>
           <div class="team-carousel__identity">
             <span class="team-carousel__identity-role" data-team-role>{{firstTeamRole}}</span>
@@ -131,6 +132,26 @@
           <div class="team-carousel__members" role="tablist" aria-label="{{teamTitle}}">{{teamMembers}}</div>
           <button class="team-carousel__arrow team-carousel__arrow--next" type="button" data-team-next aria-label="{{nextPerson}}">→</button>
           <article class="team-carousel__details" data-team-details aria-live="polite">{{teamDetails}}</article>
+        </div>
+      </section>
+    </section>
+
+    <section class="home-panel home-panel--audience">
+      <section class="audience-section container" aria-labelledby="audience-links-title">
+        <span class="social-updates__eyebrow">{{audienceEyebrow}}</span>
+        <h2 id="audience-links-title">{{audienceLinksTitle}}</h2>
+        <p class="audience-section__intro">{{audienceIntro}}</p>
+        <div class="audience-links__items">
+          <a class="audience-card audience-card--investor" href="{{investorUrl}}">
+            <span class="audience-card__title">{{investorLinkLabel}}</span>
+            <span class="audience-card__copy">{{investorLinkText}}</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="audience-card audience-card--client" href="{{clientUrl}}">
+            <span class="audience-card__title">{{clientLinkLabel}}</span>
+            <span class="audience-card__copy">{{clientLinkText}}</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
     </section>
