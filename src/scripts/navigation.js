@@ -2,7 +2,7 @@ const menuButton = document.querySelector('.navbar__toggle');
 const navigation = document.getElementById('site-navigation');
 
 if (menuButton && navigation) {
-  const mobileViewport = window.matchMedia('(max-width: 767px)');
+  const mobileViewport = window.matchMedia('(max-width: 1150px)');
   const menuLabel = document.documentElement.lang === 'en'
     ? { open: 'Open menu', close: 'Close menu' }
     : { open: 'Otwórz menu', close: 'Zamknij menu' };

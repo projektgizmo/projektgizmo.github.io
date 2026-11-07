@@ -57,7 +57,7 @@
     {"name": "Weronika Arciuch", "role": "Social Media & IT", "bio": "Leads project communications and social media.", "photo": "arciuchw.png"},
     {"name": "Zuzanna Miśkiewicz", "role": "Business & Client Relations", "bio": "Builds business partnerships and client relationships.", "photo": "mzuzanna.png"},
     {"name": "Norbert Ciesielski", "role": "Electronics Designer", "bio": "Designs the electronics that control the Gizmo robot.", "photo": "nciesielski.png"},
-    {"name": "Antek Banuch", "role": "Embedded Software Developer", "bio": "Develops low-level software for the robot.", "photo": "bantoni.png"}
+    {"name": "Antoni Banuch", "role": "Embedded Software Developer", "bio": "Develops low-level software for the robot.", "photo": "bantoni.png"}
   ],
   "updatesEyebrow": "Stay up to date",
   "updatesTitle": "Latest updates",

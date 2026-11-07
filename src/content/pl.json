@@ -57,7 +57,7 @@
     {"name": "Weronika Arciuch", "role": "Marketing i Social Media", "bio": "Dba o komunikację projektu i jego obecność w mediach społecznościowych.", "photo": "arciuchw.png"},
     {"name": "Zuzanna Miśkiewicz", "role": "Biznes i Relacje z Klientem", "bio": "Rozwija współpracę biznesową i relacje z klientami.", "photo": "mzuzanna.png"},
     {"name": "Norbert Ciesielski", "role": "Projektant Elektroniki", "bio": "Projektuje elektronikę sterującą robotem Gizmo.", "photo": "nciesielski.png"},
-    {"name": "Antek Banuch", "role": "Programista Niskopoziomowy", "bio": "Tworzy oprogramowanie niskopoziomowe dla robota.", "photo": "bantoni.png"}
+    {"name": "Antoni Banuch", "role": "Programista Niskopoziomowy", "bio": "Tworzy oprogramowanie niskopoziomowe dla robota.", "photo": "bantoni.png"}
   ],
   "updatesEyebrow": "Bądź na bieżąco",
   "updatesTitle": "Aktualności",

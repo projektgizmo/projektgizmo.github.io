@@ -7,10 +7,21 @@ if (teamCarousel) {
   const identityRole = teamCarousel.querySelector('[data-team-role]');
   let activeIndex = 0;
 
+  const animateChange = (element) => {
+    element.classList.remove('team-carousel__content--changing');
+    void element.offsetWidth;
+    element.classList.add('team-carousel__content--changing');
+    element.addEventListener('animationend', () => {
+      element.classList.remove('team-carousel__content--changing');
+    }, { once: true });
+  };
+
   const showMember = (index) => {
     activeIndex = (index + members.length) % members.length;
     identityName.textContent = members[activeIndex].dataset.teamName;
     identityRole.textContent = members[activeIndex].dataset.teamRole;
+    animateChange(identityName);
+    animateChange(identityRole);
     members.forEach((member, memberIndex) => {
       const active = memberIndex === activeIndex;
       let position = memberIndex - activeIndex;
@@ -27,6 +38,7 @@ if (teamCarousel) {
       const active = detailIndex === activeIndex;
       detail.hidden = !active;
       detail.classList.toggle('team-carousel__detail--active', active);
+      if (active) animateChange(detail);
     });
   };
 

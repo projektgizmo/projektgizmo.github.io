@@ -22,7 +22,7 @@ if (photoTrack) {
   };
   const updateAutoplayToggle = () => {
     const shouldPause = !pausedByUser;
-    autoplayToggle.textContent = shouldPause ? 'Ⅱ' : '▶';
+    autoplayToggle.classList.toggle('photo-carousel__toggle--paused', !shouldPause);
     autoplayToggle.setAttribute('aria-label', shouldPause ? autoplayToggle.dataset.labelPause : autoplayToggle.dataset.labelPlay);
   };
   const goToSlide = (index) => {
