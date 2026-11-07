@@ -1,0 +1,54 @@
+{
+  "pl": {
+    "mockLabel": "Makieta podstrony",
+    "sectionTitle": "Co oferuje Projekt Gizmo?",
+    "investor": {
+      "description": "Informacje dla inwestorów zainteresowanych rozwojem Projektu Gizmo.",
+      "title": "Dla inwestorów",
+      "intro": "Budujemy modułową robotykę dla nowoczesnego rolnictwa. Ta makieta przedstawia obszary, o których chcemy rozmawiać z partnerami inwestycyjnymi.",
+      "cards": [
+        {"title": "Skalowalny model", "text": "Model Robotics-as-a-Service (RaaS) pozwala dopasować zakres wdrożenia do potrzeb i skali gospodarstwa."},
+        {"title": "Rynek z realną potrzebą", "text": "Automatyzacja powtarzalnych zadań może wesprzeć producentów mierzących się z niedoborem pracowników sezonowych."},
+        {"title": "Rozwój technologii", "text": "Rozwijamy modułową platformę, którą można dostosowywać do kolejnych zastosowań i środowisk pracy."}
+      ],
+      "ctaText": "Chcesz poznać projekt i porozmawiać o możliwościach współpracy?"
+    },
+    "client": {
+      "description": "Informacje dla klientów zainteresowanych wdrożeniem robotów Gizmo.",
+      "title": "Dla klientów",
+      "intro": "Sprawdźmy, jak roboty Gizmo mogą wesprzeć codzienną pracę w Twojej uprawie. Każde wdrożenie zaczynamy od poznania procesu i warunków na miejscu.",
+      "cards": [
+        {"title": "Dobór rozwiązania", "text": "Wspólnie określamy zadania, które można zautomatyzować, i dobieramy konfigurację do rodzaju uprawy."},
+        {"title": "Wdrożenie i wsparcie", "text": "Planujemy uruchomienie z uwzględnieniem istniejącej infrastruktury i wspieramy zespół podczas testów."},
+        {"title": "Praktyczna optymalizacja", "text": "Obserwujemy działanie rozwiązania i szukamy usprawnień, które pomagają utrzymać płynny przepływ pracy."}
+      ],
+      "ctaText": "Opowiedz nam o swojej uprawie i wyzwaniach operacyjnych."
+    }
+  },
+  "en": {
+    "mockLabel": "Page mockup",
+    "sectionTitle": "What does Project Gizmo offer?",
+    "investor": {
+      "description": "Information for investors interested in the development of Project Gizmo.",
+      "title": "For Investors",
+      "intro": "We are building modular robotics for modern agriculture. This mockup outlines topics we would like to discuss with investment partners.",
+      "cards": [
+        {"title": "A scalable model", "text": "The Robotics-as-a-Service (RaaS) model can adapt the scope of a deployment to the needs and size of each operation."},
+        {"title": "A market with a real need", "text": "Automating repetitive tasks can support growers facing a shortage of seasonal workers."},
+        {"title": "Technology development", "text": "We are developing a modular platform that can be adapted to new applications and working environments."}
+      ],
+      "ctaText": "Would you like to learn more about the project and discuss opportunities to work together?"
+    },
+    "client": {
+      "description": "Information for clients interested in deploying Gizmo robots.",
+      "title": "For Clients",
+      "intro": "Let's explore how Gizmo robots could support day-to-day work in your crops. We start every deployment by learning about your processes and working environment.",
+      "cards": [
+        {"title": "The right solution", "text": "Together, we identify tasks that could be automated and select a configuration suited to your crops."},
+        {"title": "Deployment and support", "text": "We plan the launch around your existing infrastructure and support your team during testing."},
+        {"title": "Practical optimisation", "text": "We observe the solution in operation and look for improvements that help keep work flowing smoothly."}
+      ],
+      "ctaText": "Tell us about your crops and operational challenges."
+    }
+  }
+}

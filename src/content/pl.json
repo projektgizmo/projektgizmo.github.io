@@ -2,7 +2,7 @@
   "language": "pl",
   "title": "Gizmo — Skalowalna robotyka dla Twoich upraw",
   "description": "Gizmo — skalowalna robotyka dla Twoich upraw.",
-  "navigation": ["Strona główna", "Historia", "Zespół", "Wdrożenia", "Galeria", "Kontakt"],
+  "navigation": ["Strona główna", "Historia", "Zespół", "Wdrożenia", "Galeria", "Kontakt", "Inwestorzy", "Klienci"],
   "hero": "skalowalna robotyka dla Twoich upraw",
   "heroStage1": "poznaj robota Gizmo",
   "heroStage2": "Gizmo porusza się po uprawie",
@@ -14,6 +14,10 @@
   "skipIntro": "Pomiń animację ↓",
   "renderPlaceholder": "Render Gizmo w akcji — placeholder",
   "carouselTitle": "ZASTOSOWANIA",
+  "historyEyebrow": "Nasza droga",
+  "historyTitle": "Od pomysłu do robota",
+  "historyText": "Poznaj kolejne etapy rozwoju modułowego robota Gizmo.",
+  "historyCta": "Zobacz historię projektu",
   "previous": "Poprzednie zdjęcie",
   "next": "Następne zdjęcie",
   "valueTitle": "Jak Gizmo wspiera Twój biznes?",
@@ -22,12 +26,15 @@
   "stats": [["[ustal wartość] €/ha rocznie", "potencjalnej oszczędności na kosztach pracy"], ["Kryzys kadrowy", "rosnący brak sezonowych pracowników"], ["RaaS", "wdrożenie bez kredytu — płacisz za usługę"]],
   "checklist": ["Modułowe rozwiązanie dopasowane do Ciebie", "Wdrażamy bez przebudowy Twojej szklarni"],
   "deploymentsCta": "Poznaj przykłady wdrożeń",
+  "audienceLinksTitle": "Więcej informacji",
+  "investorLinkLabel": "Informacje dla inwestorów",
+  "clientLinkLabel": "Informacje dla klientów",
   "partnersTitle": "Z kim współpracujemy",
   "partner": "Logo partnera",
   "foundersTitle": "Nasz Zespół",
   "founders": [
-    {"name": "Feliks Brzeziński", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "kocha szczury"},
-    {"name": "Kacper Olszewski", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "Kocha szczury."}
+    {"name": "Feliks Brzeziński", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "Rozwija elektronikę i oprogramowanie robota Gizmo.", "photo": "bfeliks.png"},
+    {"name": "Kacper Olszewski", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "Projektuje mechanikę modułowego robota Gizmo.", "photo": "okacper.png"}
   ],
   "teamEyebrow": "LUDZIE STOJĄCY ZA GIZMO",
   "teamTitle": "Poznaj nasz zespół",
@@ -35,11 +42,10 @@
   "previousPerson": "Poprzednia osoba",
   "nextPerson": "Następna osoba",
   "team": [
-    {"name": "Weronika Arciuch", "role": "Marketing i Social Media", "bio": "gizmo gizmo na parkiecie"},
-    {"name": "Zuzanna Miśkiewicz", "role": "Biznes i Relacje z Klientem", "bio": "gizmo gizmo na parkiecie"},
-    {"name": "Norbert Ciesielski", "role": "Projektant Elektroniki", "bio": "gizmo gizmo na parkiecie"},
-    {"name": "Antek Banuch", "role": "Programista Niskopoziomowy", "bio": "gizmo gizmo na parkiecie"},
-    {"name": "?", "role": "Członek zespołu", "bio": "gizmo gizmo na parkiecie"}
+    {"name": "Weronika Arciuch", "role": "Marketing i Social Media", "bio": "Dba o komunikację projektu i jego obecność w mediach społecznościowych.", "photo": "arciuchw.png"},
+    {"name": "Zuzanna Miśkiewicz", "role": "Biznes i Relacje z Klientem", "bio": "Rozwija współpracę biznesową i relacje z klientami.", "photo": "mzuzanna.png"},
+    {"name": "Norbert Ciesielski", "role": "Projektant Elektroniki", "bio": "Projektuje elektronikę sterującą robotem Gizmo.", "photo": "nciesielski.png"},
+    {"name": "Antek Banuch", "role": "Programista Niskopoziomowy", "bio": "Tworzy oprogramowanie niskopoziomowe dla robota.", "photo": "bantoni.png"}
   ],
   "updatesEyebrow": "Bądź na bieżąco",
   "updatesTitle": "Aktualności",

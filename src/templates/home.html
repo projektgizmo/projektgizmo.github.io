@@ -92,6 +92,14 @@
       <section class="deployment-link container">
         <a href="{{deploymentsUrl}}" class="btn btn--primary">{{deploymentsCta}}</a>
       </section>
+
+      <section class="audience-links container" aria-labelledby="audience-links-title">
+        <h2 id="audience-links-title">{{audienceLinksTitle}}</h2>
+        <div class="audience-links__items">
+          <a class="btn btn--outline" href="{{investorUrl}}">{{investorLinkLabel}}</a>
+          <a class="btn btn--outline" href="{{clientUrl}}">{{clientLinkLabel}}</a>
+        </div>
+      </section>
     </section>
 
     <section class="home-panel home-panel--proof">
@@ -137,16 +145,25 @@
         <div class="social-updates__grid">{{socialCards}}</div>
       </section>
     </section>
+
+    <section class="home-panel home-panel--history">
+      <div class="history-promo container">
+        <span class="social-updates__eyebrow">{{historyEyebrow}}</span>
+        <h2>{{historyTitle}}</h2>
+        <p>{{historyText}}</p>
+        <a href="{{historyUrl}}" class="btn btn--primary">{{historyCta}}</a>
+      </div>
+    </section>
   </main>
 
   <footer id="contact" class="footer">
     <div class="container">
       <h2 class="section-title">{{contactTitle}}</h2>
-      <div style="height: 24px;"></div>
       <address class="footer__contact-info">
         <p><img src="{{base}}public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
-        <p><img src="{{base}}public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/">@projekt_gizmo</a></p>
-        <p><img src="{{base}}public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/">Projekt Gizmo</a></p>
+        <p><img src="{{base}}public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noreferrer">@projekt_gizmo</a></p>
+        <p><img src="{{base}}public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+        <p><img src="{{base}}public/external/facebook-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.facebook.com/profile.php?id=61575747850184" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
       </address>
     </div>
   </footer>

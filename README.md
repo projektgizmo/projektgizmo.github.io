@@ -12,7 +12,7 @@ as the GitHub Pages entry point.
 .
 ├── pl/index.html           # Generated Polish home page
 ├── pl/*.html               # Generated Polish pages
-├── en/index.html           # Reserved English output
+├── en/*.html               # Generated English pages
 ├── index.html              # GitHub Pages entry point
 ├── public/
 │   └── external/           # Images and other static assets
@@ -23,10 +23,12 @@ as the GitHub Pages entry point.
     └── styles/              # Shared and 404-page stylesheets
 ```
 
-The Polish site is currently the maintained version. Its pages use the source
-templates in `src/templates/pl/` and are generated under `/pl/`. The root
-`index.html` is retained as the GitHub Pages entry point. English output is
-reserved under `/en/` and will be completed when its content is updated.
+The Polish pages use the source templates in `src/templates/pl/` and are
+generated under `/pl/`. English translations of those pages are generated under
+`/en/`; translation strings are maintained in `src/content/en-pages.json`.
+Investor and client information pages are generated in both languages from the
+shared `src/templates/stakeholder.html` template. The root `index.html` remains
+the GitHub Pages entry point.
 
 Homepage translations live in `src/content/*.json`; do not duplicate the
 homepage markup. Shared behavior belongs in `src/scripts`, shared
