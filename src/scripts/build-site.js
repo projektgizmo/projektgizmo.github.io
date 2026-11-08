@@ -11,8 +11,8 @@ const images = [
 ];
 
 const links = {
-  pl: ['index.html', 'desktop2.html', 'zespol.html', 'wdrozenia.html', 'galeria.html', 'kontakt.html', 'investor.html', 'client.html'],
-  en: ['index.html', 'history.html', 'team.html', 'deployments.html', 'gallery.html', 'contact.html', 'investor.html', 'client.html']
+  pl: ['index.html', 'desktop2.html', 'zespol.html', 'wdrozenia.html', 'galeria.html', 'kontakt.html', 'investor.html', 'client.html', 'jak-dziala.html'],
+  en: ['index.html', 'history.html', 'team.html', 'deployments.html', 'gallery.html', 'contact.html', 'investor.html', 'client.html', 'how-it-works.html']
 };
 const socials = [
   ['instagram-svgrepo-com.svg', 'Instagram', '@projekt_gizmo', 'https://www.instagram.com/projekt_gizmo/'],
@@ -34,15 +34,16 @@ function render(locale, localized) {
   const teamCarouselMembers = data.team;
   const teamDetails = teamCarouselMembers.map((member, index) => `<div id="team-detail-${index}" class="team-carousel__detail${index === 0 ? ' team-carousel__detail--active' : ''}" data-team-detail="${index}" ${index === 0 ? '' : 'hidden'}><p>${member.bio}</p></div>`).join('');
   const teamMembers = teamCarouselMembers.map((member, index) => `<button class="team-carousel__member${index === 0 ? ' team-carousel__member--active' : ''}" type="button" role="tab" aria-selected="${index === 0}" aria-controls="team-detail-${index}" data-team-member="${index}" data-team-name="${member.name}" data-team-role="${member.role}" tabindex="${index === 0 ? '0' : '-1'}"><span class="team-carousel__member-ring"><img src="${base}public/team_photos/${member.photo}" alt="${member.name}" /></span></button>`).join('');
-  const values = { ...data, base, founders, firstTeamName: teamCarouselMembers[0].name, firstTeamRole: teamCarouselMembers[0].role, homeUrl: localized ? './index.html' : 'index.html', contactUrl: localized ? `./${links[locale][5]}` : '#contact', historyUrl: pageUrl(links[locale][1], 1), deploymentsUrl: pageUrl(links[locale][3], 3), investorUrl: pageUrl(links[locale][6], 6), clientUrl: pageUrl(links[locale][7], 7), menuOpen: locale === 'en' ? 'Open menu' : 'Otwórz menu', plUrl: url('pl'), enUrl: url('en'), plActive: locale === 'pl' ? 'navbar__lang--active' : '', enActive: locale === 'en' ? 'navbar__lang--active' : '', navigation, slides, checklist, valueChallenges, socialCards, teamMembers, teamDetails };
+  const values = { ...data, base, founders, firstTeamName: teamCarouselMembers[0].name, firstTeamRole: teamCarouselMembers[0].role, homeUrl: localized ? './index.html' : 'index.html', contactUrl: localized ? `./${links[locale][5]}` : '#contact', historyUrl: pageUrl(links[locale][1], 1), investorUrl: pageUrl(links[locale][6], 6), clientUrl: pageUrl(links[locale][7], 7), menuOpen: locale === 'en' ? 'Open menu' : 'Otwórz menu', plUrl: url('pl'), enUrl: url('en'), plActive: locale === 'pl' ? 'navbar__lang--active' : '', enActive: locale === 'en' ? 'navbar__lang--active' : '', navigation, slides, checklist, valueChallenges, socialCards, teamMembers, teamDetails };
   return template.replace(/\{\{(\w+)\}\}/g, (_, key) => values[key] ?? '');
 }
 
 function renderNavigation(labels, locale, localized, activeIndex) {
-  return labels.map((label, i) => {
-    const page = links[locale][i];
-    const href = localized ? `./${page}` : i === 0 ? 'index.html' : i === 5 ? '#contact' : `pl/${page}`;
-    return `<li><a href="${href}" class="navbar__link${i === activeIndex ? ' navbar__link--active' : ''}">${label}</a></li>`;
+  return [0, 1, 2, 8, 5, 6, 7].filter((index) => labels[index]).map((index) => {
+    const label = labels[index];
+    const page = links[locale][index];
+    const href = localized ? `./${page}` : index === 0 ? 'index.html' : index === 5 ? '#contact' : `pl/${page}`;
+    return `<li><a href="${href}" class="navbar__link${index === activeIndex ? ' navbar__link--active' : ''}">${label}</a></li>`;
   }).join('');
 }
 
@@ -57,6 +58,7 @@ for (const locale of ['pl', 'en']) {
 
 const polishPages = {
   history: ['desktop2.html', 'history.html'],
+  'how-it-works': ['jak-dziala.html', 'how-it-works.html'],
   team: ['zespol.html', 'team.html'],
   deployments: ['wdrozenia.html', 'deployments.html'],
   gallery: ['galeria.html', 'gallery.html'],
@@ -76,6 +78,7 @@ function renderPage(locale, pageKey, sourceName) {
     .replaceAll('./src/styles/site.css', '../src/styles/site.css')
     .replaceAll('./src/scripts/navigation.js', '../src/scripts/navigation.js')
     .replaceAll('public/external/', '../public/external/')
+    .replaceAll('public/own/', '../public/own/')
     .replaceAll('public/team_photos/', '../public/team_photos/')
     .replaceAll('public\\external\\', '../public/external/');
 
@@ -91,6 +94,7 @@ function renderPage(locale, pageKey, sourceName) {
   const localizedLinks = new Map([
     ['index.html', 'index.html'],
     ['desktop2.html', links[locale][1]],
+    ['jak-dziala.html', links[locale][8]],
     ['zespol.html', links[locale][2]],
     ['wdrozenia.html', links[locale][3]],
     ['galeria.html', links[locale][4]],
@@ -107,7 +111,7 @@ function renderPage(locale, pageKey, sourceName) {
   const enHref = `../en/${pageNames[1]}`;
   const languageSwitcher = `<div class="navbar__lang-switcher"><a href="${plHref}" class="navbar__lang${locale === 'pl' ? ' navbar__lang--active' : ''}">PL</a><span>/</span><a href="${enHref}" class="navbar__lang${locale === 'en' ? ' navbar__lang--active' : ''}">ENG</a></div>`;
   html = html.replace(/<div class="navbar__lang-switcher">[\s\S]*?<\/div>/, languageSwitcher);
-  const activeIndex = ['history', 'team', 'deployments', 'gallery', 'contact'].indexOf(pageKey) + 1;
+  const activeIndex = ({ history: 1, team: 2, 'how-it-works': 8, deployments: 3, gallery: 4, contact: 5 })[pageKey] ?? 0;
   html = html.replace(/<ul class="navbar__links">[\s\S]*?<\/ul>/, `<ul class="navbar__links">${renderNavigation(navigationLabels, locale, true, activeIndex)}</ul>`);
   if (pageKey === 'team') {
     const contactPage = locale === 'en' ? 'contact.html' : 'kontakt.html';

@@ -92,31 +92,14 @@
         <p class="value-question">{{valueQuestion}}</p>
         <ul class="checklist-section">{{checklist}}</ul>
       </section>
-
-      <section class="deployment-link container">
-        <a href="{{deploymentsUrl}}" class="btn btn--primary">{{deploymentsCta}}</a>
-      </section>
     </section>
 
-    <section class="home-panel home-panel--proof">
-      <section class="partners-section container">
-        <h3>{{partnersTitle}}</h3>
-        <div class="partner-logos">
-          <div class="partner-logo-placeholder">{{partner}}</div>
-          <div class="partner-logo-placeholder">{{partner}}</div>
-          <div class="partner-logo-placeholder">{{partner}}</div>
-        </div>
-      </section>
-    </section>
-
-    <section class="home-panel home-panel--founders">
+    <section class="home-panel home-panel--team">
       <section class="founders-section" aria-labelledby="founders-title">
         <h2 id="founders-title">{{foundersTitle}}</h2>
         <div class="founders-grid">{{founders}}</div>
       </section>
-    </section>
 
-    <section class="home-panel home-panel--team">
       <section class="team-carousel-section" aria-labelledby="team-carousel-title">
         <header class="team-carousel__intro container">
           <span class="social-updates__eyebrow">{{teamEyebrow}}</span>
@@ -156,17 +139,6 @@
       </section>
     </section>
 
-    <section class="home-panel home-panel--proof">
-      <section class="social-updates container" aria-labelledby="social-updates-title">
-        <div class="social-updates__header">
-          <span class="social-updates__eyebrow">{{updatesEyebrow}}</span>
-          <h2 id="social-updates-title">{{updatesTitle}}</h2>
-          <p>{{updatesText}}</p>
-        </div>
-        <div class="social-updates__grid">{{socialCards}}</div>
-      </section>
-    </section>
-
     <section class="home-panel home-panel--history">
       <div class="history-promo container">
         <span class="social-updates__eyebrow">{{historyEyebrow}}</span>
@@ -177,15 +149,26 @@
     </section>
   </main>
 
-  <footer id="contact" class="footer">
-    <div class="container">
-      <h2 class="section-title">{{contactTitle}}</h2>
-      <address class="footer__contact-info">
-        <p><img src="{{base}}public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
-        <p><img src="{{base}}public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noreferrer">@projekt_gizmo</a></p>
-        <p><img src="{{base}}public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
-        <p><img src="{{base}}public/external/facebook-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.facebook.com/profile.php?id=61575747850184" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
-      </address>
+  <footer id="contact" class="home-panel home-panel--footer footer">
+    <div class="footer__content container">
+      <section class="social-updates" aria-labelledby="social-updates-title">
+        <div class="social-updates__header">
+          <span class="social-updates__eyebrow">{{updatesEyebrow}}</span>
+          <h2 id="social-updates-title">{{updatesTitle}}</h2>
+          <p>{{updatesText}}</p>
+        </div>
+        <div class="social-updates__grid">{{socialCards}}</div>
+      </section>
+
+      <section class="footer__contact" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title" class="section-title">{{contactTitle}}</h2>
+        <address class="footer__contact-info">
+          <p><img src="{{base}}public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+          <p><img src="{{base}}public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noreferrer">@projekt_gizmo</a></p>
+          <p><img src="{{base}}public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+          <p><img src="{{base}}public/external/facebook-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.facebook.com/p/Projekt-Gizmo-61575747850184/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+        </address>
+      </section>
     </div>
   </footer>
 

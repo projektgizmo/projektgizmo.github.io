@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="An example page showing how the modular Gizmo robot works." />
+        <title>How It Works - Project Gizmo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../src/styles/site.css" />
+        <script src="../src/scripts/navigation.js" defer></script>
+    </head>
+    <body>
+        <div class="background-decor" aria-hidden="true">
+            <div class="ellipse ellipse-1"></div>
+            <div class="ellipse ellipse-2"></div>
+            <div class="decorative-circle circle-index-1"></div>
+            <div class="decorative-circle circle-index-2"></div>
+        </div>
+        <header class="navbar">
+            <div class="container navbar__container">
+                <a href="./index.html" class="navbar__logo"><span>gizmo</span></a>
+                <button class="navbar__toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="navbar__nav" id="site-navigation">
+                    <ul class="navbar__links"><li><a href="./index.html" class="navbar__link">Home</a></li><li><a href="./history.html" class="navbar__link">History</a></li><li><a href="./team.html" class="navbar__link">Team</a></li><li><a href="./how-it-works.html" class="navbar__link navbar__link--active">How it works</a></li><li><a href="./contact.html" class="navbar__link">Contact</a></li><li><a href="./investor.html" class="navbar__link">Investors</a></li><li><a href="./client.html" class="navbar__link">Clients</a></li></ul>
+                </nav>
+                <div class="navbar__lang-switcher"><a href="../pl/jak-dziala.html" class="navbar__lang">PL</a><span>/</span><a href="../en/how-it-works.html" class="navbar__lang navbar__lang--active">ENG</a></div>
+            </div>
+        </header>
+        <main class="container how-it-works-page">
+            <header class="how-it-works__intro">
+                <span class="social-updates__eyebrow">PROJECT GIZMO</span>
+                <h1 class="page-title">How it works?</h1>
+                <p class="lead">Gizmo robots are modular and can connect and work together on complex tasks. Here is an example of how such a system could work.</p>
+            </header>
+            <section class="how-it-works__steps" aria-label="An example of how a Gizmo system works">
+                <article class="how-step">
+                    <span class="how-step__number">01</span>
+                    <h2>Define the task</h2>
+                    <p>We start with the goal and working conditions: the location, environment and tasks to be carried out.</p>
+                </article>
+                <article class="how-step">
+                    <span class="how-step__number">02</span>
+                    <h2>Choose the modules</h2>
+                    <p>The modular design makes it possible to connect robots in a configuration suited to the task — without assuming every setup is the same.</p>
+                </article>
+                <article class="how-step">
+                    <span class="how-step__number">03</span>
+                    <h2>Robots work together</h2>
+                    <p>Each robot can move independently, respond to changes in its environment and communicate with other devices.</p>
+                </article>
+                <article class="how-step how-step--result">
+                    <span class="how-step__number">04</span>
+                    <h2>Develop the solution</h2>
+                    <p>Additional modules can be connected to the system to handle more complex tasks and develop the project in stages.</p>
+                </article>
+            </section>
+            <p class="how-it-works__note">This is an example of the concept. Configuration details depend on the specific application.</p>
+            <div class="how-it-works__actions">
+                <a href="./history.html" class="btn btn--outline">Explore the project history</a>
+                <a href="./contact.html" class="btn btn--primary">Contact us</a>
+            </div>
+        </main>
+        <footer id="kontakt" class="footer">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <address class="footer__contact-info">
+                    <p><img src="../public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+                    <p><img src="../public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noreferrer">@projekt_gizmo</a></p>
+                    <p><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>
