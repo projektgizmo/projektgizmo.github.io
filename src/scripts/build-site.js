@@ -3,13 +3,6 @@ const path = require('path');
 
 const root = path.resolve(__dirname, '../..');
 const template = fs.readFileSync(path.join(root, 'src/templates/home.html'), 'utf8');
-const images = [
-  ['image3360-xpg-2200h.png', 'Petrochemia', 'Petrochemicals', 'INSPEKCJA', 'INSPECTION', 'Gizmo pomaga monitorować instalacje i wykrywać problemy zanim zatrzymają produkcję.', 'Gizmo helps monitor installations and detect problems before they stop production.'],
-  ['rectangle123360-hanq-900h.png', 'Rolnictwo', 'Agriculture', 'ZBIORY', 'HARVESTING', 'Modułowa konstrukcja Gizmo wspiera powtarzalne zadania w uprawach.', 'Gizmo’s modular design supports repetitive tasks in growing environments.'],
-  ['rectangle133360-7wul-800h.png', 'Logistyka', 'Logistics', 'TRANSPORT', 'TRANSPORT', 'Gizmo przenosi ładunki tam, gdzie potrzebujesz go najbardziej.', 'Gizmo moves loads wherever you need it most.'],
-  ['homepage_render.png', 'Produkcja', 'Manufacturing', 'AUTOMATYZACJA', 'AUTOMATION', 'Elastyczna robotyka dopasowuje się do Twojego procesu pracy.', 'Flexible robotics adapt to your workflow.']
-];
-
 const links = {
   pl: ['index.html', 'desktop2.html', 'zespol.html', 'wdrozenia.html', 'galeria.html', 'kontakt.html', 'investor.html', 'client.html', 'jak-dziala.html'],
   en: ['index.html', 'history.html', 'team.html', 'deployments.html', 'gallery.html', 'contact.html', 'investor.html', 'client.html', 'how-it-works.html']
@@ -26,7 +19,7 @@ function render(locale, localized) {
   const url = (lang) => localized ? `../${lang}/index.html` : lang === 'pl' ? 'index.html' : 'en/index.html';
   const pageUrl = (page, i) => localized ? `./${page}` : i === 0 ? 'index.html' : i === 5 ? '#contact' : `pl/${page}`;
   const navigation = renderNavigation(data.navigation, locale, localized, 0);
-  const slides = images.map(([file, plCategory, enCategory, plTitle, enTitle, plCopy, enCopy]) => `<article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="${base}public/${file === 'homepage_render.png' ? 'renders/' : 'external/'}${file}" alt="${locale === 'en' ? enCategory : plCategory}" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">${locale === 'en' ? enCategory : plCategory}</p><h3>${locale === 'en' ? enTitle : plTitle}</h3><p class="photo-carousel__copy">${locale === 'en' ? enCopy : plCopy}</p></div></article>`).join('');
+  const slides = data.useCases.map((useCase) => `<article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="${base}public/renders/${useCase.image}" alt="${useCase.category}" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">${useCase.category}</p><h3>${useCase.title}</h3><p class="photo-carousel__copy">${useCase.copy}</p></div></article>`).join('');
   const checklist = data.checklist.map((item) => `<li>${item}</li>`).join('');
   const valueChallenges = data.valueChallenges.map((challenge, index) => `<article class="value-challenge"><span class="value-challenge__number">${String(index + 1).padStart(2, '0')}</span><h3>${challenge.title}</h3><p>${challenge.text}</p></article>`).join('');
   const socialCards = socials.map(([icon, name, handle, href]) => `<a class="social-updates__card" href="${href}" target="_blank" rel="noopener noreferrer"><img src="${base}public/external/${icon}" alt="" aria-hidden="true"><span class="social-updates__name">${name}</span><span class="social-updates__handle">${handle}</span><span class="social-updates__action">${data.socialAction} <span aria-hidden="true">↗</span></span></a>`).join('');

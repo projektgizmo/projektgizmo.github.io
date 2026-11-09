@@ -3,7 +3,7 @@
   "title": "Project Gizmo — Scalable robotics for your crops",
   "description": "Project Gizmo — modular robotics for scalable agricultural automation.",
   "navigation": ["Home", "History", "Team", "Deployments", "Gallery", "Contact", "Investors", "Clients", "How it works"],
-  "hero": "scalable robotics for your crops",
+  "hero": "Modular building block for task-specific robots",
   "heroStage1": "meet the Gizmo robot",
   "heroStage2": "Gizmo moves through the crop",
   "heroStage3": "a modular design works wherever you need it",
@@ -13,7 +13,12 @@
   "showNavigation": "Show navigation",
   "skipIntro": "Skip animation ↓",
   "renderPlaceholder": "Gizmo in action render — placeholder",
-  "carouselTitle": "APPLICATIONS",
+  "carouselTitle": "USE CASES",
+  "useCases": [
+    {"image": "petro_case.png", "category": "Petrochemicals", "title": "INSPECTION", "copy": "Gizmo in worm-like configuration, enabling crawling on pipelines to monitor state of the structures"},
+    {"image": "agri_case.png", "category": "Agriculture", "title": "HARVESTING", "copy": "Mobile platform with robotic arm suited for picking up soft fruits."},
+    {"image": "question_box.png", "category": "Robotic Solution", "title": "TAILORED TO YOUR NEEDS", "copy": "Do you want to robotize process you struggle with? Let's get in touch!"}
+  ],
   "historyEyebrow": "Our journey",
   "historyTitle": "From idea to robot",
   "historyText": "Explore the development stages of the modular Gizmo robot.",
@@ -27,12 +32,12 @@
   "valueText": "Automation should address the day-to-day needs of a growing operation without turning the way it works upside down.",
   "valueChallengesLabel": "Challenges Gizmo is designed to address",
   "valueChallenges": [
-    {"title": "Seasonal labour shortages", "text": "A shortage of seasonal workers can make it harder to keep crop operations running smoothly."},
+    {"title": "Labour shortages", "text": "A shortage of qualified workers can make it harder to keep your operations running smoothly."},
     {"title": "Repetitive physical work", "text": "Harvesting, transport and other physical tasks take time that a team could spend on other responsibilities."},
     {"title": "Existing infrastructure", "text": "Automation should work with the conditions and layout of the site where it will be used."}
   ],
-  "valueQuestion": "Gizmo is modular robotics designed for repetitive tasks and existing infrastructure.",
-  "checklist": ["A modular solution tailored to you", "Deploy without rebuilding your greenhouse"],
+  "valueQuestion": "Gizmo -- modular robotics designed for repetitive tasks and existing infrastructure.",
+  "checklist": ["Tailored to your needs", "Deployed without rebuilding your infrastructure"],
   "audienceEyebrow": "Who we build Gizmo for",
   "audienceLinksTitle": "Explore the project from your perspective",
   "audienceIntro": "Choose the information that best matches what you are looking for.",

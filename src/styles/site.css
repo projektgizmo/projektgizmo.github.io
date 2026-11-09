@@ -1285,6 +1285,7 @@ html:not(.home-intro-active):not(.home-nav-revealing) .intro-nav-trigger {
       box-sizing: border-box;
       width: min(100%, 720px);
       min-width: 0;
+      padding-left: 4rem;
     }
     .hero-lp__brand {
       display: flex;
