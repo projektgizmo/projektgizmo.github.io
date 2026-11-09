@@ -1,13 +1,9 @@
 {
   "language": "pl",
-  "title": "Gizmo — Skalowalna robotyka dla Twoich upraw",
+  "title": "Gizmo — Nowa Fala w Robotyce",
   "description": "Gizmo — skalowalna robotyka dla Twoich upraw.",
   "navigation": ["Strona główna", "Historia", "Zespół", "Wdrożenia", "Galeria", "Kontakt", "Inwestorzy", "Klienci", "Jak to działa"],
   "hero": "Moduł, z którego złożysz swojego robota",
-  "heroStage1": "poznaj robota Gizmo",
-  "heroStage2": "Gizmo porusza się po uprawie",
-  "heroStage3": "modułowa konstrukcja pracuje tam, gdzie jej potrzebujesz",
-  "heroStage4": "skalowalna robotyka dla Twoich upraw",
   "heroCta": "Zobacz jak działa",
   "contactCta": "Skontaktuj się",
   "showNavigation": "Pokaż nawigację",
@@ -45,10 +41,10 @@
   "investorLinkText": "Model biznesowy, rynek i rozwój technologii.",
   "clientLinkLabel": "Informacje dla klientów",
   "clientLinkText": "Możliwości wdrożenia i wsparcie dla Twojej uprawy.",
-  "foundersTitle": "Nasz Zespół",
+  "foundersTitle": "Poznaj nasz zespół!",
   "founders": [
-    {"name": "Feliks Brzeziński", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "Rozwija elektronikę i oprogramowanie robota Gizmo.", "photo": "bfeliks.png"},
-    {"name": "Kacper Olszewski", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "Projektuje mechanikę modułowego robota Gizmo.", "photo": "okacper.png"}
+    {"name": "Feliks Brzeziński", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "Inżynier automatyki i robotyki Politechniki Warszawskiej, obecnie studiujący na Uniwersytecie w Oslo. Zajmuje się oprogramowaniem niskopoziomowym i elektroniką. Zawodowo pracował nad sterownikami, systemami pomiarowymi oraz automatyzacją akwizycji danych, współpracując m.in. z CERN-em.", "photo": "bfeliks.png"},
+    {"name": "Kacper Olszewski", "role": "WSPÓŁZAŁOŻYCIEL", "bio": "Inżynier automatyki i robotyki Politechniki Warszawskiej, obecnie kontynuujący studia magisterskie na tym samym kierunku. Zawodowo projektuje systemy sterowania i automatyzacji, zdobywając doświadczenie m.in. w przemyśle rafineryjnym, automatyce budynkowej i maszynach przemysłowych.", "photo": "okacper.png"}
   ],
   "teamEyebrow": "LUDZIE STOJĄCY ZA GIZMO",
   "teamTitle": "Poznaj nasz zespół",
@@ -56,10 +52,10 @@
   "previousPerson": "Poprzednia osoba",
   "nextPerson": "Następna osoba",
   "team": [
-    {"name": "Weronika Arciuch", "role": "Marketing i Social Media", "bio": "Dba o komunikację projektu i jego obecność w mediach społecznościowych.", "photo": "arciuchw.png"},
-    {"name": "Zuzanna Miśkiewicz", "role": "Biznes i Relacje z Klientem", "bio": "Rozwija współpracę biznesową i relacje z klientami.", "photo": "mzuzanna.png"},
-    {"name": "Norbert Ciesielski", "role": "Projektant Elektroniki", "bio": "Projektuje elektronikę sterującą robotem Gizmo.", "photo": "nciesielski.png"},
-    {"name": "Antoni Banuch", "role": "Programista Niskopoziomowy", "bio": "Tworzy oprogramowanie niskopoziomowe dla robota.", "photo": "bantoni.png"}
+    {"name": "Weronika Arciuch", "role": "Marketing i Social Media", "bio": "Inżynierka automatyki i robotyki oraz magisterka inżynierii informatyki ze specjalizacją w inżynierii danych, obie kierunki ukończone na Politechnice Warszawskiej. Zajmuje się wizją maszynową, uczeniem maszynowym i zastosowaniami AI w analizie obrazów m.in we współpracy z Instytutem Badawczym IDEAS. Łączy swoje umiejętności techniczne z doświadczeniem w social mediami dbając o nasz wizerunek.", "photo": "arciuchw.png"},
+    {"name": "Zuzanna Miśkiewicz", "role": "Biznes i Relacje z Klientem", "bio": "Studentka finansów i rachunkowości na Uniwersytecie Warszawskim, wcześniej studiująca informatykę na Uniwersytecie Technicznym w Monachium. Zajmuje się rozwojem biznesu, komunikacją i zarządzaniem organizacjami. Wcześniej pracowała w WARR e.V. oraz she.codes, gdzie odpowiadała za współpracę z partnerami, organizację wydarzeń i strategię rozwoju.", "photo": "mzuzanna.png"},
+    {"name": "Norbert Ciesielski", "role": "Projektant Elektroniki", "bio": "Inżynier inżynierii kosmicznej i satelitarnej, obecnie studiujący elektronikę i telekomunikację. Projektuje i uruchamia układy elektroniczne, łącząc hardware z oprogramowaniem niskopoziomowym.", "photo": "nciesielski.png"},
+    {"name": "Antoni Banuch", "role": "Programista Niskopoziomowy", "bio": "Inżynier automatyki i robotyki Politechniki Warszawskiej, obecnie kontynuujący studia magisterskie na tym samym kierunku. Zajmuje się automatyką, robotyką i systemami mechatronicznymi. Ma doświadczenie w montażu, uruchamianiu i programowaniu urządzeń przemysłowych.", "photo": "bantoni.png"}
   ],
   "updatesEyebrow": "Bądź na bieżąco",
   "updatesTitle": "Aktualności",

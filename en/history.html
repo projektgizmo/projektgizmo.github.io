@@ -35,7 +35,7 @@
                     <span></span><span></span><span></span>
                 </button>
                 <nav class="navbar__nav" id="site-navigation">
-                    <ul class="navbar__links"><li><a href="./index.html" class="navbar__link">Home</a></li><li><a href="./history.html" class="navbar__link navbar__link--active">History</a></li><li><a href="./team.html" class="navbar__link">Team</a></li><li><a href="./how-it-works.html" class="navbar__link">How it works</a></li><li><a href="./contact.html" class="navbar__link">Contact</a></li><li><a href="./investor.html" class="navbar__link">Investors</a></li><li><a href="./client.html" class="navbar__link">Clients</a></li></ul>
+                    <ul class="navbar__links"><li><a href="./index.html" class="navbar__link">Home</a></li><li><a href="./history.html" class="navbar__link navbar__link--active">History</a></li><li><a href="./team.html" class="navbar__link">Team</a></li><li><a href="./contact.html" class="navbar__link">Contact</a></li></ul>
                 </nav>
                 <div class="navbar__lang-switcher"><a href="../pl/desktop2.html" class="navbar__lang">PL</a><span>/</span><a href="../en/history.html" class="navbar__lang navbar__lang--active">ENG</a></div>
             </div>
@@ -124,104 +124,7 @@
                         </div>
                     </article>
                 </div>
-                <div class="history-collaborations">
-                    <span class="history-highlight__eyebrow">COLLABORATIONS AND COMMUNITY</span>
-                    <p>The KNR and Tapir student research groups also contribute to the project. Academic advisors are Assoc. Prof. Łukasz Kolimas, Dr Łukasz Makowski and Dr Witold Czajewski.</p>
-                </div>
             </section>
-
-            <h2 class="section-title history-evolution-title">Robot development</h2>
-                
-            <section class="evolution-intro">
-                <div class="evolution-intro__card">
-                    <div class="column">
-                        <div class="row">
-                            <img src="../public/external/model1.png" alt="Model 1">
-                            <img src="../public/external/arrow.png" alt="Arrow" class="arrow">
-                            <img src="../public/external/model2.png" alt="Model 2">
-                            <img src="../public/external/arrow.png" alt="Arrow" class="arrow">
-                            <img src="../public/external/model3.png" alt="Model 3">
-                        </div>
-                        <img src="../public/external/arrow.png" alt="Arrow down" class="arrow arrow-down">
-                        <img src="../public/external/model4.png" alt="Model 4">
-                    </div>
-                </div>
-                <div class="decorative-circle circle-model-1" style="transform: scale(0.3) translateX(500px);"></div>
-            </section>
-
-            <section class="evolution-card">
-                    <div class="evolution-card__image-gallery" style="display: flex; align-items: center; justify-content: space-around; width: 100%;">
-                        <div class="evolution-card__image-wrapper">
-                            <div class="decorative-circle circle-model-1"></div>
-                            <img src="../public/external/model1.png" alt="Main image of Model 1">
-                        </div>
-                        <h2 class="evolution-card__title" style="margin: 0;">Model 1</h2>
-                        <div class="evolution-card__image-wrapper">
-                            <img src="../public/external/model1_2.png" alt="Additional image 1">
-                        </div>
-                        <div class="evolution-card__image-wrapper">
-                            <img src="../public/external/model1_3.jpg.png" alt="Additional image 2" style="transform: scale(1.12);">
-                        </div>
-                    </div>
-                    <p>The first model consisted of two discs connected by a joint. It was our first attempt at creating the robot's body, inspired by continuum manipulators.</p>
-                    <p>Model 1 deliberately had no drive or control unit, as it was intended to explore the drive concept. The design allowed movement in three planes.</p>
-                </div>
-            </section>
-
-            <section class="evolution-card">
-                <div class="evolution-card__content text-center">
-                    <div class="evolution-card__image-gallery" style="display: flex; align-items: center; justify-content: space-around; width: 100%;">
-                        <div class="evolution-card__image-wrapper">
-                            <div class="decorative-circle circle-model-2"></div>
-                            <img src="../public/external/model2.png" alt="Main image of Model 2">
-                        </div>
-                        <h2 class="evolution-card__title">Model 2</h2>
-                        <div class="evolution-card__image-wrapper">
-                            <img src="../public/external/model2_1.png" alt="Additional image 1">
-                        </div>
-                        <div class="evolution-card__image-wrapper">
-                            <img src="../public/external/model2_2.png" alt="Additional image 2" style="transform: scale(0.8);">
-                        </div>
-                    </div>
-                    <p>The success of Model 1 led to a test version. Equipped with three servos, this robot connected to other similar robots through a joint. Cables linking the robot body to the servo shafts enabled movement. The design had several drawbacks:</p>
-                    <ul class="feature-list feature-list--drawbacks">
-                        <li>Cable tension was the only way to control position</li>
-                        <li>The discs could rotate uncontrollably around the joint</li>
-                        <li>Connecting robots was complicated</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="evolution-card">
-                <div class="evolution-card__content text-center">
-                    <div class="evolution-card__image-gallery" style="display: flex; align-items: center; justify-content: space-around; width: 100%;">
-                        <div class="evolution-card__image-wrapper">
-                            <div class="decorative-circle circle-model-3"></div>
-                            <img src="../public/external/model3.png" alt="Main image of Model 3">
-                        </div>
-                        <h2 class="evolution-card__title">Model 3</h2>
-                        <div class="evolution-card__image-wrapper">
-                            <img src="../public/external/model3_1.png" alt="Additional image 1">
-                        </div>
-                        <div class="evolution-card__image-wrapper">
-                            <img src="../public/external/model3_2.png" alt="Additional image 2">
-                        </div>
-                    </div>
-                    <p>The implemented drive addressed the shortcomings of earlier models. It offered:</p>
-                    <ul class="feature-list feature-list--advantages">
-                        <li>Straightforward control of the desired angle</li>
-                        <li>No need to continuously monitor position</li>
-                        <li>Easy module replacement</li>
-                    </ul>
-                    <p>The model still fell short of the ideal design. Its main drawbacks were:</p>
-                    <ul class="feature-list feature-list--drawbacks">
-                        <li>A complicated connection system</li>
-                        <li>No feedback system</li>
-                        <li>Strict module alignment requirements and a risk of damaging the tube</li>
-                    </ul>
-                </div>
-            </section>
-
         </main>
 
         <footer id="kontakt" class="footer">

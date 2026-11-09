@@ -1,13 +1,9 @@
 {
   "language": "en",
-  "title": "Project Gizmo — Scalable robotics for your crops",
+  "title": "Gizmo -- New Wave in Robotics",
   "description": "Project Gizmo — modular robotics for scalable agricultural automation.",
   "navigation": ["Home", "History", "Team", "Deployments", "Gallery", "Contact", "Investors", "Clients", "How it works"],
   "hero": "Modular building block for task-specific robots",
-  "heroStage1": "meet the Gizmo robot",
-  "heroStage2": "Gizmo moves through the crop",
-  "heroStage3": "a modular design works wherever you need it",
-  "heroStage4": "scalable robotics for your crops",
   "heroCta": "See how it works",
   "contactCta": "Contact us",
   "showNavigation": "Show navigation",
@@ -36,7 +32,7 @@
     {"title": "Repetitive physical work", "text": "Harvesting, transport and other physical tasks take time that a team could spend on other responsibilities."},
     {"title": "Existing infrastructure", "text": "Automation should work with the conditions and layout of the site where it will be used."}
   ],
-  "valueQuestion": "Gizmo -- modular robotics designed for repetitive tasks and existing infrastructure.",
+  "valueQuestion": "Gizmo — modular robotics designed for repetitive tasks and existing infrastructure.",
   "checklist": ["Tailored to your needs", "Deployed without rebuilding your infrastructure"],
   "audienceEyebrow": "Who we build Gizmo for",
   "audienceLinksTitle": "Explore the project from your perspective",
@@ -45,10 +41,10 @@
   "investorLinkText": "Business model, market opportunity and technology development.",
   "clientLinkLabel": "Information for clients",
   "clientLinkText": "Deployment options and support for your growing operation.",
-  "foundersTitle": "Meet our founders",
+  "foundersTitle": "Meet our Team!",
   "founders": [
-    {"name": "Feliks Brzeziński", "role": "CO-FOUNDER", "bio": "Develops the electronics and software behind Gizmo.", "photo": "bfeliks.png"},
-    {"name": "Kacper Olszewski", "role": "CO-FOUNDER", "bio": "Designs the mechanical systems that make Gizmo modular.", "photo": "okacper.png"}
+    {"name": "Feliks Brzeziński", "role": "CO-FOUNDER", "bio": "An automation and robotics engineer from Warsaw University of Technology, currently studying at the University of Oslo. He works on low-level software and electronics. Professionally, he has worked on control systems, measurement setups, and data-acquisition automation, collaborating with organizations including CERN", "photo": "bfeliks.png"},
+    {"name": "Kacper Olszewski", "role": "CO-FOUNDER", "bio": "An automation and robotics engineer from Warsaw University of Technology, currently continuing his studies at the master’s level in the same field. Professionally, he designs control and automation systems, gaining experience in areas such as the refining industry, building automation, and industrial machinery.", "photo": "okacper.png"}
   ],
   "teamEyebrow": "THE PEOPLE BEHIND GIZMO",
   "teamTitle": "Meet our team",
@@ -56,10 +52,10 @@
   "previousPerson": "Previous team member",
   "nextPerson": "Next team member",
   "team": [
-    {"name": "Weronika Arciuch", "role": "Social Media & IT", "bio": "Leads project communications and social media.", "photo": "arciuchw.png"},
-    {"name": "Zuzanna Miśkiewicz", "role": "Business & Client Relations", "bio": "Builds business partnerships and client relationships.", "photo": "mzuzanna.png"},
-    {"name": "Norbert Ciesielski", "role": "Electronics Designer", "bio": "Designs the electronics that control the Gizmo robot.", "photo": "nciesielski.png"},
-    {"name": "Antoni Banuch", "role": "Embedded Software Developer", "bio": "Develops low-level software for the robot.", "photo": "bantoni.png"}
+    {"name": "Weronika Arciuch", "role": "Social Media & IT", "bio": "An automation and robotics engineer with a master’s degree in computer engineering, specializing in data engineering, with both degrees completed at Warsaw University of Technology. She works with computer vision, machine learning, and AI applications in image analysis, including in collaboration with the IDEAS Research Institute. She combines her technical skills with experience in social media, taking care of our public image.", "photo": "arciuchw.png"},
+    {"name": "Zuzanna Miśkiewicz", "role": "Business & Client Relations", "bio": "A finance and accounting student at the University of Warsaw, previously studying computer science at the Technical University of Munich. She focuses on business development, communication, and organizational management. She has previously worked with WARR e.V. and she.codes, where she was responsible for partnerships, event organization, and growth strategy.", "photo": "mzuzanna.png"},
+    {"name": "Norbert Ciesielski", "role": "Electronics Designer", "bio": "An aerospace and satellite engineering graduate, currently studying electronics and telecommunications. He designs and commissions electronic systems, combining hardware with low-level software.", "photo": "nciesielski.png"},
+    {"name": "Antoni Banuch", "role": "Embedded Software Developer", "bio": "An automation and robotics engineer from Warsaw University of Technology, currently continuing his studies at the master’s level in the same field. He works with automation, robotics, and mechatronic systems. He has experience in assembling, commissioning, and programming industrial equipment.", "photo": "bantoni.png"}
   ],
   "updatesEyebrow": "Stay up to date",
   "updatesTitle": "Latest updates",

@@ -2097,7 +2097,7 @@ html:not(.home-intro-active):not(.home-nav-revealing) .intro-nav-trigger {
     }
     .founder-card--lime .founder-card__portrait {
       left: auto;
-      right: clamp(2.5rem, 6vw, 5rem);
+      right: clamp(8rem, 8vw, 7rem);
       transform: translate(50%, -50%);
     }
     .founder-card--lime .founder-card__content {
@@ -2113,7 +2113,7 @@ html:not(.home-intro-active):not(.home-nav-revealing) .intro-nav-trigger {
     .founder-card__portrait {
       position: absolute;
       isolation: isolate;
-      left: clamp(2.5rem, 6vw, 5rem);
+      left: clamp(8rem, 8vw, 7rem);
       top: 50%;
       width: 144px;
       height: 144px;
@@ -2236,7 +2236,8 @@ html:not(.home-intro-active):not(.home-nav-revealing) .intro-nav-trigger {
       padding: .25rem 0 0;
     }
     .team-carousel__intro {
-      margin-bottom: .25rem;
+      margin-bottom: 1rem;
+      margin-top: .5rem;
       text-align: center;
     }
     .team-carousel__intro h2 {

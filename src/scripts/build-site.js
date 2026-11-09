@@ -32,7 +32,7 @@ function render(locale, localized) {
 }
 
 function renderNavigation(labels, locale, localized, activeIndex) {
-  return [0, 1, 2, 8, 5, 6, 7].filter((index) => labels[index]).map((index) => {
+  return [0, 1, 2, 5].filter((index) => labels[index]).map((index) => {
     const label = labels[index];
     const page = links[locale][index];
     const href = localized ? `./${page}` : index === 0 ? 'index.html' : index === 5 ? '#contact' : `pl/${page}`;
