@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="{{language}}" class="home-page">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{description}}" />
+  <link rel="alternate" hreflang="pl" href="{{plUrl}}" />
+  <link rel="alternate" hreflang="en" href="{{enUrl}}" />
+  <title>{{title}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{base}}src/styles/site.css" />
+  <script src="{{base}}src/scripts/navigation.js" defer></script>
+</head>
+<body>
+  <div class="background-decor">
+    <div class="ellipse ellipse-1"></div>
+    <div class="ellipse ellipse-2"></div>
+    <div class="ellipse ellipse-5"></div>
+    <div class="decorative-circle circle-index-1"></div>
+    <div class="decorative-circle circle-index-2"></div>
+    <div class="decorative-circle circle-index-3"></div>
+  </div>
+
+  <header class="navbar">
+    <div class="container navbar__container">
+      <a href="{{homeUrl}}" class="navbar__logo"><span>gizmo</span></a>
+      <button class="navbar__toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="{{menuOpen}}">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__nav" id="site-navigation">
+        <ul class="navbar__links">{{navigation}}</ul>
+      </nav>
+      <div class="navbar__lang-switcher">
+        <a href="{{plUrl}}" class="navbar__lang {{plActive}}">PL</a>
+        <span>/</span>
+        <a href="{{enUrl}}" class="navbar__lang {{enActive}}">ENG</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="home-panel home-panel--intro">
+      <img class="hero-lp__background" src="{{base}}public/renders/homepage_render.png" alt="" aria-hidden="true" />
+      <div class="hero-lp container">
+        <div class="hero-lp__content">
+          <div class="hero-lp__brand">
+            <img class="hero-lp__logo" src="{{base}}public/own/Gizmo_RAW_Minimal.svg" alt="Gizmo logo" />
+            <div class="hero-lp__copy">
+              <div class="hero-lp__heading">
+                <h1>Gizmo</h1>
+                <p>{{hero}}</p>
+              </div>
+              <div class="hero-lp__ctas">
+                <a href="#value" class="btn btn--primary">{{heroCta}}</a>
+                <a href="{{contactUrl}}" class="btn btn--outline">{{contactCta}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-panel home-panel--carousel">
+      <div class="photo-carousel">
+        <h2 class="photo-carousel__static-title">{{carouselTitle}}</h2>
+        <div class="photo-carousel__viewport" role="region" aria-label="{{carouselTitle}}" aria-live="off" tabindex="0">
+          <div class="photo-carousel__track" id="photoTrack">{{slides}}</div>
+          <div class="photo-carousel__controls">
+            <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" type="button" aria-label="{{previous}}">←</button>
+            <div class="photo-carousel__dots" id="photoDots"></div>
+            <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" type="button" aria-label="{{next}}">→</button>
+            <button class="photo-carousel__toggle" id="photoAutoplay" type="button" aria-label="{{carouselPause}}" data-label-pause="{{carouselPause}}" data-label-play="{{carouselPlay}}"><span class="photo-carousel__toggle-icon" aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-panel home-panel--value">
+      <section id="value" class="value-section container">
+        <span class="value-section__eyebrow">{{valueEyebrow}}</span>
+        <h2>{{valueTitle}}</h2>
+        <p>{{valueText}}</p>
+      </section>
+
+      <section class="value-challenges container" aria-label="{{valueChallengesLabel}}">
+        {{valueChallenges}}
+      </section>
+
+      <section class="value-summary container">
+        <p class="value-question">{{valueQuestion}}</p>
+        <ul class="checklist-section">{{checklist}}</ul>
+      </section>
+    </section>
+
+    <section class="home-panel home-panel--team">
+      <section class="founders-section" aria-labelledby="founders-title">
+        <h2 id="founders-title">{{foundersTitle}}</h2>
+        <div class="founders-grid">{{founders}}</div>
+      </section>
+
+      <section class="team-carousel-section" aria-labelledby="team-carousel-title">
+        <!--
+        <header class="team-carousel__intro container">
+          <p>{{teamText}}</p> span class="social-updates__eyebrow">{{teamEyebrow}}</span>
+          <h2>{{teamTitle}}</h2>
+          <p>{{teamText}}</p>
+        </header> -->
+        <div class="team-carousel" data-team-carousel>
+          <div class="team-carousel__identity">
+            <span class="team-carousel__identity-role" data-team-role>{{firstTeamRole}}</span>
+            <h2 id="team-carousel-title" data-team-name>{{firstTeamName}}</h2>
+          </div>
+          <button class="team-carousel__arrow team-carousel__arrow--prev" type="button" data-team-prev aria-label="{{previousPerson}}">←</button>
+          <div class="team-carousel__members" role="tablist" aria-label="{{teamTitle}}">{{teamMembers}}</div>
+          <button class="team-carousel__arrow team-carousel__arrow--next" type="button" data-team-next aria-label="{{nextPerson}}">→</button>
+          <article class="team-carousel__details" data-team-details aria-live="polite">{{teamDetails}}</article>
+        </div>
+      </section>
+    </section>
+    <!--
+    <section class="home-panel home-panel--audience">
+      <section class="audience-section container" aria-labelledby="audience-links-title">
+        <span class="social-updates__eyebrow">{{audienceEyebrow}}</span>
+        <h2 id="audience-links-title">{{audienceLinksTitle}}</h2>
+        <p class="audience-section__intro">{{audienceIntro}}</p>
+        <div class="audience-links__items">
+          <a class="audience-card audience-card--investor" href="{{investorUrl}}">
+            <span class="audience-card__title">{{investorLinkLabel}}</span>
+            <span class="audience-card__copy">{{investorLinkText}}</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="audience-card audience-card--client" href="{{clientUrl}}">
+            <span class="audience-card__title">{{clientLinkLabel}}</span>
+            <span class="audience-card__copy">{{clientLinkText}}</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </section>
+    -->
+
+    <section class="home-panel home-panel--history">
+      <div class="history-promo container">
+        <span class="social-updates__eyebrow">{{historyEyebrow}}</span>
+        <h2>{{historyTitle}}</h2>
+        <p>{{historyText}}</p>
+        <a href="{{historyUrl}}" class="btn btn--primary">{{historyCta}}</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="home-panel home-panel--footer footer">
+    <div class="footer__content container">
+      <section class="social-updates" aria-labelledby="social-updates-title">
+        <div class="social-updates__header">
+          <span class="social-updates__eyebrow">{{updatesEyebrow}}</span>
+          <h2 id="social-updates-title">{{updatesTitle}}</h2>
+          <p>{{updatesText}}</p>
+        </div>
+        <div class="social-updates__grid">{{socialCards}}</div>
+      </section>
+
+      <section class="footer__contact" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title" class="section-title">{{contactTitle}}</h2>
+        <address class="footer__contact-info">
+          <p><img src="{{base}}public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+          <p><img src="{{base}}public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noreferrer">@projekt_gizmo</a></p>
+          <p><img src="{{base}}public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+          <p><img src="{{base}}public/external/facebook-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.facebook.com/p/Projekt-Gizmo-61575747850184/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+        </address>
+      </section>
+    </div>
+  </footer>
+
+  <script src="{{base}}src/scripts/carousel.js" defer></script>
+  <script src="{{base}}src/scripts/team-carousel.js" defer></script>
+  <script src="{{base}}src/scripts/home-scroll.js" defer></script>
+</body>
+</html>

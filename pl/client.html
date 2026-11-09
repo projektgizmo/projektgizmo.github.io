@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Informacje dla klientów zainteresowanych wdrożeniem robotów Gizmo." />
+        <title>Dla klientów - Projekt Gizmo</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../src/styles/site.css" />
+        <script src="../src/scripts/navigation.js" defer></script>
+    </head>
+    <body>
+        <div class="background-decor">
+            <div class="ellipse ellipse-1"></div>
+            <div class="ellipse ellipse-2"></div>
+            <div class="ellipse ellipse-3"></div>
+            <div class="ellipse ellipse-4"></div>
+            <div class="ellipse ellipse-5"></div>
+            <div class="decorative-circle circle-index-1"></div>
+            <div class="decorative-circle circle-index-2"></div>
+            <div class="decorative-circle circle-index-3"></div>
+        </div>
+
+        <header class="navbar">
+            <div class="container navbar__container">
+                <a href="./index.html" class="navbar__logo"><span>gizmo</span></a>
+                <button class="navbar__toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Otwórz menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="navbar__nav" id="site-navigation">
+                    <ul class="navbar__links"><li><a href="./index.html" class="navbar__link">Strona główna</a></li><li><a href="./desktop2.html" class="navbar__link">Historia</a></li><li><a href="./zespol.html" class="navbar__link">Zespół</a></li><li><a href="./kontakt.html" class="navbar__link">Kontakt</a></li></ul>
+                </nav>
+                <div class="navbar__lang-switcher">
+                    <a href="../pl/client.html" class="navbar__lang navbar__lang--active">PL</a>
+                    <span>/</span>
+                    <a href="../en/client.html" class="navbar__lang ">ENG</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container contact-page">
+            <h1 class="page-title">Dla klientów</h1>
+            <p class="lead">Sprawdźmy, jak roboty Gizmo mogą wesprzeć codzienną pracę w Twojej uprawie. Każde wdrożenie zaczynamy od poznania procesu i warunków na miejscu.</p>
+
+            <section class="info-section" aria-label="Co oferuje Projekt Gizmo?">
+                <div class="info-column"><h2 class="section-title--small">Dobór rozwiązania</h2><p class="lead">Wspólnie określamy zadania, które można zautomatyzować, i dobieramy konfigurację do rodzaju uprawy.</p></div><div class="info-column"><h2 class="section-title--small">Wdrożenie i wsparcie</h2><p class="lead">Planujemy uruchomienie z uwzględnieniem istniejącej infrastruktury i wspieramy zespół podczas testów.</p></div><div class="info-column"><h2 class="section-title--small">Praktyczna optymalizacja</h2><p class="lead">Obserwujemy działanie rozwiązania i szukamy usprawnień, które pomagają utrzymać płynny przepływ pracy.</p></div>
+            </section>
+
+            <div class="deployments-cta">
+                <p>Opowiedz nam o swojej uprawie i wyzwaniach operacyjnych.</p>
+                <a href="./kontakt.html" class="btn btn--outline">Wróć do kontaktu</a>
+            </div>
+        </main>
+
+        <footer id="contact" class="footer">
+            <div class="container">
+                <h2 class="section-title">Kontakt</h2>
+                <address class="footer__contact-info">
+                    <p><img src="../public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+                    <p><img src="../public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noreferrer">@projekt_gizmo</a></p>
+                    <p><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+                </address>
+            </div>
+        </footer>
+    </body>
+</html>

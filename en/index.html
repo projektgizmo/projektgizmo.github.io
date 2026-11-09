@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="home-page">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project Gizmo — modular robotics for scalable agricultural automation." />
+  <link rel="alternate" hreflang="pl" href="../pl/index.html" />
+  <link rel="alternate" hreflang="en" href="../en/index.html" />
+  <title>Gizmo -- New Wave in Robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Raleway:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/site.css" />
+  <script src="../src/scripts/navigation.js" defer></script>
+</head>
+<body>
+  <div class="background-decor">
+    <div class="ellipse ellipse-1"></div>
+    <div class="ellipse ellipse-2"></div>
+    <div class="ellipse ellipse-5"></div>
+    <div class="decorative-circle circle-index-1"></div>
+    <div class="decorative-circle circle-index-2"></div>
+    <div class="decorative-circle circle-index-3"></div>
+  </div>
+
+  <header class="navbar">
+    <div class="container navbar__container">
+      <a href="./index.html" class="navbar__logo"><span>gizmo</span></a>
+      <button class="navbar__toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar__nav" id="site-navigation">
+        <ul class="navbar__links"><li><a href="./index.html" class="navbar__link navbar__link--active">Home</a></li><li><a href="./history.html" class="navbar__link">History</a></li><li><a href="./team.html" class="navbar__link">Team</a></li><li><a href="./contact.html" class="navbar__link">Contact</a></li></ul>
+      </nav>
+      <div class="navbar__lang-switcher">
+        <a href="../pl/index.html" class="navbar__lang ">PL</a>
+        <span>/</span>
+        <a href="../en/index.html" class="navbar__lang navbar__lang--active">ENG</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="home-panel home-panel--intro">
+      <img class="hero-lp__background" src="../public/renders/homepage_render.png" alt="" aria-hidden="true" />
+      <div class="hero-lp container">
+        <div class="hero-lp__content">
+          <div class="hero-lp__brand">
+            <img class="hero-lp__logo" src="../public/own/Gizmo_RAW_Minimal.svg" alt="Gizmo logo" />
+            <div class="hero-lp__copy">
+              <div class="hero-lp__heading">
+                <h1>Gizmo</h1>
+                <p>Modular building block for task-specific robots</p>
+              </div>
+              <div class="hero-lp__ctas">
+                <a href="#value" class="btn btn--primary">See how it works</a>
+                <a href="./contact.html" class="btn btn--outline">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-panel home-panel--carousel">
+      <div class="photo-carousel">
+        <h2 class="photo-carousel__static-title">USE CASES</h2>
+        <div class="photo-carousel__viewport" role="region" aria-label="USE CASES" aria-live="off" tabindex="0">
+          <div class="photo-carousel__track" id="photoTrack"><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="../public/renders/petro_case.png" alt="Petrochemicals" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Petrochemicals</p><h3>INSPECTION</h3><p class="photo-carousel__copy">Gizmo in worm-like configuration, enabling crawling on pipelines to monitor state of the structures</p></div></article><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="../public/renders/agri_case.png" alt="Agriculture" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Agriculture</p><h3>HARVESTING</h3><p class="photo-carousel__copy">Mobile platform with robotic arm suited for picking up soft fruits.</p></div></article><article class="photo-carousel__slide"><div class="photo-carousel__image"><img src="../public/renders/question_box.png" alt="Robotic Solution" /></div><div class="photo-carousel__content"><p class="photo-carousel__category">Robotic Solution</p><h3>TAILORED TO YOUR NEEDS</h3><p class="photo-carousel__copy">Do you want to robotize process you struggle with? Let's get in touch!</p></div></article></div>
+          <div class="photo-carousel__controls">
+            <button class="photo-carousel__arrow photo-carousel__arrow--prev" id="photoPrev" type="button" aria-label="Previous photo">←</button>
+            <div class="photo-carousel__dots" id="photoDots"></div>
+            <button class="photo-carousel__arrow photo-carousel__arrow--next" id="photoNext" type="button" aria-label="Next photo">→</button>
+            <button class="photo-carousel__toggle" id="photoAutoplay" type="button" aria-label="Pause automatic sliding" data-label-pause="Pause automatic sliding" data-label-play="Resume automatic sliding"><span class="photo-carousel__toggle-icon" aria-hidden="true"></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-panel home-panel--value">
+      <section id="value" class="value-section container">
+        <span class="value-section__eyebrow">Robotics for real-world challenges</span>
+        <h2>What can we improve?</h2>
+        <p>Automation should address the day-to-day needs of a growing operation without turning the way it works upside down.</p>
+      </section>
+
+      <section class="value-challenges container" aria-label="Challenges Gizmo is designed to address">
+        <article class="value-challenge"><span class="value-challenge__number">01</span><h3>Labour shortages</h3><p>A shortage of qualified workers can make it harder to keep your operations running smoothly.</p></article><article class="value-challenge"><span class="value-challenge__number">02</span><h3>Repetitive physical work</h3><p>Harvesting, transport and other physical tasks take time that a team could spend on other responsibilities.</p></article><article class="value-challenge"><span class="value-challenge__number">03</span><h3>Existing infrastructure</h3><p>Automation should work with the conditions and layout of the site where it will be used.</p></article>
+      </section>
+
+      <section class="value-summary container">
+        <p class="value-question">Gizmo — modular robotics designed for repetitive tasks and existing infrastructure.</p>
+        <ul class="checklist-section"><li>Tailored to your needs</li><li>Deployed without rebuilding your infrastructure</li></ul>
+      </section>
+    </section>
+
+    <section class="home-panel home-panel--team">
+      <section class="founders-section" aria-labelledby="founders-title">
+        <h2 id="founders-title">Meet our Team!</h2>
+        <div class="founders-grid"><article class="founder-card founder-card--purple"><div class="founder-card__portrait"><div class="founder-card__portrait-crop"><img class="founder-card__portrait-image founder-card__portrait-image--feliks" src="../public/team_photos/bfeliks.png" alt="Feliks Brzeziński" /></div></div><div class="founder-card__content"><span class="founder-card__role">CO-FOUNDER</span><h3>Feliks Brzeziński</h3><p>An automation and robotics engineer from Warsaw University of Technology, currently studying at the University of Oslo. He works on low-level software and electronics. Professionally, he has worked on control systems, measurement setups, and data-acquisition automation, collaborating with organizations including CERN</p></div></article><article class="founder-card founder-card--lime"><div class="founder-card__portrait"><div class="founder-card__portrait-crop"><img class="founder-card__portrait-image" src="../public/team_photos/okacper.png" alt="Kacper Olszewski" /></div></div><div class="founder-card__content"><span class="founder-card__role">CO-FOUNDER</span><h3>Kacper Olszewski</h3><p>An automation and robotics engineer from Warsaw University of Technology, currently continuing his studies at the master’s level in the same field. Professionally, he designs control and automation systems, gaining experience in areas such as the refining industry, building automation, and industrial machinery.</p></div></article></div>
+      </section>
+
+      <section class="team-carousel-section" aria-labelledby="team-carousel-title">
+        <!--
+        <header class="team-carousel__intro container">
+          <p>A multidisciplinary team turning practical challenges into dependable automation.</p> span class="social-updates__eyebrow">THE PEOPLE BEHIND GIZMO</span>
+          <h2>Meet our team</h2>
+          <p>A multidisciplinary team turning practical challenges into dependable automation.</p>
+        </header> -->
+        <div class="team-carousel" data-team-carousel>
+          <div class="team-carousel__identity">
+            <span class="team-carousel__identity-role" data-team-role>Social Media & IT</span>
+            <h2 id="team-carousel-title" data-team-name>Weronika Arciuch</h2>
+          </div>
+          <button class="team-carousel__arrow team-carousel__arrow--prev" type="button" data-team-prev aria-label="Previous team member">←</button>
+          <div class="team-carousel__members" role="tablist" aria-label="Meet our team"><button class="team-carousel__member team-carousel__member--active" type="button" role="tab" aria-selected="true" aria-controls="team-detail-0" data-team-member="0" data-team-name="Weronika Arciuch" data-team-role="Social Media & IT" tabindex="0"><span class="team-carousel__member-ring"><img src="../public/team_photos/arciuchw.png" alt="Weronika Arciuch" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-1" data-team-member="1" data-team-name="Zuzanna Miśkiewicz" data-team-role="Business & Client Relations" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/mzuzanna.png" alt="Zuzanna Miśkiewicz" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-2" data-team-member="2" data-team-name="Norbert Ciesielski" data-team-role="Electronics Designer" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/nciesielski.png" alt="Norbert Ciesielski" /></span></button><button class="team-carousel__member" type="button" role="tab" aria-selected="false" aria-controls="team-detail-3" data-team-member="3" data-team-name="Antoni Banuch" data-team-role="Embedded Software Developer" tabindex="-1"><span class="team-carousel__member-ring"><img src="../public/team_photos/bantoni.png" alt="Antoni Banuch" /></span></button></div>
+          <button class="team-carousel__arrow team-carousel__arrow--next" type="button" data-team-next aria-label="Next team member">→</button>
+          <article class="team-carousel__details" data-team-details aria-live="polite"><div id="team-detail-0" class="team-carousel__detail team-carousel__detail--active" data-team-detail="0" ><p>An automation and robotics engineer with a master’s degree in computer engineering, specializing in data engineering, with both degrees completed at Warsaw University of Technology. She works with computer vision, machine learning, and AI applications in image analysis, including in collaboration with the IDEAS Research Institute. She combines her technical skills with experience in social media, taking care of our public image.</p></div><div id="team-detail-1" class="team-carousel__detail" data-team-detail="1" hidden><p>A finance and accounting student at the University of Warsaw, previously studying computer science at the Technical University of Munich. She focuses on business development, communication, and organizational management. She has previously worked with WARR e.V. and she.codes, where she was responsible for partnerships, event organization, and growth strategy.</p></div><div id="team-detail-2" class="team-carousel__detail" data-team-detail="2" hidden><p>An aerospace and satellite engineering graduate, currently studying electronics and telecommunications. He designs and commissions electronic systems, combining hardware with low-level software.</p></div><div id="team-detail-3" class="team-carousel__detail" data-team-detail="3" hidden><p>An automation and robotics engineer from Warsaw University of Technology, currently continuing his studies at the master’s level in the same field. He works with automation, robotics, and mechatronic systems. He has experience in assembling, commissioning, and programming industrial equipment.</p></div></article>
+        </div>
+      </section>
+    </section>
+    <!--
+    <section class="home-panel home-panel--audience">
+      <section class="audience-section container" aria-labelledby="audience-links-title">
+        <span class="social-updates__eyebrow">Who we build Gizmo for</span>
+        <h2 id="audience-links-title">Explore the project from your perspective</h2>
+        <p class="audience-section__intro">Choose the information that best matches what you are looking for.</p>
+        <div class="audience-links__items">
+          <a class="audience-card audience-card--investor" href="./investor.html">
+            <span class="audience-card__title">Information for investors</span>
+            <span class="audience-card__copy">Business model, market opportunity and technology development.</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="audience-card audience-card--client" href="./client.html">
+            <span class="audience-card__title">Information for clients</span>
+            <span class="audience-card__copy">Deployment options and support for your growing operation.</span>
+            <span class="audience-card__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </section>
+    -->
+
+    <section class="home-panel home-panel--history">
+      <div class="history-promo container">
+        <span class="social-updates__eyebrow">Our journey</span>
+        <h2>From idea to robot</h2>
+        <p>Explore the development stages of the modular Gizmo robot.</p>
+        <a href="./history.html" class="btn btn--primary">Explore our history</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="home-panel home-panel--footer footer">
+    <div class="footer__content container">
+      <section class="social-updates" aria-labelledby="social-updates-title">
+        <div class="social-updates__header">
+          <span class="social-updates__eyebrow">Stay up to date</span>
+          <h2 id="social-updates-title">Latest updates</h2>
+          <p>Follow us on social media for the latest news about Project Gizmo.</p>
+        </div>
+        <div class="social-updates__grid"><a class="social-updates__card" href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noopener noreferrer"><img src="../public/external/instagram-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">Instagram</span><span class="social-updates__handle">@projekt_gizmo</span><span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span></a><a class="social-updates__card" href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noopener noreferrer"><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">LinkedIn</span><span class="social-updates__handle">Projekt Gizmo</span><span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span></a><a class="social-updates__card" href="https://www.facebook.com/p/Projekt-Gizmo-61575747850184/" target="_blank" rel="noopener noreferrer"><img src="../public/external/facebook-svgrepo-com.svg" alt="" aria-hidden="true"><span class="social-updates__name">Facebook</span><span class="social-updates__handle">Projekt Gizmo</span><span class="social-updates__action">View profile <span aria-hidden="true">↗</span></span></a></div>
+      </section>
+
+      <section class="footer__contact" aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title" class="section-title">Contact</h2>
+        <address class="footer__contact-info">
+          <p><img src="../public/external/mail.svg" alt="" class="contact-icon" /> <a href="mailto:gizmoprojekt@gmail.com">gizmoprojekt@gmail.com</a></p>
+          <p><img src="../public/external/instagram-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.instagram.com/projekt_gizmo/" target="_blank" rel="noreferrer">@projekt_gizmo</a></p>
+          <p><img src="../public/external/linkedin-fill-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.linkedin.com/company/projekt-gizmo/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+          <p><img src="../public/external/facebook-svgrepo-com.svg" alt="" class="contact-icon" /> <a href="https://www.facebook.com/p/Projekt-Gizmo-61575747850184/" target="_blank" rel="noreferrer">Projekt Gizmo</a></p>
+        </address>
+      </section>
+    </div>
+  </footer>
+
+  <script src="../src/scripts/carousel.js" defer></script>
+  <script src="../src/scripts/team-carousel.js" defer></script>
+  <script src="../src/scripts/home-scroll.js" defer></script>
+</body>
+</html>
